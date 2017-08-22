@@ -58,3 +58,12 @@ $on-laptop:        950px;
         "syntax-highlighting",
 	"fancy-image"
 ;
+
+
+span.reverse {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  color: #07c;
+  font-family: monospace;
+  font-size: 90%;
+}
