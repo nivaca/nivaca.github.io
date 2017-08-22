@@ -3,13 +3,13 @@
 ---
 @charset "utf-8";
 
-
-
 // Our variables
-$base-font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-$base-font-size:   .95em;
+$base-font-family: 'Crimson Text', serifm georgia, times;
+$base-font-size:   1em;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
+
+$tt-font-family: 'Ubuntu Mono', monospace;
 
 $spacing-unit:     30px;
 
@@ -17,8 +17,8 @@ $text-color:       #111;
 $background-color: #fdfdfd;
 $brand-color:      #0077CC;
 // $gameday-sky: #109dc0;
-$clemson-purple:      #522d80;
-$clemson-orange:      #f66733;
+$clemson-purple:      #8A0808;
+$clemson-orange:      #003399;
 
 
 $grey-color:       #828282;
