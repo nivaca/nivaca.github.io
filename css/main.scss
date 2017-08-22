@@ -4,7 +4,7 @@
 @charset "utf-8";
 
 // Our variables
-$base-font-family: 'Crimson Text', serifm georgia, times;
+$base-font-family: 'Crimson Text', serif, georgia, times;
 $base-font-size:   1em;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -16,10 +16,8 @@ $spacing-unit:     30px;
 $text-color:       #111;
 $background-color: #fdfdfd;
 $brand-color:      #0077CC;
-// $gameday-sky: #109dc0;
 $clemson-purple:      #8A0808;
-$clemson-orange:      #003399;
-
+$royal-blue:    #29428f;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -52,11 +50,11 @@ $on-laptop:        950px;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "header",
-	"mobile-header",
+    "mobile-header",
         "base",
         "layout",
         "syntax-highlighting",
-	"fancy-image"
+    "fancy-image"
 ;
 
 
