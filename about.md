@@ -4,7 +4,9 @@ title: About
 permalink: /about/
 ---
 
-{% include image.html url="/images/nivaca.jpg" align="right" %}
+{% include image.html url="/images/nivaca.jpg"  align="right" %}
+
+
 
 I'm Assistant Professor at the [Department of Philosophy](http://filosofia.uniandes.edu.co/), [Universidad de los Andes](https://uniandes.edu.co/), Bogotá, Colombia. My current research interests include medieval semantics and medieval logical theories, centered particularly around the works of [William of Ockham](https://plato.stanford.edu/entries/ockham/) and [Adam Wodeham](https://plato.stanford.edu/entries/wodeham/).
 I am also adjunct editor of the [Online Digital Edition of Wodeham's *Ordinatio*](http://scta.lombardpress.org/text/questions/wodehamordinatio), under the direction of Prof [Jeffrey C. Witt](http://jeffreycwitt.com/). I teach undergraduate and graduate courses on—of course—medieval philosophy and medieval culture, as well as on argumentation theory, modern Empiricism and Kant.
