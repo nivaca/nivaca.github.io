@@ -5,19 +5,21 @@
 
 // Our variables
 $base-font-family: 'Crimson Text', serif, georgia, times;
-$base-font-size:   1em;
+$base-font-size:   16px;
+$base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$tt-font-family: 'Ubuntu Mono', monospace;
+
+$tt-font-family:   'Ubuntu Mono', monospace;
 
 $spacing-unit:     30px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
 $brand-color:      #0077CC;
-$clemson-purple:      #8A0808;
-$royal-blue:    #29428f;
+$clemson-purple:   #8A0808;
+$royal-blue:       #29428f;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
