@@ -2,8 +2,8 @@
 layout: slide
 title: Los Andes Textual Editing Workshop
 description: A workshop on textual editing with TEI
-theme: white
-transition: slide
+theme: league
+transition: fade
 ---
 
 <style>
@@ -24,9 +24,8 @@ transition: slide
   <p>2017 Universidad de Los Andes, Bogota, Columbia, August 28th-30th, 2017</p>
   <p>Slide Deck: <a href="http://lombardpress.org/slides/2017-08-28-los-andes-workshop">http://lombardpress.org/slides/2017-08-28-los-andes-workshop | http://bit.ly/2wbCaJ9</a>
 </p>
-
-
 </section>
+
 <section data-markdown>
   ### Useful Links
 
