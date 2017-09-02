@@ -1,6 +1,3 @@
 [submodule "javascripts/--force"]
 	path = javascripts/--force
 	url = https://github.com/nivaca/reveal.js.git
-[submodule "javascripts/reveal.js"]
-	path = javascripts/reveal.js
-	url = https://github.com/hakimel/reveal.js.git
