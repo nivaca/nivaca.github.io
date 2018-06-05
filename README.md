@@ -1,1 +1,1 @@
-I created this site with the static blogging platform [Jekyll](http://jekyllrb.com/), using a nice theme by [Steve V. Miller](https://github.com/svmiller), and it is hosted as a [github page](https://pages.github.com/).
+I created this site with the static blogging platform [Jekyll](http://jekyllrb.com/), using a nice theme by [Steve V. Miller](https://github.com/svmiller), and it is hosted as a [gitlab page](https://pages.gitlab.com/).
