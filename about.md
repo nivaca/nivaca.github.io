@@ -11,7 +11,7 @@ I am also adjunct editor of the [Online Digital Edition of Wodeham's *Ordinatio*
 
 You can check out my Academia page [here](https://uniandes.academia.edu/NicolasVaughan).
 
-I'm an enthusiast of the [Python 3 programming language](https://www.python.org/), as well as of the document preparation system and markup language [LaTeX](https://www.latex-project.org//). You may find some programmes and packages I have written in and for Python and LaTeX at my [github page](https://github.com/nivaca). I created this site with the static blogging platform [Jekyll](http://jekyllrb.com/), using a nice theme by [Steve V. Miller](https://github.com/svmiller), and it is hosted as a [github page](https://pages.github.com/).
+I'm an enthusiast of the [Python 3 programming language](https://www.python.org/), as well as of the document preparation system and markup language [LaTeX](https://www.latex-project.org//). You may find some programmes and packages I have written in and for Python and LaTeX at my [gitlab page](https://gitlab.com/nivaca). I created this site with the static blogging platform [Jekyll](http://jekyllrb.com/), using a nice theme by [Steve V. Miller](https://github.com/svmiller), and it is hosted as a [gitlab page](https://gitlab.com/help/user/project/pages/index.md).
 
 I only use [GNU/Linux](https://en.wikipedia.org/wiki/GNU/Linux_naming_controversy) OS on my machines. On my university PC, I have installed [KDE Neon](https://neon.kde.org/) (which is based upon [Ubuntu](https://www.ubuntu.com/) 16.04). At home, I have actually installed [Manjaro Linux](https://manjaro.org/) and [Antergos](https://antergos.com/), both with the powerful [KDE Plasma](https://www.kde.org/plasma-desktop) desktop.
 
