@@ -8,7 +8,7 @@
           <!--<li><strong>{{ site.title }}</strong></li>-->
 
           <!--<li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>-->
-          <li>{{ site.email }}</li>
+          <li style="font-family: monospace; font-size: small;">{{ site.email }}</li>
         </ul>
       </div>
 
@@ -31,7 +31,7 @@
           {% if site.gitlab_username %}
           <li>
             <a href="https://gitlab.com/{{ site.gitlab_username }}">
-              <span style="font-family:'Courier New', Courier, monospace;">https://gitlab.com/{{ site.gitlab_username }}</span>
+              <span style="font-family: monospace; font-size: small;">https://gitlab.com/{{ site.gitlab_username }}</span>
             </a>
           </li>
           {% endif %}
