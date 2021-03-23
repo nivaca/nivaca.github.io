@@ -1,15 +1,24 @@
 # Site settings
 title: Nicolás Vaughan
-email: <span class="reverse">gro.nahguavsalocin@liam</span>
+email: n.vaughan@uniandes.edu.co
 description: > # this means to ignore newlines until "baseurl:"
+  I'm a philosopher at the Universidad de los Andes (Bogotá, Colombia) with research interests in medieval literature and textual transmission.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://nicolasvaughan.org" # the base hostname & protocol for your site
 gitlab_username: nivaca
+github_username:  nivaca
+orcid_id: 0000-0002-2877-0539
+google_scholar_id:  bfRCzHMAAAAJ
 
 # Build settings
 markdown: kramdown
 
 # Other options
-permalink: blog/:year/:month/:title
-job.title: "Associate Professor"
+permalink: blog/:year/:month/:title/
+jobtitle: "Associate Professor"
 excerpt_separator: "<!--more-->"
+
+plugins_dir:
+  - jekyll-sitemap
+
+exclude: ['*.Rmd']

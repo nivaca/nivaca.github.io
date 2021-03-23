@@ -1,47 +1,71 @@
 <footer class="site-footer">
-
+  
   <div class="wrapper">
-
+    
+    
     <div class="footer-col-wrapper">
+      
       <div class="footer-col  footer-col-1">
         <ul class="contact-list">
-          <!--<li><strong>{{ site.title }}</strong></li>-->
-
-          <!--<li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>-->
-          <li style="font-family: monospace; font-size: small;">{{ site.email }}</li>
+          <li><a href="https://posgradosfacartes.uniandes.edu.co/miembro/nicolas-vaughan-caro/"><strong>{{ site.title }}</strong></a></li>
+          <li>{{ site.jobtitle }}</li>
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
         </ul>
       </div>
-
-      <!--      <div class="footer-col  footer-col-3">
+      
+      
+      
+      
+      <div class="footer-col  footer-col-3">      
         <p class="text">
-        {{ site.description }}
+          <a href="https://literatura.uniandes.edu.co/">Departamento de Literatura</a><br />
+          <a href="https://uniandes.edu.co/">Universidad de los Andes</a><br />
+          Bogotá, Colombia</p> <!-- {{ site.description }} -->
         </p>
-        </div>-->
+      </div> <!-- footer-col-2 -->
+      
+      
 
-      <div class="footer-col  footer-col-3">
-        <p class="text">
-          <a href="https://en.wikipedia.org/wiki/GNU_General_Public_License"><img src="/images/Heckert_GNU_white.svg" alt="GPL" style="width:14px;height:14px;"></img></a>
-          <a href="https://en.wikipedia.org/wiki/Copyleft"><img src="/images/GreenCopyleft.svg" alt="copyleft" style="width:14px;height:14px;"></img></a>
-          2021 Nicolás Vaughan
-        </p>
-      </div>
+
 
       <div class="footer-col  footer-col-2">
-        <ul class="contact-list">
+        <ul class="social-media-list">                           
           {% if site.gitlab_username %}
           <li>
             <a href="https://gitlab.com/{{ site.gitlab_username }}">
-              <span style="font-family: monospace; font-size: small;">https://gitlab.com/{{ site.gitlab_username }}</span>
+              <i class="fab fa-gitlab" style="color:gray"></i> GitLab
             </a>
           </li>
           {% endif %}
 
+          {% if site.github_username %}
+          <li>
+            <a href="https://github.com/{{ site.github_username }}">
+              <i class="fab fa-github" style="color:gray"></i> GitHub
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.orcid_id %}
+          <li>
+            <a href="https://orcid.org/{{ site.orcid_id }}">
+              <i class="ai ai-orcid" style="color:gray"></i> ORCID
+            </a>
+          </li>
+          {% endif %}
+          
+          {% if site.google_scholar_id %}
+          <li>
+            <a href="https://scholar.google.com/citations?user={{ site.google_scholar_id }}">
+              <i class="ai ai-google-scholar" style="color:gray"></i> Google Scholar
+            </a>
+          </li>
+          {% endif %}
         </ul>
-      </div>
-
-
-    </div>
-
-  </div>
-
+      </div> <!-- footer-col-3 -->
+      
+    </div> <!-- footer-col-wrapper -->
+    
+  </div> <!-- wrapper -->
+  
 </footer>
