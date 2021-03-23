@@ -6,9 +6,9 @@ permalink: /about/
 
 {% include image.html url="/images/nivaca.jpg"  align="right" %}
 
-I'm Associate Professor at the [Department of Literature](http://literatura.uniandes.edu.co/), [Universidad de los Andes](https://uniandes.edu.co/), Bogotá, Colombia. My teaching and research interests concern classic and medieval works and authors from the Western (Latin) tradition. I'm also an advocate of [digital humanities](https://en.wikipedia.org/wiki/Digital_humanities).
+I'm an Associate Professor at the [Department of Literature](http://literatura.uniandes.edu.co/), [Universidad de los Andes](https://uniandes.edu.co/), Bogotá, Colombia. My teaching and research interests concern classic and medieval works and authors from the Western (Latin) tradition. I'm an advocate of [digital humanities](https://en.wikipedia.org/wiki/Digital_humanities) as well.
 
-I am adjunct editor of the [Online Digital Edition of Wodeham's *Ordinatio*](https://scta.lombardpress.org/#/text?resourceid=http://scta.info/resource/b1-d3-qun), under the direction of Prof [Jeffrey C. Witt](http://jeffreycwitt.com/).
+I'm also adjunct editor of the [Online Digital Edition of Wodeham's *Ordinatio*](https://scta.lombardpress.org/#/text?resourceid=http://scta.info/resource/b1-d3-qun), under the direction of Prof [Jeffrey C. Witt](http://jeffreycwitt.com/).
 
 You can check out my Academia page [here](https://uniandes.academia.edu/NicolasVaughan).
 
