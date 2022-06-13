@@ -16,8 +16,8 @@ You can check out my Academia page [here](https://uniandes.academia.edu/NicolasV
 
 I'm an enthusiast of the [Python programming language](https://www.python.org/), as well as of the document preparation system and markup language [LaTeX](https://www.latex-project.org//). 
 You may find much of my technical stuff at my [GitHub](https://github.com/nivaca) page. 
-I created this pages using the static site generator [Hugo](https://gohugo.io).
-Its source code is available **here** (todo).
+I created this pages using the static site generator [Jekyll](https://jekyllrb.com), with a theme by [S.V. Miller](http://svmiller.com/).
+Its source code is available [here](https://github.com/nivaca/nivaca.github.io).
 
 I exclusively use [GNU/Linux](https://en.wikipedia.org/wiki/GNU/Linux_naming_controversy) OS on my machines.
 Currently I am happily on the [Fedora Linux](https://getfedora.org/) distribution with the [KDE Plasma](https://www.kde.org/plasma-desktop) desktop.
