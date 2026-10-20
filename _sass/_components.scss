@@ -78,6 +78,37 @@
     margin-top: 1.25rem;
 }
 
+/**
+ * Featured project on the home page
+ */
+.feature {
+    margin: 0 0 2.5rem;
+    padding: 1.5rem 1.5rem 0.5rem;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 6px;
+    background: var(--bg-soft);
+
+    h2 {
+        margin: 0 0 0.5rem;
+        font-size: 1.3rem;
+    }
+
+    .buttons {
+        margin: 1rem 0;
+    }
+}
+
+.feature-label {
+    margin-bottom: 0.25rem !important;
+    font-family: $sans;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
 .section-heading {
     display: flex;
     justify-content: space-between;
@@ -237,6 +268,17 @@
 
     &:hover {
         background: var(--accent);
+        color: var(--bg);
+    }
+}
+
+.button-primary {
+    background: var(--accent);
+    color: var(--bg);
+
+    &:hover {
+        background: var(--accent-hover);
+        border-color: var(--accent-hover);
         color: var(--bg);
     }
 }

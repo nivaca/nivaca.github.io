@@ -1,11 +1,12 @@
 # Publications, grouped by section and listed newest first within each.
-# Fields: authors, year, title, in (container: journal, book or series),
-# details (volume, pages, publisher…), doi, url, note (Markdown).
-# Only `title` and `year` are required.
+# Fields: authors, year, title, in (container: journal, book or event),
+# in_label (word before `in`, default "In"), details (volume, pages,
+# publisher…), doi, url, note (Markdown). Only `title` and `year` are
+# required. A section with `recent: false` is left out of the home page.
 
 - section: Books
   items:
-    - authors: María José Afanador-Llach and Nicolás Vaughan
+    - authors: María José Afanador-Llach and Nicolás Vaughan (eds.)
       year: 2026
       title: "Ctrl + F: Texto, archivo e interpretación en entornos digitales"
       details: Bogotá, Ediciones Uniandes
@@ -23,19 +24,88 @@
       details: Bogotá, Ediciones Uniandes
       doi: 10.51573/andes.9789586958639
 
+- section: Editions and translations
+  items:
+    - authors: J. F. Scharff and D. Walther
+      year: 2024
+      title: "Con la guía de Dios, la guerra es lícita para los cristianos (1670)"
+      details: translated by Andrea Lozano-Vásquez, Felipe Castañeda, Nicolás Vaughan and Liliana Sánchez, Bogotá, Ediciones Uniandes
+      doi: 10.51573/Andes.9789587985719.9789587985726
+
+    - authors: Lou Burnard
+      year: 2022
+      title: "¿Qué es la Iniciativa de Codificación de Textos? Cómo añadir marcado inteligente a los recursos digitales"
+      details: translated by Nicolás Vaughan, Marseille, OpenEdition Press
+      doi: 10.4000/books.oep.15662
+
+    - authors: Felipe Castañeda, Andrea Lozano-Vásquez and Nicolás Vaughan (eds.)
+      year: 2018
+      title: "Anselmo de Canterbury, Tratado sobre la verdad: Edición bilingüe"
+      details: Bogotá, Ediciones Uniandes
+      url: https://www.jstor.org/stable/10.7440/j.ctvf3w31f
+
+    - authors: Nicolás Vaughan and Jeffrey C. Witt
+      year: 2017
+      title: "Adam de Wodeham, Ordinatio I, d. 3, q. un.: critical edition"
+      details: Scholastic Commentaries and Texts Archive, online
+      url: "https://scta.lombardpress.org/text?resourceid=http://scta.info/resource/b1-d3-qun"
+      note: "Part of the [online critical edition of Wodeham's *Ordinatio*](/projects/)."
+
 - section: Book chapters
   items:
+    - year: 2026
+      title: "Citación de recursos de inteligencia artificial generativa"
+      in: "Manual de citas y referencias bibliográficas"
+      details: 5th ed., Bogotá, Ediciones Uniandes, pp. 181–201
+      doi: 10.51573/andes.9789587989397.9789587989410
+
+    - year: 2026
+      title: "La escena como espejo: ética, empatía y cambio climático / The Stage as a Mirror: Ethics, Empathy, and Climate Change"
+      in: "Representar el cambio / Enacting Change: Diez obras que abordan el cambio climático / Ten Plays That Tackle the Climate Crisis"
+      details: Bogotá, Ediciones Uniandes, pp. 261–270
+      doi: 10.51573/andes.9789587989823.9789587989830
+
+    - year: 2025
+      title: "Bufones medievales: De los márgenes a las fabulae"
+      in: "“Un diálogo a gritos”: Homenaje a Amalia Iriarte Núñez"
+      details: Bogotá, Ediciones Uniandes, pp. 145–190
+      doi: 10.51573/andes.9789587988871.9789587988888
+
+    - authors: Timothy Brennan
+      year: 2025
+      title: "Cosmopolitismo y literatura mundial"
+      in: "Visiones de un mundo desigual: Problemas, desafíos y diseminaciones críticas de la literatura mundial"
+      details: translated by Nicolás Vaughan, Bogotá, Ediciones Uniandes, pp. 117–140
+      doi: 10.51573/andes.9789587988901.9789587988963.9789587988970
+
     - year: 2023
       title: "Ockham and Wodeham on Perceptual Experience"
       in: "Per cognitionem visualem: The Visualization of Cognitive and Natural Processes in the Middle Ages"
       details: Rencontres de Philosophie Médiévale, Turnhout, Brepols, pp. 239–263
       doi: 10.1484/m.rpm-eb.5.133642
 
+    - year: 2020
+      title: "Estilo IEEE; Estilo Vancouver; Manejadores de referencias bibliográficas"
+      in: "Manual de citas y referencias bibliográficas"
+      details: Bogotá, Universidad de los Andes
+      note: Three chapters.
+
+    - year: 2019
+      title: "Códices y manuscritos medievales: materiales, técnica y tradición"
+      in: "Tecnologías de la comunicación: Una breve historia material"
+      details: Bogotá, Universidad de los Andes, pp. 29–47
+
     - year: 2018
       title: "Ockham y el problema de la verdad"
       in: "Anselmo de Canterbury, Tratado sobre la verdad: Edición bilingüe"
-      details: Bogotá, Universidad de los Andes
+      details: Bogotá, Ediciones Uniandes, pp. 263–304
       doi: 10.30778/2018.68
+
+    - year: 2018
+      title: "Salutatio ad Magnum Albertum / Saludo a Alberto Magno"
+      in: "Alberto Magno en los Andes: La escultura de Gerhard Marcks"
+      details: Bogotá, Ediciones Uniandes
+      url: https://www.jstor.org/stable/10.7440/j.ctvjhzpgr
 
 - section: Articles and lessons
   items:
@@ -64,6 +134,12 @@
       details: 42 (2), pp. 174–179
       doi: 10.47397/tb/42-2/tb131vaughan-tei
 
+    - year: 2016
+      title: "El proyecto de la Edición Crítica en línea de la Ordinatio de Adam de Wodeham"
+      in: Gaceta CIC
+      details: Facultad de Artes y Humanidades, Universidad de los Andes
+      url: https://issuu.com/facartes-uniandes/docs/gacetafinalw
+
 - section: Reviews
   items:
     - authors: Jeffrey C. Witt and Nicolás Vaughan
@@ -78,3 +154,61 @@
       in: Ideas y Valores
       details: 63 (156), pp. 266–268
       doi: 10.15446/ideasyvalores.v63n156.47086
+
+- section: Talks
+  recent: false
+  items:
+    - year: 2021
+      title: "Adam of Wodeham's Theory of Perception: A Disjunctivist Approach"
+      in_label: Presented at
+      in: the congress of the Société Internationale pour l'Étude de la Philosophie Médiévale (SIEPM)
+      url: https://hiw.kuleuven.be/siepm/siepm-2020
+
+    - year: 2021
+      title: "TEI-XML to LaTeX Workflow: Issues and Lessons"
+      in_label: Presented at
+      in: TUG 2021, the annual conference of the TeX Users Group
+      details: online
+      url: https://tug.org/tug2021/
+
+    - year: 2018
+      title: "Ockham y Wodeham sobre la locución angélica"
+      in_label: Presented at
+      in: VII Congreso Colombiano de Filosofía
+
+- section: Software and digital resources
+  recent: false
+  items:
+    - year: 2026
+      title: "py-words: Latin-English-Latin and Latin-Spanish-Latin dictionary"
+      details: a Python adaptation of William Whitaker's WORDS
+      url: https://codeberg.org/nivaca/py-words
+      note: "[Try it in your browser](/py-words/)."
+
+    - year: 2021
+      title: "witrels"
+      details: software to establish witness relations in TEI-XML documents created according to the SCTA standard
+      url: https://github.com/nivaca/witrels
+
+    - authors: Nicolás Vaughan and Riva Quiroga
+      year: 2021
+      title: "phyaml"
+      details: a YAML validator for Programming Historian lessons
+      url: https://github.com/rivaquiroga/phyaml
+
+    - year: 2021
+      title: "phimages"
+      details: a script to rename lesson images for Programming Historian
+      url: https://github.com/nivaca/phimages
+
+    - authors: Nicolás Vaughan, Jeffrey C. Witt and Michael Stenskjær Christensen
+      year: 2016
+      title: "LombardPress Schema 1.0.0"
+      details: TEI customisation (ODD) for critical and diplomatic transcriptions of scholastic texts
+      url: https://github.com/lombardpress/lombardpress-schema
+      note: "With [critical](https://github.com/lombardpress/lombardpress-schema/blob/master/docs/critical.md) and [diplomatic](https://github.com/lombardpress/lombardpress-schema/blob/master/docs/diplomatic.md) transcription guidelines."
+
+    - year: 2016
+      title: "pythonxml"
+      details: a script for collating differences in TEI files
+      url: https://github.com/nivaca/pythonxml

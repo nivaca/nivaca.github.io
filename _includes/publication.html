@@ -5,7 +5,7 @@
     {% if pub.authors %}<span class="publication-authors">{{ pub.authors }}.</span>{% endif %}
     <cite class="publication-title">
       {%- if pub.in -%}“{{ pub.title }}”{%- else -%}<i>{{ pub.title }}</i>{%- endif -%}
-    </cite>{% if pub.in %}. In <i>{{ pub.in }}</i>{% endif %}{% if pub.details %}, {{ pub.details }}{% endif %}.
+    </cite>{% if pub.in %}. {{ pub.in_label | default: "In" }} {% if pub.in_label %}{{ pub.in }}{% else %}<i>{{ pub.in }}</i>{% endif %}{% endif %}{% if pub.details %}, {{ pub.details }}{% endif %}.
     {% if pub.doi %}<a class="publication-link" href="https://doi.org/{{ pub.doi }}">doi:{{ pub.doi }}</a>{% elsif pub.url %}<a class="publication-link" href="{{ pub.url }}">Link</a>{% endif %}
     {% if pub.note %}<span class="publication-note">{{ pub.note | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span>{% endif %}
   </div>
