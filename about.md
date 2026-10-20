@@ -15,7 +15,7 @@ I'm also adjunct editor of, and technical adviser to, the [Online Digital Editio
 You can check out my Academia page [here](https://uniandes.academia.edu/NicolasVaughan).
 
 I'm an enthusiast of the [Python programming language](https://www.python.org/), as well as of the document preparation system and markup language [LaTeX](https://www.latex-project.org/). 
-You may find much of my technical stuff at my [GitHub](https://github.com/nivaca) page. 
+You may find much of my technical stuff at my [GitHub](https://github.com/nivaca) and [Codeberg](https://codeberg.org/nivaca) pages. 
 I created these pages using the static site generator [Jekyll](https://jekyllrb.com), with a theme by [S.V. Miller](https://svmiller.com/).
 Its source code is available [here](https://github.com/nivaca/nivaca.github.io).
 

@@ -46,6 +46,14 @@
           </li>
           {% endif %}
 
+          {% if site.codeberg_username %}
+          <li>
+            <a href="https://codeberg.org/{{ site.codeberg_username }}">
+              <i class="fab fa-codeberg" style="color:gray"></i> Codeberg
+            </a>
+          </li>
+          {% endif %}
+
           {% if site.orcid_id %}
           <li>
             <a href="https://orcid.org/{{ site.orcid_id }}">

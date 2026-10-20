@@ -6,6 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://nicolasvaughan.org" # the base hostname & protocol for your site
 github_username:  nivaca
+codeberg_username: nivaca
 orcid_id: 0000-0002-2877-0539
 google_scholar_id:  bfRCzHMAAAAJ
 
