@@ -1,3 +1,7 @@
+@use "sass:math";
+@use "variables" as *;
+@use "base";
+
 /* .site-nav {
     float: right;
     line-height: 40px;
@@ -78,7 +82,7 @@
 
 .footer-heading {
     font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: math.div($spacing-unit, 2);
 }
 
 .contact-list,
@@ -90,14 +94,14 @@
 .footer-col-wrapper {
     font-size: 15px;
     color: $grey-color;
-    margin-left: -$spacing-unit / 2;
+    margin-left: math.div(-$spacing-unit, 2);
     @extend %clearfix;
 }
 
 .footer-col {
     float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+    margin-bottom: math.div($spacing-unit, 2);
+    padding-left: math.div($spacing-unit, 2);
 }
 
 .footer-col-1 {

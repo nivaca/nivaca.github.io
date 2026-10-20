@@ -3,61 +3,15 @@
 ---
 @charset "utf-8";
 
-// Our variables
-$base-font-family: 'Gentium Plus', serif, georgia, times;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+// Variables and mixins live in `_sass/_variables.scss`; each partial
+// loads them with `@use "variables" as *;`.
+@use "header";
+@use "mobile-header";
+@use "base";
+@use "layout";
+@use "syntax-highlighting";
+@use "fancy-image";
 
-
-$tt-font-family:   'Ubuntu Mono', monospace;
-
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #0077CC;
-$clemson-purple:   #8A0808;
-$royal-blue:       #29428f;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-
-// Width of the content area
-$content-width:    950px;
-
-$on-palm:          600px;
-$on-laptop:        950px;
-
-
-
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
-
-
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "header",
-    "mobile-header",
-        "base",
-        "layout",
-        "syntax-highlighting",
-    "fancy-image"
-;
 
 
 span.reverse {

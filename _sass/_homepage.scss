@@ -1,3 +1,6 @@
+@use "variables" as *;
+@use "base";
+
 .column-wrapper, .right-column, .left-column {
   box-sizing: border-box;
 
