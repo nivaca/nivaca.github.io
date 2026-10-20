@@ -1,44 +1,15 @@
-@use "sass:color";
-@use "sass:math";
+// Fonts
+$serif: "Gentium Plus", "Gentium Book Plus", Georgia, "Times New Roman", serif;
+$sans:  system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif;
+$mono:  "Ubuntu Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
 
-// Our variables
-$base-font-family: 'Gentium Plus', serif, georgia, times;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+// Sizes
+$base-font-size: 1.1875rem; // 19px: Gentium has a small x-height
+$spacing-unit:   2rem;
+$content-width:  44rem;     // comfortable reading measure
 
+$on-palm: 600px;
 
-$tt-font-family:   'Ubuntu Mono', monospace;
-
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #0077CC;
-$clemson-purple:   #8A0808;
-$royal-blue:       #29428f;
-
-$grey-color:       #828282;
-$grey-color-light: color.adjust($grey-color, $lightness: 40%);
-$grey-color-dark:  color.adjust($grey-color, $lightness: -25%);
-
-
-// Width of the content area
-$content-width:    950px;
-
-$on-palm:          600px;
-$on-laptop:        950px;
-
-
-
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: math.div($spacing-unit, 2);
-//         padding-left: math.div($spacing-unit, 2);
-//     }
-// }
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
         @content;

@@ -1,0 +1,80 @@
+# Publications, grouped by section and listed newest first within each.
+# Fields: authors, year, title, in (container: journal, book or series),
+# details (volume, pages, publisher…), doi, url, note (Markdown).
+# Only `title` and `year` are required.
+
+- section: Books
+  items:
+    - authors: María José Afanador-Llach and Nicolás Vaughan
+      year: 2026
+      title: "Ctrl + F: Texto, archivo e interpretación en entornos digitales"
+      details: Bogotá, Ediciones Uniandes
+      doi: 10.51573/andes.9786287903081.9786287903098.9786287903111
+
+    - authors: Nicolás Vaughan, Ella Suárez, Manuel Romero and Margarita Pérez
+      year: 2026
+      title: "Manual de citas y referencias bibliográficas: APA, Chicago, TAG, IEEE, Latino, MLA, Vancouver"
+      details: 5th ed., Bogotá, Ediciones Uniandes
+      doi: 10.51573/andes.9789587989397.9789587989410
+
+    - authors: Nicolás Vaughan, Ella Suárez, Margarita Pérez and Felipe Castañeda
+      year: 2013
+      title: "Manual de citas & referencias bibliográficas: APA, Chicago, IEEE, MLA, Vancouver"
+      details: Bogotá, Ediciones Uniandes
+      doi: 10.51573/andes.9789586958639
+
+- section: Book chapters
+  items:
+    - year: 2023
+      title: "Ockham and Wodeham on Perceptual Experience"
+      in: "Per cognitionem visualem: The Visualization of Cognitive and Natural Processes in the Middle Ages"
+      details: Rencontres de Philosophie Médiévale, Turnhout, Brepols, pp. 239–263
+      doi: 10.1484/m.rpm-eb.5.133642
+
+    - year: 2018
+      title: "Ockham y el problema de la verdad"
+      in: "Anselmo de Canterbury, Tratado sobre la verdad: Edición bilingüe"
+      details: Bogotá, Universidad de los Andes
+      doi: 10.30778/2018.68
+
+- section: Articles and lessons
+  items:
+    - year: 2025
+      title: "Introduction to Encoding Texts in TEI (Part 1)"
+      in: Programming Historian
+      details: vol. 14
+      doi: 10.46430/phen0129
+      note: "Also in [French](https://doi.org/10.46430/phfr0040) (2026) and [Portuguese](https://doi.org/10.46430/phpt0026) (2022)."
+
+    - year: 2021
+      title: "Introducción a la codificación de textos en TEI (parte 2)"
+      in: Programming Historian en español
+      details: vol. 5
+      doi: 10.46430/phes0055
+
+    - year: 2021
+      title: "Introducción a la codificación de textos en TEI (parte 1)"
+      in: Programming Historian en español
+      details: vol. 5
+      doi: 10.46430/phes0053
+
+    - year: 2021
+      title: "TEI-XML to LaTeX Workflow: Issues and Lessons"
+      in: TUGboat
+      details: 42 (2), pp. 174–179
+      doi: 10.47397/tb/42-2/tb131vaughan-tei
+
+- section: Reviews
+  items:
+    - authors: Jeffrey C. Witt and Nicolás Vaughan
+      year: 2022
+      title: "Evina Steinová, ed., The Glosses to the First Book of the Etymologiae of Isidore of Seville: A Digital Scholarly Edition"
+      in: Manuscript Studies
+      details: 7 (2), pp. 389–393
+      doi: 10.1353/mns.2022.0025
+
+    - year: 2014
+      title: "Guillermo de Ockham, Suma de lógica, primera y segunda parte"
+      in: Ideas y Valores
+      details: 63 (156), pp. 266–268
+      doi: 10.15446/ideasyvalores.v63n156.47086

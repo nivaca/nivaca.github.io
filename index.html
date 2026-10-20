@@ -1,14 +1,36 @@
 ---
 layout: default
 ---
+<section class="intro">
+  <img class="intro-photo" src="{{ "/images/nivaca.jpg" | relative_url }}" alt="Portrait of Nicolás Vaughan" width="200" height="266">
 
+  <div>
+    <h1 class="intro-name">{{ site.title }}</h1>
+    <p class="intro-role">{{ site.jobtitle }} and Director, <a href="{{ site.department.url }}">{{ site.department.name }}</a><br><a href="{{ site.university.url }}">{{ site.university.name }}</a>, Bogotá</p>
 
-<div class="home">
+    <p>I work on medieval philosophy and Latin texts, especially the logic and semantics of William of Ockham and his contemporaries, and on digital scholarly editions of classical and medieval works. I'm adjunct editor of the online critical edition of Adam Wodeham's <i>Ordinatio</i> and an editor of <i>Programming Historian en español</i>.</p>
 
-<h1>Welcome</h1>
+    {% include profile-links.html %}
+  </div>
+</section>
 
-<p style="text-align:center">
-   <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Meta-moerbeke_jpeg031-part.jpg" alt="Beginning of book 7 of Aristotle's Metaphysics, translated into Latin by William of Moerbeke. 14th-century manuscript." style="width:298px;height:171px;">
-</p>
- 
+<div class="section-heading">
+  <h2>Recent publications</h2>
+  <a href="{{ "/publications/" | relative_url }}">All publications →</a>
 </div>
+
+{% assign recent = "" | split: "" %}
+{% for group in site.data.publications %}
+  {% assign recent = recent | concat: group.items %}
+{% endfor %}
+{% assign recent = recent | sort: "year" | reverse %}
+<ol class="publications">
+  {% for pub in recent limit: 4 %}
+    {% include publication.html pub=pub %}
+  {% endfor %}
+</ol>
+
+<figure class="manuscript">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Meta-moerbeke_jpeg031-part.jpg" width="298" height="171" alt="Decorated opening of a 14th-century manuscript page in Latin" loading="lazy">
+  <figcaption>Opening of Book VII of Aristotle's <i>Metaphysics</i> in William of Moerbeke's Latin translation, 14th-century manuscript. <a href="https://commons.wikimedia.org/wiki/File:Meta-moerbeke_jpeg031-part.jpg">Wikimedia Commons</a>.</figcaption>
+</figure>

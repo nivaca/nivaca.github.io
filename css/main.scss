@@ -5,19 +5,7 @@
 
 // Variables and mixins live in `_sass/_variables.scss`; each partial
 // loads them with `@use "variables" as *;`.
-@use "header";
-@use "mobile-header";
 @use "base";
 @use "layout";
+@use "components";
 @use "syntax-highlighting";
-@use "fancy-image";
-
-
-
-span.reverse {
-  unicode-bidi: bidi-override;
-  direction: rtl;
-  color: #07c;
-  font-family: monospace;
-  font-size: 90%;
-}

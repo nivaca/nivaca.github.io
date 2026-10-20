@@ -1,6 +1,11 @@
+- title: "Publications"
+  href: "/publications/"
+
+- title: "Projects"
+  href: "/projects/"
+
+- title: "CV"
+  href: "/cv/"
+
 - title: "About"
   href: "/about/"
-
-# - title: "CV"
-#  href: "/cv/"
-

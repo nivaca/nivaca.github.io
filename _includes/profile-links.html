@@ -1,0 +1,18 @@
+<ul class="profile-links">
+  <li><a href="mailto:{{ site.email }}"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a></li>
+  {% if site.orcid_id %}
+  <li><a href="https://orcid.org/{{ site.orcid_id }}"><i class="ai ai-orcid" aria-hidden="true"></i> ORCID</a></li>
+  {% endif %}
+  {% if site.google_scholar_id %}
+  <li><a href="https://scholar.google.com/citations?user={{ site.google_scholar_id }}"><i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar</a></li>
+  {% endif %}
+  {% if site.academia_url %}
+  <li><a href="{{ site.academia_url }}"><i class="ai ai-academia" aria-hidden="true"></i> Academia</a></li>
+  {% endif %}
+  {% if site.github_username %}
+  <li><a href="https://github.com/{{ site.github_username }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+  {% endif %}
+  {% if site.codeberg_username %}
+  <li><a href="https://codeberg.org/{{ site.codeberg_username }}"><i class="fab fa-codeberg" aria-hidden="true"></i> Codeberg</a></li>
+  {% endif %}
+</ul>

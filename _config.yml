@@ -1,21 +1,57 @@
 # Site settings
 title: Nicolás Vaughan
+tagline: Medieval philosophy, Latin texts & digital humanities
 email: n.vaughan@uniandes.edu.co
-description: > # this means to ignore newlines until "baseurl:"
-  I'm a philosopher at the Universidad de los Andes (Bogotá, Colombia) with research interests in medieval literature and textual transmission.
+description: >-
+  Nicolás Vaughan is an associate professor at the Universidad de los Andes
+  (Bogotá, Colombia), working on medieval philosophy, Latin texts and
+  digital scholarly editions.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://nicolasvaughan.org" # the base hostname & protocol for your site
+lang: en
+jobtitle: "Associate Professor"
+department:
+  name: Department of Humanities and Literature
+  url: https://artehum.uniandes.edu.co/pregrado/lite/
+university:
+  name: Universidad de los Andes
+  url: https://uniandes.edu.co/
+profile_url: https://artehum.uniandes.edu.co/profesores/nicolas-vaughan/
+
+# Profile links (shown on the home page and in the footer)
 github_username:  nivaca
 codeberg_username: nivaca
 orcid_id: 0000-0002-2877-0539
 google_scholar_id:  bfRCzHMAAAAJ
+academia_url: https://uniandes.academia.edu/NicolasVaughan
+
+# jekyll-seo-tag: link previews and search-engine metadata
+author:
+  name: Nicolás Vaughan
+logo: /images/nivaca.jpg
+social:
+  name: Nicolás Vaughan
+  links:
+    - https://orcid.org/0000-0002-2877-0539
+    - https://github.com/nivaca
+    - https://codeberg.org/nivaca
+    - https://scholar.google.com/citations?user=bfRCzHMAAAAJ
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /images/nivaca.jpg
 
 # Build settings
 markdown: kramdown
+plugins:
+  - jekyll-seo-tag
 
 # Other options
 permalink: blog/:year/:month/:title/
-jobtitle: "Associate Professor"
 excerpt_separator: "<!--more-->"
 
 exclude: ['*.Rmd', 'vendor', 'Gemfile', 'Gemfile.lock', 'README.md', 'LICENSE']
+
+twitter:
+  card: summary

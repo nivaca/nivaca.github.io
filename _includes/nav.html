@@ -1,16 +1,7 @@
-<ul class="menu">
-
+<nav class="site-nav" aria-label="Main">
+  <ul>
     {% for item in site.data.menu %}
-    {% if item.subcategories != null %}
-    <li><a href="{{ item.href }}" class="page-link">{{ item.title }}</a>
-    <ul class="sub-menu">
-    {% for subcategory in item.subcategories %}
-    <li><a href="{{ subcategory.subhref }}">{{ subcategory.subtitle }}</a></li>
+    <li><a href="{{ item.href | relative_url }}"{% if page.url == item.href %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
     {% endfor %}
-    </ul>
-    {% else %}
-     <li><a href="{{ item.href }}" class="page-link">{{ item.title }}</a>
-    {% endif %}
-    </li>
-    {% endfor %}
-    </ul>
+  </ul>
+</nav>

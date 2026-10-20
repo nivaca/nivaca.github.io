@@ -1,224 +1,208 @@
-@use "sass:color";
 @use "sass:math";
 @use "variables" as *;
 
 /**
- * Reset some basic elements
+ * Colours. The accent is rubric red, as in a medieval manuscript.
  */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+:root {
+    --bg:          #fdfcf9;
+    --bg-soft:     #f4f1ea;
+    --text:        #1d1b18;
+    --text-muted:  #5f5a52;
+    --rule:        #e2ddd2;
+    --accent:      #9b1c1c;
+    --accent-hover:#6f1212;
+    color-scheme: light;
+}
+
+@mixin dark-colours {
+    color-scheme: dark;
+    --bg:          #17161a;
+    --bg-soft:     #211f24;
+    --text:        #e9e5dd;
+    --text-muted:  #a8a196;
+    --rule:        #34313a;
+    --accent:      #ec8c7e;
+    --accent-hover:#f6b5aa;
+}
+
+// Dark follows the system setting unless the visitor picked a theme
+// with the header toggle, which sets data-theme on <html>.
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        @include dark-colours;
+    }
+}
+
+:root[data-theme="dark"] {
+    @include dark-colours;
+}
+
+/**
+ * Reset-ish
+ */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure {
     margin: 0;
     padding: 0;
 }
 
-
-
-/**
- * Basic styling
- */
-body {
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-    color: $text-color;
-    background-color: $background-color;
+html {
     -webkit-text-size-adjust: 100%;
-    -webkit-font-feature-settings: "kern" 1;
-    -moz-font-feature-settings: "kern" 1;
-    -o-font-feature-settings: "kern" 1;
-    font-feature-settings: "kern" 1;
-    font-kerning: normal;
+    text-size-adjust: 100%;
 }
 
+body {
+    font-family: $serif;
+    font-size: $base-font-size;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--bg);
+    font-kerning: normal;
+    font-variant-ligatures: common-ligatures;
+    text-rendering: optimizeLegibility;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
 %vertical-rhythm {
     margin-bottom: math.div($spacing-unit, 2);
 }
 
+p, blockquote, pre, ul, ol, dl, figure, table {
+    @extend %vertical-rhythm;
+}
 
+ul, ol {
+    margin-left: 1.25em;
+}
 
-/**
- * Images
- */
+li > ul, li > ol {
+    margin-bottom: 0;
+}
+
 img {
     max-width: 100%;
+    height: auto;
     vertical-align: middle;
 }
-
-
-
-/**
- * Figures
- */
-figure > img {
-    display: block;
-}
-
-figcaption {
-    font-size: $small-font-size;
-}
-
-
-
-/**
- * Lists
- */
-ul, ol {
-    margin-left: $spacing-unit;
-}
-
-li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
-}
-
-
 
 /**
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: $base-font-weight;
+    font-family: $sans;
+    font-weight: 650;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
 }
 
+h2 {
+    font-size: 1.35rem;
+    margin: 2.25rem 0 0.75rem;
+}
 
+h3 {
+    font-size: 1.1rem;
+    margin: 1.75rem 0 0.5rem;
+}
 
 /**
  * Links
  */
 a {
-    color: $brand-color;
-    text-decoration: none;
-
-    &:visited {
-        color: color.adjust($brand-color, $lightness: -15%);
-    }
+    color: var(--accent);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.18em;
 
     &:hover {
-        color: $text-color;
-        text-decoration: underline;
+        color: var(--accent-hover);
+        text-decoration-thickness: 2px;
     }
 }
 
-
+:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+}
 
 /**
- * Blockquotes
+ * Blockquotes and code
  */
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: math.div($spacing-unit, 2);
-    font-size: 18px;
-    letter-spacing: 0px;
-    //font-style: italic;
+    color: var(--text-muted);
+    border-left: 3px solid var(--rule);
+    padding-left: 1rem;
+    font-style: italic;
 
     > :last-child {
         margin-bottom: 0;
     }
 }
 
-/** 
-* table formatting 
-*/
-
-td {
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 1px dashed gray;
-}
-table {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-collapse: collapse;
-}
-
-/**
- * Code formatting
- */
-pre,
-code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
+code, pre {
+    font-family: $mono;
+    font-size: 0.9em;
+    background-color: var(--bg-soft);
+    border-radius: 4px;
 }
 
 code {
-    padding: 1px 5px;
+    padding: 0.1em 0.3em;
 }
 
 pre {
-    padding: 8px 12px;
+    padding: 0.75rem 1rem;
     overflow-x: auto;
 
     > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
+        padding: 0;
+        background: none;
     }
 }
 
-
+hr {
+    border: 0;
+    border-top: 1px solid var(--rule);
+    margin: $spacing-unit 0;
+}
 
 /**
  * Wrapper
  */
 .wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: math.div($spacing-unit, 2);
-        padding-left: math.div($spacing-unit, 2);
-    }
+    max-width: $content-width;
+    margin: 0 auto;
+    padding: 0 1.25rem;
 }
-
-
 
 /**
  * Clearfix
  */
-%clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+%clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-
-
 /**
- * Icons
+ * Screen-reader-only skip link
  */
-.icon {
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: 0.5rem;
+    z-index: 10;
+    padding: 0.5rem 1rem;
+    background: var(--bg);
+    font-family: $sans;
 
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $grey-color;
-        }
+    &:focus {
+        left: 0.5rem;
     }
 }

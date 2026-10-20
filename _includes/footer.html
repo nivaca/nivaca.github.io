@@ -1,81 +1,15 @@
 <footer class="site-footer">
-  
   <div class="wrapper">
-    
-    
-    <div class="footer-col-wrapper">
-      
-      <div class="footer-col  footer-col-1">
-        <ul class="contact-list">
-          <li><a href="https://artehum.uniandes.edu.co/profesores/nicolas-vaughan/"><strong>{{ site.title }}</strong></a></li>
-          <li>{{ site.jobtitle }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
+    <div class="footer-grid">
+      <div>
+        <p class="footer-name"><a href="{{ site.profile_url }}">{{ site.title }}</a></p>
+        <p>{{ site.jobtitle }}<br>
+          <a href="{{ site.department.url }}">{{ site.department.name }}</a><br>
+          <a href="{{ site.university.url }}">{{ site.university.name }}</a>, Bogotá, Colombia</p>
       </div>
-      
-      
-      
-      
-      <div class="footer-col  footer-col-3">      
-        <p class="text">
-          <a href="https://artehum.uniandes.edu.co/pregrado/lite/">Departamento de Humanidades y Literatura</a><br />
-          <a href="https://uniandes.edu.co/">Universidad de los Andes</a><br />
-          Bogotá, Colombia <!-- {{ site.description }} -->
-        </p>
-      </div> <!-- footer-col-2 -->
-      
-      
-
-
-
-      <div class="footer-col  footer-col-2">
-        <ul class="social-media-list">                           
-          <!-- {% if site.gitlab_username %}
-          <li>
-            <a href="https://gitlab.com/{{ site.gitlab_username }}">
-              <i class="fab fa-gitlab" style="color:gray"></i> GitLab
-            </a>
-          </li>
-          {% endif %} -->
-
-          {% if site.github_username %}
-          <li>
-            <a href="https://github.com/{{ site.github_username }}">
-              <i class="fab fa-github" style="color:gray"></i> GitHub
-            </a>
-          </li>
-          {% endif %}
-
-          {% if site.codeberg_username %}
-          <li>
-            <a href="https://codeberg.org/{{ site.codeberg_username }}">
-              <i class="fab fa-codeberg" style="color:gray"></i> Codeberg
-            </a>
-          </li>
-          {% endif %}
-
-          {% if site.orcid_id %}
-          <li>
-            <a href="https://orcid.org/{{ site.orcid_id }}">
-              <i class="ai ai-orcid" style="color:gray"></i> ORCID
-            </a>
-          </li>
-          {% endif %}
-          
-          {% if site.google_scholar_id %}
-          <li>
-            <a href="https://scholar.google.com/citations?user={{ site.google_scholar_id }}">
-              <i class="ai ai-google-scholar" style="color:gray"></i> Google Scholar
-            </a>
-          </li>
-          {% endif %}
-        </ul>
-      </div> <!-- footer-col-3 -->
-      
-    </div> <!-- footer-col-wrapper -->
+      {% include profile-links.html %}
+    </div>
 
     <p class="footer-copyright">&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
-    
-  </div> <!-- wrapper -->
-  
+  </div>
 </footer>

@@ -7,3 +7,7 @@ gem "jekyll", "~> 4.4"
 gem "tzinfo-data", platforms: [:windows, :jruby]
 
 gem "webrick", "~> 1.9"
+
+group :jekyll_plugins do
+  gem "jekyll-seo-tag", "~> 2.8"
+end
