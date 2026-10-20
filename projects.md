@@ -31,6 +31,12 @@ description: Digital editions, digital humanities and open-source work by NicolÃ
   </li>
 
   <li class="project">
+    <h2><a href="https://codeberg.org/{{ site.codeberg_username }}/py-words">py-words: a Latin dictionary with morphology</a></h2>
+    <p class="project-role">Author (2026) Â· on <a href="https://codeberg.org/{{ site.codeberg_username }}/py-words">Codeberg</a> and <a href="https://github.com/{{ site.github_username }}/py-words">GitHub</a></p>
+    <p>William Whitaker's <i>WORDS</i>, rewritten in Python. It analyses inflected Latin words, and whole lines of Latin, into their forms and dictionary entries, with meanings in English or Spanish, and finds the Latin for English or Spanish words. It runs in a window, on the command line, in the terminal or in a web browser, and needs only Python 3.11 or later.</p>
+  </li>
+
+  <li class="project">
     <h2>Open-source tools</h2>
     <p class="project-role">On <a href="https://github.com/{{ site.github_username }}">GitHub</a> and <a href="https://codeberg.org/{{ site.codeberg_username }}">Codeberg</a></p>
     <p>Code for text encoding, critical editions and typesetting with Python, XML/TEI and LaTeX, including a <a href="https://doi.org/10.47397/tb/42-2/tb131vaughan-tei">TEI-to-LaTeX workflow</a>.</p>
