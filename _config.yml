@@ -5,7 +5,6 @@ description: > # this means to ignore newlines until "baseurl:"
   I'm a philosopher at the Universidad de los Andes (Bogotá, Colombia) with research interests in medieval literature and textual transmission.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://nicolasvaughan.org" # the base hostname & protocol for your site
-gitlab_username: nivaca
 github_username:  nivaca
 orcid_id: 0000-0002-2877-0539
 google_scholar_id:  bfRCzHMAAAAJ
@@ -18,7 +17,4 @@ permalink: blog/:year/:month/:title/
 jobtitle: "Associate Professor"
 excerpt_separator: "<!--more-->"
 
-plugins_dir:
-  - jekyll-sitemap
-
-exclude: ['*.Rmd']
+exclude: ['*.Rmd', 'vendor', 'Gemfile', 'Gemfile.lock', 'README.md', 'LICENSE']

@@ -1,2 +1,4 @@
-User-agent: * 
+User-agent: *
 Disallow: /cslides/
+
+Sitemap: https://nicolasvaughan.org/sitemap.xml

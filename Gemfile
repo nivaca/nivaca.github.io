@@ -1,11 +1,9 @@
 source "https://rubygems.org"
-ruby RUBY_VERSION
 
 # This will help ensure the proper Jekyll version is running.
-gem "jekyll"
+gem "jekyll", "~> 4.4"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem "tzinfo-data", platforms: [:windows, :jruby]
 
-
-gem "webrick", "~> 1.7"
+gem "webrick", "~> 1.9"
