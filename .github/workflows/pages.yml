@@ -5,6 +5,9 @@ name: Deploy site
 on:
   push:
     branches: [master]
+  schedule:
+    # Rebuild on 1 January so the footer's copyright year rolls over.
+    - cron: "0 6 1 1 *"
   workflow_dispatch:
 
 permissions:

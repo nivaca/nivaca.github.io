@@ -80,6 +80,14 @@
     padding: $spacing-unit 0;
 }
 
+.footer-copyright {
+    clear: both;
+    padding-top: math.div($spacing-unit, 2);
+    font-size: $small-font-size;
+    color: $grey-color;
+    text-align: center;
+}
+
 .footer-heading {
     font-size: 18px;
     margin-bottom: math.div($spacing-unit, 2);
