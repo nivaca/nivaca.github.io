@@ -14,7 +14,7 @@ My full curriculum vitae is available as a PDF in English and Spanish.
 
 ## In brief
 
-- **{{ site.jobtitle }}**, {{ site.department.name }}, Universidad de los Andes (since 2019); Director of the Department.
+- **{{ site.jobtitle }}**, {{ site.department.name }}, Universidad de los Andes (since 2019); Chair of the Department.
 - Assistant Professor, Department of Philosophy, Universidad de los Andes (2016–2018).
 - Associate Professor, Department of Humanities, Universidad Jorge Tadeo Lozano (2013–2016).
 - **DPhil in Philosophy**, Balliol College, University of Oxford (2014), with a thesis on the semantics of William of Ockham.

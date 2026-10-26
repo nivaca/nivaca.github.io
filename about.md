@@ -6,16 +6,17 @@ permalink: /about/
 
 <img class="portrait" src="/images/nivaca.jpg" alt="Portrait of Nicolás Vaughan" width="200" height="266">
 
-I am an associate professor at the [Department of Humanities and Literature](https://artehum.uniandes.edu.co/pregrado/lite/), [Universidad de los Andes](https://uniandes.edu.co/), Bogotá, Colombia, where I currently serve as Director of the Department. My teaching and research interests concern classic and medieval works and authors from the Western (Latin) tradition. I'm an advocate of [digital humanities](https://en.wikipedia.org/wiki/Digital_humanities) as well.
+I am an associate professor at the [Department of Literature](https://artehum.uniandes.edu.co/pregrado/lite/), [Universidad de los Andes](https://uniandes.edu.co/), Bogotá, Colombia, where I currently serve as Director of the Department. My teaching and research interests concern classic and medieval works and authors from the Western (Latin) tradition. I'm an advocate of [digital humanities](https://en.wikipedia.org/wiki/Digital_humanities) as well.
 
-I have a PhD (DPhil) in Philosophy from Balliol College, University of Oxford (2014), where I wrote a thesis on the logic and semantics of the 14th-century philosopher [William of Ockham](https://en.wikipedia.org/wiki/William_of_Ockham). 
+I have a PhD (DPhil) in Philosophy from Balliol College, University of Oxford (2014), where I wrote a thesis on the logic and semantics of the 14th-century philosopher [William of Ockham](https://en.wikipedia.org/wiki/William_of_Ockham).
 
 I'm also adjunct editor of, and technical adviser to, the [Online Digital Edition of Wodeham's *Ordinatio*](https://scta.lombardpress.org/text?resourceid=http%3A%2F%2Fscta.info%2Fresource%2Fwodehamordinatio), under the direction of [Prof Jeffrey C. Witt](https://jeffreycwitt.com/).
+I'm co-editor of the [Programming Historian en español](https://programminghistorian.org/es/) as well.
 
 You can check out my Academia page [here](https://uniandes.academia.edu/NicolasVaughan).
 
-I'm an enthusiast of the [Python programming language](https://www.python.org/), as well as of the document preparation system and markup language [LaTeX](https://www.latex-project.org/). 
-You may find much of my technical stuff at my [GitHub](https://github.com/nivaca) and [Codeberg](https://codeberg.org/nivaca) pages. 
+I'm an enthusiast of the [Python programming language](https://www.python.org/), as well as of the document preparation system and markup language [LaTeX](https://www.latex-project.org/).
+You may find much of my technical stuff at my [GitHub](https://github.com/nivaca) and [Codeberg](https://codeberg.org/nivaca) pages.
 I built these pages with the static site generator [Jekyll](https://jekyllrb.com); the design started from a theme by [S.V. Miller](https://svmiller.com/).
 Its source code is available [here](https://github.com/nivaca/nivaca.github.io).
 
