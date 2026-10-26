@@ -4,14 +4,13 @@ tagline: Medieval philosophy, Latin texts & digital humanities
 email: n.vaughan@uniandes.edu.co
 description: >-
   Nicolás Vaughan is an associate professor at the Universidad de los Andes
-  (Bogotá, Colombia), working on medieval philosophy, Latin texts and
-  digital scholarly editions.
+  (Bogotá, Colombia), working on medieval philosophy and literature, Latin and Middle English texts, and digital scholarly editions.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://nicolasvaughan.org" # the base hostname & protocol for your site
 lang: en
 jobtitle: "Associate Professor"
 department:
-  name: Department of Humanities and Literature
+  name: Department of Literature
   url: https://artehum.uniandes.edu.co/pregrado/lite/
 university:
   name: Universidad de los Andes

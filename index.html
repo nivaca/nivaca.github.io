@@ -6,7 +6,11 @@ layout: default
 
   <div>
     <h1 class="intro-name">{{ site.title }}</h1>
-    <p class="intro-role">{{ site.jobtitle }} and Director, <a href="{{ site.department.url }}">{{ site.department.name }}</a><br><a href="{{ site.university.url }}">{{ site.university.name }}</a>, Bogotá</p>
+    <p class="intro-role">{{ site.jobtitle }} and Chair,
+      <br>
+      <a href="{{ site.department.url }}">{{ site.department.name }}</a>,
+      <br><a href="{{ site.university.url }}">{{ site.university.name }}</a>,
+      <br>Bogotá, Colombia</p>
 
     <p>My primary research interests lie at the intersection of medieval philosophy, literature, and digital humanities, with a particular focus on texts written in Latin and Middle English. I am interested in the ways philosophical ideas are articulated, transmitted, and transformed through literary forms, as well as in the intellectual and historical contexts that shape the production and reception of medieval texts. My work on digital scholarly editions of classical and medieval works brings these interests together by combining traditional philological and textual scholarship with digital methods and tools. Through this interdisciplinary approach, I aim to explore how digital editions can deepen our understanding of historical texts, illuminate the relationships between philosophical and literary traditions, and make these works more accessible for research and study.</p>
 
@@ -31,14 +35,14 @@ layout: default
 
 {% assign recent = "" | split: "" %}
 {% for group in site.data.publications %}
-  {% unless group.recent == false %}
-    {% assign recent = recent | concat: group.items %}
-  {% endunless %}
+{% unless group.recent == false %}
+{% assign recent = recent | concat: group.items %}
+{% endunless %}
 {% endfor %}
 {% assign recent = recent | sort: "year" | reverse %}
 <ol class="publications">
   {% for pub in recent limit: 4 %}
-    {% include publication.html pub=pub %}
+  {% include publication.html pub=pub %}
   {% endfor %}
 </ol>
 
