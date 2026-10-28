@@ -1,5 +1,4 @@
 @use "variables" as *;
-@use "base";
 
 /**
  * Profile links (home page and footer)
@@ -43,6 +42,10 @@
         grid-template-columns: 1fr;
         gap: 1.25rem;
     }
+
+    .profile-links {
+        margin-top: 1.25rem;
+    }
 }
 
 .intro-photo {
@@ -74,10 +77,6 @@
     color: var(--text-muted);
 }
 
-.intro .profile-links {
-    margin-top: 1.25rem;
-}
-
 /**
  * Featured project on the home page
  */
@@ -100,7 +99,7 @@
 }
 
 .feature-label {
-    margin-bottom: 0.25rem !important;
+    margin-bottom: 0.25rem;
     font-family: $sans;
     font-size: 0.8rem;
     font-weight: 600;
@@ -236,13 +235,14 @@
     p {
         margin-bottom: 0;
     }
-}
 
-.project-role {
-    font-family: $sans;
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    margin-bottom: 0.4rem !important;
+    // Nested so it outranks `.project p`.
+    .project-role {
+        font-family: $sans;
+        font-size: 0.9rem;
+        color: var(--text-muted);
+        margin-bottom: 0.4rem;
+    }
 }
 
 /**

@@ -22,6 +22,18 @@ I write software mostly in [Python](https://www.python.org/), along with XML/TEI
   </li>
 
   <li class="project">
+    <h2><a href="https://github.com/{{ site.github_username }}/pdf-word-finder">pdf-word-finder: find which pages of a PDF a word is on</a></h2>
+    <p class="project-role">Author (2026) · on <a href="https://github.com/{{ site.github_username }}/pdf-word-finder">GitHub</a></p>
+    <p><b>pdf-word-finder</b> searches a PDF for a list of words, phrases or regular expressions and reports the pages each one appears on, one line per term, in the form of a book index. It gives the page numbers printed in the book (roman numerals in the front matter, restarts in later volumes) rather than the PDF's position in the file, and warns when the PDF has no page labels instead of making them up. It runs on the command line or in a window, and needs only Python 3.9 or later and <code>pypdf</code>, using PyMuPDF when available for better reading order in pages with columns, footnotes or critical apparatus.</p>
+  </li>
+
+  <li class="project">
+    <h2><a href="https://github.com/{{ site.github_username }}/validate">validate: Schematron validation for TEI-XML from the terminal</a></h2>
+    <p class="project-role">Author (2026) · on <a href="https://github.com/{{ site.github_username }}/validate">GitHub</a></p>
+    <p><b>validate</b> is a Python script that checks TEI-XML documents against the Schematron rules embedded in an ODD (or in an already-extracted <code>.sch</code>, or harvested from an ODD-generated RelaxNG schema, the rules Jing ignores), running them with Saxon. Unlike oXygen, which silently stops after a hundred errors, it reports every violation, with counts per rule and, if asked, the line number and <code>xml:id</code> of each offender, and says exactly how many it left out when the listing is capped. It returns a non-zero exit code on violations, so it can run in a Makefile or a pre-commit hook. It needs Python 3.9 or later, <code>saxonche</code> and <code>lxml</code>.</p>
+  </li>
+
+  <li class="project">
     <h2><a href="https://doi.org/10.47397/tb/42-2/tb131vaughan-tei">TEI-XML to LaTeX workflow</a></h2>
     <p class="project-role">Author (2021) · <i>TUGboat</i> 42 (2)</p>
     <p>A workflow for typesetting critical editions encoded in TEI-XML with LaTeX, and the lessons learned building it.</p>

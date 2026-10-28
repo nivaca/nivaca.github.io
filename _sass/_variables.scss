@@ -15,3 +15,17 @@ $on-palm: 600px;
         @content;
     }
 }
+
+// Dark follows the system setting unless the visitor picked a theme
+// with the header toggle, which sets data-theme on <html>.
+@mixin dark-theme {
+    @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+            @content;
+        }
+    }
+
+    :root[data-theme="dark"] {
+        @content;
+    }
+}

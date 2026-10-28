@@ -1,6 +1,4 @@
-@use "sass:math";
 @use "variables" as *;
-@use "base";
 
 /**
  * Site header
@@ -91,21 +89,11 @@
     .fa-sun { display: none; }
 }
 
-@mixin dark-toggle {
+@include dark-theme {
     .theme-toggle {
         .fa-sun  { display: inline; }
         .fa-moon { display: none; }
     }
-}
-
-@media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-        @include dark-toggle;
-    }
-}
-
-:root[data-theme="dark"] {
-    @include dark-toggle;
 }
 
 /**
