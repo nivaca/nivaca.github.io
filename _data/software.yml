@@ -1,3 +1,23 @@
+- year: 2026
+  title: "nivaca-leuven"
+  details: an Emacs colour theme based on Fabrice Niessen's Leuven, but a bit darker
+  url: https://github.com/nivaca/nivaca-leuven
+
+- year: 2026
+  title: "nv-theme-color-adjustments"
+  details: an Emacs package that lightens or darkens the current theme at runtime, without touching the theme file or Custom settings
+  url: https://github.com/nivaca/nv-theme-color-adjustments
+
+- year: 2025
+  title: "Leuven Beamer theme"
+  details: a LaTeX Beamer theme loosely inspired by Fabrice Niessen's Leuven Emacs theme
+  url: https://github.com/nivaca/leuventhemeLeuven
+
+- year: 2025
+  title: "Oxygen XML colour themes"
+  details: colour themes for Oxygen XML Editor, including versions of the Modus, Ef, Doric and Dracula themes
+  url: https://github.com/nivaca/oxygenxml_color_themes
+
 - year: 2021
   title: "witrels"
   details: software to establish witness relations in TEI-XML documents created according to the SCTA standard
@@ -13,6 +33,11 @@
   title: "phimages"
   details: a script to rename lesson images for Programming Historian
   url: https://github.com/nivaca/phimages
+
+- year: 2020
+  title: "cleantex"
+  details: a script to remove unwanted whitespace from LaTeX files produced from TEI
+  url: https://github.com/nivaca/cleantex
 
 - authors: Nicolás Vaughan, Jeffrey C. Witt and Michael Stenskjær Christensen
   year: 2016
