@@ -16,14 +16,6 @@ I'm co-editor of the [Programming Historian en español](https://programminghist
 You can check out my Academia page [here](https://uniandes.academia.edu/NicolasVaughan).
 
 I'm an enthusiast of the [Python programming language](https://www.python.org/), as well as of the document preparation system and markup language [LaTeX](https://www.latex-project.org/).
-You may find much of my technical stuff at my [GitHub](https://github.com/nivaca) and [Codeberg](https://codeberg.org/nivaca) pages.
-I built these pages with the static site generator [Jekyll](https://jekyllrb.com); the design started from a theme by [S.V. Miller](https://svmiller.com/).
-Its source code is available [here](https://github.com/nivaca/nivaca.github.io).
-
-I exclusively use [GNU/Linux](https://en.wikipedia.org/wiki/GNU/Linux_naming_controversy) OS on my machines.
-Currently I am happily on the [Fedora Linux](https://fedoraproject.org/) distribution with the [KDE Plasma](https://kde.org/plasma-desktop/) desktop.
-For many years I used the [Manjaro Linux](https://manjaro.org/) distribution, as well as (vanilla) [Arch Linux](https://archlinux.org/), but found them pretty unstable and hard to use on a daily basis.
-
-I mostly use [GNU Emacs](https://www.gnu.org/s/emacs/) as my general editor (writing and coding), but frequently resort to [Neovim](https://neovim.io/), [Visual Studio Code](https://code.visualstudio.com/), [PyCharm](https://www.jetbrains.com/pycharm/), and [Oxygen XML Editor](https://www.oxygenxml.com/), depending on my needs.
+My software, scripts and the tools I use are on the [Coding](/coding/) page.
 
 As you can see I am an advocate of open source software and open access publishing.

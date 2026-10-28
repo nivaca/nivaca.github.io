@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: Digital editions, digital humanities and open-source work by Nicolás Vaughan.
+description: Digital editions and digital humanities projects by Nicolás Vaughan.
 ---
 
 <ul class="projects">
@@ -29,17 +29,6 @@ description: Digital editions, digital humanities and open-source work by Nicol�
     <p class="project-role">Co-editor, with María José Afanador-Llach (Ediciones Uniandes, 2026)</p>
     <p>A book on reading, archiving and interpreting texts in digital environments.</p>
   </li>
-
-  <li class="project">
-    <h2><a href="https://codeberg.org/{{ site.codeberg_username }}/py-words">py-words: a Latin dictionary with morphology</a></h2>
-    <p class="project-role">Author (2026) · on <a href="https://codeberg.org/{{ site.codeberg_username }}/py-words">Codeberg</a> and <a href="https://github.com/{{ site.github_username }}/py-words">GitHub</a></p>
-    <p><b>py-words</b> is a Latin-English-Latin and Latin-Spanish-Latin dictionary written in Python. It started from William Whitaker's WORDS, but both code and data have been redesigned, and it now includes Lewis and Short's English dictionary and the Spanish ones of Echave-Sustaeta and De Miguel. It analyses inflected Latin words, and whole lines of Latin, into their forms and dictionary entries, with meanings in English or Spanish, and finds the Latin for English or Spanish words. It runs in a window, on the command line, in the terminal or in a web browser, and needs only Python 3.11 or later.</p>
-    <p><a class="button button-primary" href="{{ "/py-words/" | relative_url }}"><i class="fas fa-book-open" aria-hidden="true"></i> Try it in your browser</a></p>
-  </li>
-
-  <li class="project">
-    <h2>Open-source tools</h2>
-    <p class="project-role">On <a href="https://github.com/{{ site.github_username }}">GitHub</a> and <a href="https://codeberg.org/{{ site.codeberg_username }}">Codeberg</a></p>
-    <p>Code for text encoding, critical editions and typesetting with Python, XML/TEI and LaTeX, including a <a href="https://doi.org/10.47397/tb/42-2/tb131vaughan-tei">TEI-to-LaTeX workflow</a>.</p>
-  </li>
 </ul>
+
+For software and programming work, including <a href="{{ "/py-words/" | relative_url }}">py-words</a>, see <a href="{{ "/coding/" | relative_url }}">Coding</a>.
