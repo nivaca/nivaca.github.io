@@ -16,6 +16,12 @@ I write software mostly in [Python](https://www.python.org/), along with XML/TEI
   </li>
 
   <li class="project">
+    <h2><a href="https://github.com/{{ site.github_username }}/py-wtk">py-wtk: Wiktionary from the terminal or the desktop</a></h2>
+    <p class="project-role">Author (2026) · on <a href="https://github.com/{{ site.github_username }}/py-wtk">GitHub</a></p>
+    <p><b>py-wtk</b> is a Python interface to the <a href="https://en.wiktionary.org">English Wiktionary</a> for looking up words without opening a web browser. It comes as a command-line tool, a full-screen terminal interface and a desktop window, all sharing the same code. It shows the complete entry, not only the definitions: etymology, pronunciation, examples and quotations, usage notes, inflection tables, synonyms, derived and related terms, descendants and translations, for all the languages on the page or only those you choose (only Latin, say, or Latin and Spanish). It can also search page titles and output structured JSON for use in other programs. It needs only Python 3.11 or later and its standard library (plus Tkinter for the window), and there is also a self-contained AppImage for Linux.</p>
+  </li>
+
+  <li class="project">
     <h2><a href="https://github.com/{{ site.github_username }}/krunner-abbr">krunner-abbr: abbreviation expander for KDE Plasma</a></h2>
     <p class="project-role">Author (2026) · on <a href="https://github.com/{{ site.github_username }}/krunner-abbr">GitHub</a></p>
     <p><b>krunner-abbr</b> is a <a href="https://userbase.kde.org/Plasma/Krunner">KRunner</a> plugin for Plasma 6, written in Python, that expands abbreviations: type <code>abbr</code> and an abbreviation, press Enter, and the expansion is copied to the clipboard. Abbreviations live in a TOML file and can use placeholders for dates, the clipboard, typed text, input dialogs and shell commands, with chainable filters to clean up text (title case, unwrapping text copied from PDFs, quote conversion, sorting). It comes with examples for LaTeX and Markdown, Latin (Roman numerals, macrons), and fetching BibTeX from a DOI, plus a settings dialog with a live preview.</p>
