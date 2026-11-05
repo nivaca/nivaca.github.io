@@ -22,6 +22,12 @@ I write software mostly in [Python](https://www.python.org/), along with XML/TEI
   </li>
 
   <li class="project">
+    <h2><a href="https://github.com/{{ site.github_username }}/krunner-py-wtk">krunner-py-wtk: Wiktionary in KRunner</a></h2>
+    <p class="project-role">Author (2026) · on <a href="https://github.com/{{ site.github_username }}/krunner-py-wtk">GitHub</a></p>
+    <p><b>krunner-py-wtk</b> brings <a href="https://github.com/{{ site.github_username }}/py-wtk">py-wtk</a> to <a href="https://userbase.kde.org/Plasma/Krunner">KRunner</a> in KDE Plasma 6: type <code>wtk</code> and a word, and its Wiktionary entries appear, one for each part of speech in each language, with the headword line and the first definitions. Languages can be chosen in the query itself (<code>wtk rosa @la</code> for Latin only), expressions of several words work, and a word without a page suggests similar titles. Enter opens the entry in py-wtk's window, and other actions copy the full entry or open it on Wiktionary. Lookups wait for a pause in typing and run on a separate thread, so KRunner never hangs, and recent results are cached. A small settings window sets the prefix, the languages and the number of results and definitions shown. It is written in Python and needs py-wtk and the Python D-Bus bindings.</p>
+  </li>
+
+  <li class="project">
     <h2><a href="https://github.com/{{ site.github_username }}/krunner-abbr">krunner-abbr: abbreviation expander for KDE Plasma</a></h2>
     <p class="project-role">Author (2026) · on <a href="https://github.com/{{ site.github_username }}/krunner-abbr">GitHub</a></p>
     <p><b>krunner-abbr</b> is a <a href="https://userbase.kde.org/Plasma/Krunner">KRunner</a> plugin for Plasma 6, written in Python, that expands abbreviations: type <code>abbr</code> and an abbreviation, press Enter, and the expansion is copied to the clipboard. Abbreviations live in a TOML file and can use placeholders for dates, the clipboard, typed text, input dialogs and shell commands, with chainable filters to clean up text (title case, unwrapping text copied from PDFs, quote conversion, sorting). It comes with examples for LaTeX and Markdown, Latin (Roman numerals, macrons), and fetching BibTeX from a DOI, plus a settings dialog with a live preview.</p>
