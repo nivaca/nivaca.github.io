@@ -35,6 +35,12 @@ I write software mostly in [Python](https://www.python.org/), along with XML/TEI
   </li>
 
   <li class="project">
+    <h2><a href="https://github.com/{{ site.github_username }}/QuickView">QuickView: Quick Look-style file previews for KDE Plasma</a></h2>
+    <p class="project-role">Maintainer of the fork (2026) · on <a href="https://github.com/{{ site.github_username }}/QuickView">GitHub</a></p>
+    <p><b>QuickView</b> is a reworked fork of <a href="https://github.com/MustaphaAlioglou/QuickView">Mustapha Alioglou's QuickView</a>, a macOS Quick Look-style previewer for KDE Plasma 6: select a file in Dolphin, press Space, and a floating preview panel appears; arrow keys walk the folder or page through a multi-file selection. It previews images, PDFs (with search and a contents sidebar), EPUB books laid out as pages, rendered Markdown, syntax-highlighted source code, HTML, audio and video, archive listings, spreadsheets as real grids, and office documents laid out as pages through LibreOffice. A resident daemon makes the panel appear in about 20 ms, and every parser runs in a bubblewrap sandbox with no network or filesystem access. The fork adds support for the Flathub LibreOffice, fixes a bug that could leave the panel hanging, splits the daemon into smaller modules and hardens the installer. It is written in Python with PySide6 and needs Python 3.10 or later and bubblewrap.</p>
+  </li>
+
+  <li class="project">
     <h2><a href="https://github.com/{{ site.github_username }}/pdf-word-finder">pdf-word-finder: find which pages of a PDF a word is on</a></h2>
     <p class="project-role">Author (2026) · on <a href="https://github.com/{{ site.github_username }}/pdf-word-finder">GitHub</a></p>
     <p><b>pdf-word-finder</b> searches a PDF for a list of words, phrases or regular expressions and reports the pages each one appears on, one line per term, in the form of a book index. It gives the page numbers printed in the book (roman numerals in the front matter, restarts in later volumes) rather than the PDF's position in the file, and warns when the PDF has no page labels instead of making them up. It runs on the command line or in a window, and needs only Python 3.9 or later and <code>pypdf</code>, using PyMuPDF when available for better reading order in pages with columns, footnotes or critical apparatus.</p>
