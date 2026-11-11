@@ -41,6 +41,12 @@ I write software mostly in [Python](https://www.python.org/), along with XML/TEI
   </li>
 
   <li class="project">
+    <h2><a href="https://github.com/{{ site.github_username }}/py-imposition">py-imposition: a command-line PDF imposition toolkit</a></h2>
+    <p class="project-role">Author (2026) · on <a href="https://github.com/{{ site.github_username }}/py-imposition">GitHub</a></p>
+    <p><b>py-imposition</b> prepares PDFs for printing and binding from the command line, covering the feature set of the Quite Imposing Plus plug-in for Acrobat without needing Acrobat. It makes booklets (perfect, saddle-stitched or cut-and-stack, with creep and right-to-left binding), n-up sheets and step-and-repeat layouts, and it can shuffle, trim, shift and scale pages, add bleeds, crop and fold marks, page numbers and stamps, merge variable data, and split or join documents. Commands can be chained, saved as reusable sequences, or attached to hot folders that process whatever PDFs land in them. It is written in Python with pikepdf and ReportLab.</p>
+  </li>
+
+  <li class="project">
     <h2><a href="https://github.com/{{ site.github_username }}/pdf-word-finder">pdf-word-finder: find which pages of a PDF a word is on</a></h2>
     <p class="project-role">Author (2026) · on <a href="https://github.com/{{ site.github_username }}/pdf-word-finder">GitHub</a></p>
     <p><b>pdf-word-finder</b> searches a PDF for a list of words, phrases or regular expressions and reports the pages each one appears on, one line per term, in the form of a book index. It gives the page numbers printed in the book (roman numerals in the front matter, restarts in later volumes) rather than the PDF's position in the file, and warns when the PDF has no page labels instead of making them up. It runs on the command line or in a window, and needs only Python 3.9 or later and <code>pypdf</code>, using PyMuPDF when available for better reading order in pages with columns, footnotes or critical apparatus.</p>
