@@ -57,12 +57,6 @@ I write software mostly in [Python](https://www.python.org/), along with XML/TEI
     <p class="project-role">2026 · v1.4 · on <a href="https://codeberg.org/{{ site.codeberg_username }}/validate">Codeberg</a> and <a href="https://github.com/{{ site.github_username }}/validate">GitHub</a></p>
     <p><b>validate</b> is a Python script that checks TEI-XML documents against the Schematron rules embedded in an ODD (or in an already-extracted <code>.sch</code>, or harvested from an ODD-generated RelaxNG schema, the rules Jing ignores), running them with Saxon. Unlike oXygen, which silently stops after a hundred errors, it reports every violation, with counts per rule and, if asked, the line number and <code>xml:id</code> of each offender, and says exactly how many it left out when the listing is capped. It returns a non-zero exit code on violations, so it can run in a Makefile or a pre-commit hook. It needs Python 3.9 or later, <code>saxonche</code> and <code>lxml</code>.</p>
   </li>
-
-  <li class="project">
-    <h2><a href="https://doi.org/10.47397/tb/42-2/tb131vaughan-tei">TEI-XML to LaTeX workflow</a></h2>
-    <p class="project-role">2021 · <i>TUGboat</i> 42 (2)</p>
-    <p>A workflow for typesetting critical editions encoded in TEI-XML with LaTeX, and the lessons learned building it.</p>
-  </li>
 </ul>
 
 ## Other software
