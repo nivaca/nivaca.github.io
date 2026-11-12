@@ -243,6 +243,11 @@
         margin-bottom: 0;
     }
 
+    // A further paragraph of the same description.
+    .continued {
+        text-indent: 1.5em;
+    }
+
     // Nested so it outranks `.project p`.
     .project-role {
         font-family: $sans;

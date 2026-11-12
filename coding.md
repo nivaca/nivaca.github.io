@@ -53,9 +53,10 @@ I write software mostly in [Python](https://www.python.org/), along with XML/TEI
   </li>
 
   <li class="project">
-    <h2><a href="https://github.com/{{ site.github_username }}/validate">validate: Schematron validation for TEI-XML from the terminal</a></h2>
-    <p class="project-role">2026 · v1.4 · on <a href="https://codeberg.org/{{ site.codeberg_username }}/validate">Codeberg</a> and <a href="https://github.com/{{ site.github_username }}/validate">GitHub</a></p>
+    <h2><a href="https://github.com/{{ site.github_username }}/validate">validate: Schematron validation for TEI-XML, from the terminal or VS Code</a></h2>
+    <p class="project-role">2026 · v1.8 (VS Code extension v0.5.0) · on <a href="https://codeberg.org/{{ site.codeberg_username }}/validate">Codeberg</a> and <a href="https://github.com/{{ site.github_username }}/validate">GitHub</a></p>
     <p><b>validate</b> is a Python script that checks TEI-XML documents against the Schematron rules embedded in an ODD (or in an already-extracted <code>.sch</code>, or harvested from an ODD-generated RelaxNG schema, the rules Jing ignores), running them with Saxon. Unlike oXygen, which silently stops after a hundred errors, it reports every violation, with counts per rule and, if asked, the line number and <code>xml:id</code> of each offender, and says exactly how many it left out when the listing is capped. It returns a non-zero exit code on violations, so it can run in a Makefile or a pre-commit hook. It needs Python 3.9 or later, <code>saxonche</code> and <code>lxml</code>.</p>
+    <p class="continued">It also finds the schema on its own from the document's <code>&lt;?xml-model?&gt;</code> declarations and can write a JSON report. On top of that, it now comes with a <b>VS Code extension</b> that validates XML/TEI files as you type, on open and on save, unsaved edits included. Each Schematron violation is underlined on the offending element and listed in the Problems panel, with its severity taken from the rule's <code>role</code>. If the schema is RelaxNG and <a href="https://relaxng.org/jclark/jing.html">jing</a> is installed, structural errors are added too. A status-bar indicator shows whether the file is clean, and commands let you pick the Python interpreter or re-download a schema that changed upstream. The extension bundles the script, and you install it from the <code>.vsix</code> in the <a href="https://codeberg.org/{{ site.codeberg_username }}/validate/releases">Codeberg releases</a>.</p>
   </li>
 </ul>
 
