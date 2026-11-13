@@ -52,6 +52,12 @@ I write software mostly in [Python](https://www.python.org/), along with XML/TEI
     <p><b>pdf-word-finder</b> searches a PDF for a list of words, phrases or regular expressions and reports the pages each one appears on, one line per term, in the form of a book index. It gives the page numbers printed in the book (roman numerals in the front matter, restarts in later volumes) rather than the PDF's position in the file, and warns when the PDF has no page labels instead of making them up. It runs on the command line or in a window, and needs only Python 3.9 or later and <code>pypdf</code>, using PyMuPDF when available for better reading order in pages with columns, footnotes or critical apparatus.</p>
   </li>
 
+  <li class="project">
+    <h2><a href="https://github.com/{{ site.github_username }}/py-foliation">py-foliation: change the page labels of PDF documents</a></h2>
+    <p class="project-role">2026 · v0.1 · on <a href="https://codeberg.org/{{ site.codeberg_username }}/py-foliation">Codeberg</a> and <a href="https://github.com/{{ site.github_username }}/py-foliation">GitHub</a></p>
+    <p><b>py-foliation</b> changes the page labels of PDF documents: the numbering a PDF viewer shows for their pages. A book whose front matter is numbered i, ii, iii and whose text starts again at 1 can show those numbers in the viewer, instead of the plain 1, 2, 3 of the pages of the file; only the labels change, and the pages are left as they are. Labels are set as ranges, each with its first page, its style (arabic, roman or letters, upper or lower case, or no number), the number it starts at and a prefix, so that an appendix can run App-1, App-2 or a last page be called Cover. It has a window for seeing and editing the labels page by page, with undo and redo, and a command line for doing the same in scripts; the window can copy the command that gives the same labels to another file. The interface is in English and Spanish. It is written in Python with pikepdf and PySide6, and comes as an AppImage for Linux, a Fedora package on Copr, or from the source with Python 3.12 or later.</p>
+  </li>
+
   <li class="project" id="py-validate">
     <h2><a href="https://github.com/{{ site.github_username }}/py-validate">py-validate: Schematron validation for TEI-XML from the terminal</a></h2>
     <p class="project-role">2026 · v1.8 · on <a href="https://codeberg.org/{{ site.codeberg_username }}/py-validate">Codeberg</a> and <a href="https://github.com/{{ site.github_username }}/py-validate">GitHub</a></p>
