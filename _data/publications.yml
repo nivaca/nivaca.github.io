@@ -3,14 +3,15 @@
 # in_label (word before `in`, default "In"), details (volume, pages,
 # publisher…), doi, url, note (Markdown). Only `title` and `year` are
 # required. A section with `recent: false` is left out of the home page.
-# For the Spanish pages, authors, in, in_label, details and note can have
-# a Spanish variant (authors_es, in_es…); section names are translated in
-# _data/i18n.yml.
+# For the Spanish and Latin pages, authors, in, in_label, details and note
+# can have a variant in that language (authors_es, in_la…); section names
+# are translated in _data/i18n.yml.
 
 - section: Books
   items:
     - authors: María José Afanador-Llach and Nicolás Vaughan (eds.)
       authors_es: María José Afanador-Llach y Nicolás Vaughan (eds.)
+      authors_la: María José Afanador-Llach et Nicolás Vaughan (eds.)
       year: 2026
       title: "Ctrl + F: Texto, archivo e interpretación en entornos digitales"
       details: Bogotá, Ediciones Uniandes
@@ -18,14 +19,17 @@
 
     - authors: Nicolás Vaughan, Ella Suárez, Manuel Romero and Margarita Pérez
       authors_es: Nicolás Vaughan, Ella Suárez, Manuel Romero y Margarita Pérez
+      authors_la: Nicolás Vaughan, Ella Suárez, Manuel Romero et Margarita Pérez
       year: 2026
       title: "Manual de citas y referencias bibliográficas: APA, Chicago, TAG, IEEE, Latino, MLA, Vancouver"
       details: 5th ed., Bogotá, Ediciones Uniandes
       details_es: 5.ª ed., Bogotá, Ediciones Uniandes
+      details_la: ed. 5, Bogotá, Ediciones Uniandes
       doi: 10.51573/andes.9789587989397.9789587989410
 
     - authors: Nicolás Vaughan, Ella Suárez, Margarita Pérez and Felipe Castañeda
       authors_es: Nicolás Vaughan, Ella Suárez, Margarita Pérez y Felipe Castañeda
+      authors_la: Nicolás Vaughan, Ella Suárez, Margarita Pérez et Felipe Castañeda
       year: 2013
       title: "Manual de citas & referencias bibliográficas: APA, Chicago, IEEE, MLA, Vancouver"
       details: Bogotá, Ediciones Uniandes
@@ -35,10 +39,12 @@
   items:
     - authors: J. F. Scharff and D. Walther
       authors_es: J. F. Scharff y D. Walther
+      authors_la: J. F. Scharff et D. Walther
       year: 2024
       title: "Con la guía de Dios, la guerra es lícita para los cristianos (1670)"
       details: translated by Andrea Lozano-Vásquez, Felipe Castañeda, Nicolás Vaughan and Liliana Sánchez, Bogotá, Ediciones Uniandes
       details_es: traducción de Andrea Lozano-Vásquez, Felipe Castañeda, Nicolás Vaughan y Liliana Sánchez, Bogotá, Ediciones Uniandes
+      details_la: interpretibus Andrea Lozano-Vásquez, Felipe Castañeda, Nicolás Vaughan et Liliana Sánchez, Bogotá, Ediciones Uniandes
       doi: 10.51573/Andes.9789587985719.9789587985726
 
     - authors: Lou Burnard
@@ -46,10 +52,12 @@
       title: "¿Qué es la Iniciativa de Codificación de Textos? Cómo añadir marcado inteligente a los recursos digitales"
       details: translated by Nicolás Vaughan, Marseille, OpenEdition Press
       details_es: traducción de Nicolás Vaughan, Marsella, OpenEdition Press
+      details_la: interprete Nicolás Vaughan, Massilie, OpenEdition Press
       doi: 10.4000/books.oep.15662
 
     - authors: Felipe Castañeda, Andrea Lozano-Vásquez and Nicolás Vaughan (eds.)
       authors_es: Felipe Castañeda, Andrea Lozano-Vásquez y Nicolás Vaughan (eds.)
+      authors_la: Felipe Castañeda, Andrea Lozano-Vásquez et Nicolás Vaughan (eds.)
       year: 2018
       title: "Anselmo de Canterbury, Tratado sobre la verdad: Edición bilingüe"
       details: Bogotá, Ediciones Uniandes
@@ -57,13 +65,16 @@
 
     - authors: Nicolás Vaughan and Jeffrey C. Witt
       authors_es: Nicolás Vaughan y Jeffrey C. Witt
+      authors_la: Nicolás Vaughan et Jeffrey C. Witt
       year: 2017
       title: "Adam de Wodeham, Ordinatio I, d. 3, q. un.: critical edition"
       details: Scholastic Commentaries and Texts Archive, online
       details_es: Scholastic Commentaries and Texts Archive, en línea
+      details_la: Scholastic Commentaries and Texts Archive, in rete
       url: "https://scta.lombardpress.org/text?resourceid=http://scta.info/resource/b1-d3-qun"
       note: "Part of the [online critical edition of Wodeham's *Ordinatio*](/projects/)."
       note_es: "Parte de la [edición crítica en línea de la *Ordinatio* de Wodeham](/es/proyectos/)."
+      note_la: "Pars [editionis critice *Ordinationis* Ade de Wodeham in rete](/la/incepta/)."
 
 - section: Book chapters
   items:
@@ -72,6 +83,7 @@
       in: "Manual de citas y referencias bibliográficas"
       details: 5th ed., Bogotá, Ediciones Uniandes, pp. 181–201
       details_es: 5.ª ed., Bogotá, Ediciones Uniandes, pp. 181–201
+      details_la: ed. 5, Bogotá, Ediciones Uniandes, pp. 181–201
       doi: 10.51573/andes.9789587989397.9789587989410
 
     - year: 2026
@@ -92,6 +104,7 @@
       in: "Visiones de un mundo desigual: Problemas, desafíos y diseminaciones críticas de la literatura mundial"
       details: translated by Nicolás Vaughan, Bogotá, Ediciones Uniandes, pp. 117–140
       details_es: traducción de Nicolás Vaughan, Bogotá, Ediciones Uniandes, pp. 117–140
+      details_la: interprete Nicolás Vaughan, Bogotá, Ediciones Uniandes, pp. 117–140
       doi: 10.51573/andes.9789587988901.9789587988963.9789587988970
 
     - year: 2023
@@ -106,6 +119,7 @@
       details: Bogotá, Universidad de los Andes
       note: Three chapters.
       note_es: Tres capítulos.
+      note_la: Tria capitula.
 
     - year: 2019
       title: "Códices y manuscritos medievales: materiales, técnica y tradición"
@@ -133,6 +147,7 @@
       doi: 10.46430/phen0129
       note: "Also in [French](https://doi.org/10.46430/phfr0040) (2026) and [Portuguese](https://doi.org/10.46430/phpt0026) (2022)."
       note_es: "También en [francés](https://doi.org/10.46430/phfr0040) (2026) y [portugués](https://doi.org/10.46430/phpt0026) (2022)."
+      note_la: "Etiam [Gallice](https://doi.org/10.46430/phfr0040) (2026) et [Lusitane](https://doi.org/10.46430/phpt0026) (2022)."
 
     - year: 2021
       title: "Introducción a la codificación de textos en TEI (parte 2)"
@@ -162,6 +177,7 @@
   items:
     - authors: Jeffrey C. Witt and Nicolás Vaughan
       authors_es: Jeffrey C. Witt y Nicolás Vaughan
+      authors_la: Jeffrey C. Witt et Nicolás Vaughan
       year: 2022
       title: "Evina Steinová, ed., The Glosses to the First Book of the Etymologiae of Isidore of Seville: A Digital Scholarly Edition"
       in: Manuscript Studies
@@ -181,22 +197,28 @@
       title: "Adam of Wodeham's Theory of Perception: A Disjunctivist Approach"
       in_label: Presented at
       in_label_es: Presentada en
+      in_label_la: Habita in
       in: the congress of the Société Internationale pour l'Étude de la Philosophie Médiévale (SIEPM)
       in_es: el congreso de la Société Internationale pour l'Étude de la Philosophie Médiévale (SIEPM)
+      in_la: congressu Societatis Internationalis pro Studio Philosophie Medii Evi (SIEPM)
       url: https://hiw.kuleuven.be/siepm/siepm-2020
 
     - year: 2021
       title: "TEI-XML to LaTeX Workflow: Issues and Lessons"
       in_label: Presented at
       in_label_es: Presentada en
+      in_label_la: Habita in
       in: TUG 2021, the annual conference of the TeX Users Group
       details: online
       in_es: TUG 2021, el congreso anual del TeX Users Group
+      in_la: TUG 2021, congressu annuo TeX Users Group
       details_es: en línea
+      details_la: in rete
       url: https://tug.org/tug2021/
 
     - year: 2018
       title: "Ockham y Wodeham sobre la locución angélica"
       in_label: Presented at
       in_label_es: Presentada en
+      in_label_la: Habita in
       in: VII Congreso Colombiano de Filosofía

@@ -2,64 +2,77 @@
   title: "nivaca-leuven"
   details: an Emacs colour theme based on Fabrice Niessen's Leuven, but a bit darker
   details_es: un tema de colores para Emacs basado en Leuven, de Fabrice Niessen, pero algo más oscuro
+  details_la: thema colorum pro Emacs, ex Leuven Fabricii Niessen sumptum, sed paulo obscurius
   url: https://github.com/nivaca/nivaca-leuven
 
 - year: 2026
   title: "nv-theme-color-adjustments"
   details: an Emacs package that lightens or darkens the current theme at runtime, without touching the theme file or Custom settings
   details_es: un paquete de Emacs que aclara u oscurece el tema activo sobre la marcha, sin tocar el archivo del tema ni la configuración de Custom
+  details_la: fasciculus Emacs qui thema presens, dum programma currit, clarius vel obscurius reddit, nec documentum thematis nec optiones Custom tangens
   url: https://github.com/nivaca/nv-theme-color-adjustments
 
 - year: 2025
   title: "Leuven Beamer theme"
   details: a LaTeX Beamer theme loosely inspired by Fabrice Niessen's Leuven Emacs theme
   details_es: un tema para LaTeX Beamer inspirado libremente en Leuven, el tema de Emacs de Fabrice Niessen
+  details_la: thema pro LaTeX Beamer, libere ad imitationem Leuven, thematis Emacs Fabricii Niessen, factum
   url: https://github.com/nivaca/leuventhemeLeuven
 
 - year: 2025
   title: "Oxygen XML colour themes"
   details: colour themes for Oxygen XML Editor, including versions of the Modus, Ef, Doric and Dracula themes
   details_es: temas de colores para Oxygen XML Editor, entre ellos versiones de los temas Modus, Ef, Doric y Dracula
+  details_la: themata colorum pro Oxygen XML Editor, inter que sunt versiones thematum Modus, Ef, Doric et Dracula
   url: https://github.com/nivaca/oxygenxml_color_themes
 
 - year: 2021
   title: "witrels"
   details: software to establish witness relations in TEI-XML documents created according to the SCTA standard
   details_es: un programa que establece las relaciones entre testimonios en documentos TEI-XML hechos según el estándar de SCTA
+  details_la: programma quod relationes inter testes in documentis TEI-XML secundum normam SCTA confectis statuit
   url: https://github.com/nivaca/witrels
 
 - authors: Nicolás Vaughan and Riva Quiroga
   authors_es: Nicolás Vaughan y Riva Quiroga
+  authors_la: Nicolás Vaughan et Riva Quiroga
   year: 2021
   title: "phyaml"
   details: a YAML validator for Programming Historian lessons
   details_es: un validador de YAML para las lecciones de Programming Historian
+  details_la: instrumentum ad YAML lectionum Programming Historian probandum
   url: https://github.com/rivaquiroga/phyaml
 
 - year: 2021
   title: "phimages"
   details: a script to rename lesson images for Programming Historian
   details_es: un script que renombra las imágenes de las lecciones de Programming Historian
+  details_la: scriptum quod nomina imaginum lectionum Programming Historian mutat
   url: https://github.com/nivaca/phimages
 
 - year: 2020
   title: "cleantex"
   details: a script to remove unwanted whitespace from LaTeX files produced from TEI
   details_es: un script que quita los espacios sobrantes de los archivos LaTeX generados a partir de TEI
+  details_la: scriptum quod spatia superflua ex documentis LaTeX ex TEI genitis tollit
   url: https://github.com/nivaca/cleantex
 
 - authors: Nicolás Vaughan, Jeffrey C. Witt and Michael Stenskjær Christensen
   authors_es: Nicolás Vaughan, Jeffrey C. Witt y Michael Stenskjær Christensen
+  authors_la: Nicolás Vaughan, Jeffrey C. Witt et Michael Stenskjær Christensen
   year: 2016
   title: "LombardPress Schema 1.0.0"
   details: TEI customisation (ODD) for critical and diplomatic transcriptions of scholastic texts
   details_es: personalización de TEI (ODD) para transcripciones críticas y diplomáticas de textos escolásticos
+  details_la: accommodatio TEI (ODD) ad transcriptiones criticas et diplomaticas textuum scholasticorum
   url: https://github.com/lombardpress/lombardpress-schema
   note: "With [critical](https://github.com/lombardpress/lombardpress-schema/blob/master/docs/critical.md) and [diplomatic](https://github.com/lombardpress/lombardpress-schema/blob/master/docs/diplomatic.md) transcription guidelines."
   note_es: "Con normas de transcripción [crítica](https://github.com/lombardpress/lombardpress-schema/blob/master/docs/critical.md) y [diplomática](https://github.com/lombardpress/lombardpress-schema/blob/master/docs/diplomatic.md)."
+  note_la: "Cum regulis transcriptionis [critice](https://github.com/lombardpress/lombardpress-schema/blob/master/docs/critical.md) et [diplomatice](https://github.com/lombardpress/lombardpress-schema/blob/master/docs/diplomatic.md)."
 
 - year: 2016
   title: "pythonxml"
   details: a script for collating differences in TEI files
   details_es: un script que coteja las diferencias entre archivos TEI
+  details_la: scriptum quod differentias inter documenta TEI collationat
   url: https://github.com/nivaca/pythonxml

@@ -1,25 +1,20 @@
 {%- comment -%}
-  One entry of a publication or software list. On Spanish pages the
-  fields authors, in, in_label, details and note are taken from their `_es`
-  variants when an entry has them (authors_es, details_es…).
+  One entry of a publication or software list. On Spanish and Latin
+  pages the fields authors, in, in_label, details and note are taken from
+  their variants for that language when an entry has them (authors_es,
+  details_la…).
 {%- endcomment -%}
 {%- assign pub = include.pub -%}
-{%- assign plang = "en" -%}
 {%- assign p_prefix = page.url | slice: 0, 4 -%}
-{%- if p_prefix == "/es/" -%}{%- assign plang = "es" -%}{%- endif -%}
+{%- assign plang = "en" -%}
+{%- if p_prefix == "/es/" -%}{%- assign plang = "es" -%}{%- elsif p_prefix == "/la/" -%}{%- assign plang = "la" -%}{%- endif -%}
 {%- assign pt = site.data.i18n[plang] -%}
-{%- assign p_authors = pub.authors -%}
-{%- assign p_details = pub.details -%}
-{%- assign p_note = pub.note -%}
-{%- assign p_in = pub.in -%}
-{%- assign p_in_label = pub.in_label -%}
-{%- if plang == "es" -%}
-  {%- if pub.authors_es -%}{%- assign p_authors = pub.authors_es -%}{%- endif -%}
-  {%- if pub.details_es -%}{%- assign p_details = pub.details_es -%}{%- endif -%}
-  {%- if pub.note_es -%}{%- assign p_note = pub.note_es -%}{%- endif -%}
-  {%- if pub.in_es -%}{%- assign p_in = pub.in_es -%}{%- endif -%}
-  {%- if pub.in_label_es -%}{%- assign p_in_label = pub.in_label_es -%}{%- endif -%}
-{%- endif %}
+{%- assign p_suffix = "_" | append: plang -%}
+{%- assign p_key = "authors" | append: p_suffix -%}{%- assign p_authors = pub[p_key] | default: pub.authors -%}
+{%- assign p_key = "details" | append: p_suffix -%}{%- assign p_details = pub[p_key] | default: pub.details -%}
+{%- assign p_key = "note" | append: p_suffix -%}{%- assign p_note = pub[p_key] | default: pub.note -%}
+{%- assign p_key = "in" | append: p_suffix -%}{%- assign p_in = pub[p_key] | default: pub.in -%}
+{%- assign p_key = "in_label" | append: p_suffix -%}{%- assign p_in_label = pub[p_key] | default: pub.in_label -%}
 <li class="publication">
   <span class="publication-year">{{ pub.year }}</span>
   <div class="publication-body">

@@ -4,11 +4,11 @@
   <meta name="color-scheme" content="light dark">
 
   {% seo %}
-  {%- if twin %}
-  {%- if lang == "en" %}{% assign en_url = page.url %}{% assign es_url = twin.url %}{% else %}{% assign en_url = twin.url %}{% assign es_url = page.url %}{% endif %}
-  <link rel="alternate" hreflang="en" href="{{ en_url | absolute_url }}">
-  <link rel="alternate" hreflang="es" href="{{ es_url | absolute_url }}">
-  <link rel="alternate" hreflang="x-default" href="{{ en_url | absolute_url }}">
+  {%- if page.ref %}
+  {%- for l in site_langs %}{% if alt_found[forloop.index0] == "y" %}
+  <link rel="alternate" hreflang="{{ l }}" href="{{ alt_urls[forloop.index0] | absolute_url }}">
+  {%- endif %}{% endfor %}
+  <link rel="alternate" hreflang="x-default" href="{{ alt_urls[0] | absolute_url }}">
   {%- endif %}
 
   <script>
@@ -28,6 +28,30 @@
         var next = current === "dark" ? "light" : "dark";
         root.dataset.theme = next;
         try { localStorage.setItem("theme", next); } catch (e) {}
+      });
+
+      // Close the language menu on a click elsewhere or on Escape.
+      function closeLangMenus(except) {
+        document.querySelectorAll("details.lang-menu[open]").forEach(function (d) {
+          if (d !== except) d.removeAttribute("open");
+        });
+      }
+      document.addEventListener("click", function (event) {
+        closeLangMenus(event.target.closest("details.lang-menu"));
+      });
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") closeLangMenus(null);
+      });
+
+      // Open the language menu towards the side that has room: leftwards
+      // from the button, unless that would run off the screen (on phones,
+      // where the buttons wrap to the left edge). Decided on the click,
+      // before the menu is drawn.
+      document.addEventListener("click", function (event) {
+        var summary = event.target.closest("details.lang-menu > summary");
+        if (!summary) return;
+        // The closed menu has no width to measure; 150px covers its 7.5rem.
+        summary.parentNode.classList.toggle("open-right", summary.getBoundingClientRect().right < 150);
       });
     })();
   </script>

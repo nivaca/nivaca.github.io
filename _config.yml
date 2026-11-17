@@ -41,12 +41,16 @@ defaults:
     values:
       image: /images/nivaca.jpg
       lang: en
-  # The Spanish version lives under /es/. Each page pairs with its English
-  # counterpart through a shared `ref` (see _includes/lang-switch.html).
+  # The Spanish version lives under /es/, the Latin one under /la/. Pages
+  # pair across languages through a shared `ref` (see _includes/lang-vars.html).
   - scope:
       path: "es"
     values:
       lang: es
+  - scope:
+      path: "la"
+    values:
+      lang: la
 
 # Build settings
 markdown: kramdown

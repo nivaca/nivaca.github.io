@@ -71,26 +71,77 @@
 }
 
 /**
- * Language switch: the code of the other language, linking to the same
- * page in that language. Same round shape as the theme toggle.
+ * Language menu: a round button with the current language's code (same
+ * shape as the theme toggle) that opens a short list of the languages.
  */
-.lang-switch {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 2rem;
-    height: 2rem;
-    border: 1px solid var(--rule);
-    border-radius: 50%;
-    color: var(--text-muted);
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    text-decoration: none;
+.lang-menu {
+    position: relative;
 
-    &:hover {
+    summary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2rem;
+        height: 2rem;
+        border: 1px solid var(--rule);
+        border-radius: 50%;
+        color: var(--text-muted);
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        cursor: pointer;
+        list-style: none;
+        user-select: none;
+
+        &::-webkit-details-marker { display: none; }
+
+        &:hover {
+            color: var(--accent);
+            border-color: var(--accent);
+        }
+    }
+
+    &[open] summary {
         color: var(--accent);
         border-color: var(--accent);
+    }
+
+    ul {
+        position: absolute;
+        top: calc(100% + 0.4rem);
+        right: 0;
+        z-index: 10;
+        min-width: 7.5rem;
+        margin: 0;
+        padding: 0.3rem 0;
+        list-style: none;
+        background: var(--bg);
+        border: 1px solid var(--rule);
+        border-radius: 6px;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    }
+
+    &.open-right ul {
+        left: 0;
+        right: auto;
+    }
+
+    a {
+        display: block;
+        padding: 0.3rem 0.9rem;
+        font-size: 0.9rem;
+        color: var(--text-muted);
+        text-decoration: none;
+
+        &:hover {
+            color: var(--text);
+            background: var(--bg-soft);
+        }
+
+        &[aria-current] {
+            color: var(--text);
+            font-weight: 700;
+        }
     }
 }
 

@@ -1,6 +1,13 @@
 {%- comment -%}
-  Link to this page in the other language, or to that language's home
-  page if this one has no counterpart.
+  Language menu: a round button with the current language's code that
+  opens a list of the site's languages, each linking to this page in that
+  language (or to its home page if this page has no counterpart).
 {%- endcomment -%}
-{%- if twin -%}{%- assign switch_href = twin.url -%}{%- else -%}{%- assign switch_href = site.data.i18n[other_lang].home -%}{%- endif -%}
-<a class="lang-switch" href="{{ switch_href | relative_url }}" hreflang="{{ other_lang }}" lang="{{ other_lang }}" title="{{ t.switch_label }}" aria-label="{{ t.switch_label }}">{{ other_lang | upcase }}</a>
+<details class="lang-menu">
+  <summary title="{{ t.language_menu }}" aria-label="{{ t.language_menu }}">{{ lang | upcase }}</summary>
+  <ul>
+    {%- for l in site_langs %}
+    <li><a href="{{ alt_urls[forloop.index0] | relative_url }}" hreflang="{{ l }}" lang="{{ l }}"{% if l == lang %} aria-current="true"{% endif %}>{{ site.data.i18n[l].language_name }}</a></li>
+    {%- endfor %}
+  </ul>
+</details>

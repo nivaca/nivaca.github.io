@@ -1,13 +1,15 @@
 # Interface strings for each language of the site. Templates read them as
-# site.data.i18n[page.lang].<key>. Page content lives in the pages
-# themselves (English at the root, Spanish under /es/).
+# t.<key> (see _includes/lang-vars.html, which also lists the languages).
+# Page content lives in the pages themselves: English at the root,
+# Spanish under /es/, Medieval Latin under /la/.
 
 en:
   language_name: English
   home: /
   skip_link: Skip to content
   theme_toggle: Switch between light and dark theme
-  switch_label: Leer esta página en español
+  language_menu: Language
+  nav_label: Main
   jobtitle: Associate Professor
   department: Department of Literature
   email: Email
@@ -26,7 +28,8 @@ es:
   home: /es/
   skip_link: Ir al contenido
   theme_toggle: Cambiar entre el tema claro y el oscuro
-  switch_label: Read this page in English
+  language_menu: Idioma
+  nav_label: Principal
   jobtitle: Profesor asociado
   department: Departamento de Literatura
   email: Correo
@@ -39,3 +42,24 @@ es:
     Articles and lessons: Artículos y lecciones
     Reviews: Reseñas
     Talks: Ponencias
+
+# Medieval Latin, in medieval spelling (e for ae and oe).
+la:
+  language_name: Latine
+  home: /la/
+  skip_link: Ad ea que scripta sunt transi
+  theme_toggle: Inter colorem clarum et obscurum muta
+  language_menu: Lingua
+  nav_label: Index principalis
+  jobtitle: Professor associatus
+  department: Departamentum Litterarum
+  email: Epistola
+  in: In
+  link: Nexus
+  sections:
+    Books: Libri
+    Editions and translations: Editiones et translationes
+    Book chapters: Capitula librorum
+    Articles and lessons: Articuli et lectiones
+    Reviews: Recensiones
+    Talks: Collationes

@@ -1,0 +1,59 @@
+---
+layout: default
+ref: home
+permalink: /la/
+title: Philosophia medii evi, textus Latini et humanitates digitales
+description: >-
+  Nicolaus Vaughan, professor associatus in Universitate de los Andes
+  (Bogotá, in Columbia), philosophie et litteris medii evi, textibus
+  Latinis et Anglicis medii evi, editionibusque digitalibus operam dat.
+---
+<section class="intro">
+  <img class="intro-photo" src="{{ "/images/nivaca.jpg" | relative_url }}" alt="Imago Nicolai Vaughan" width="200" height="266">
+
+  <div>
+    <h1 class="intro-name">{{ site.title }}</h1>
+    <p class="intro-role">Professor associatus et prefectus
+      <br>
+      <a href="{{ site.department.url }}">Departamenti Litterarum</a>
+      <br><a href="{{ site.university.url }}">Universitatis de los Andes</a>,
+      <br>Bogotá, in Columbia</p>
+
+    <p>Studia mea in confinio philosophie medii evi, litterarum et humanitatum digitalium versantur, et precipue circa textus Latine et Anglice medii evi scriptos. Inquiro quomodo sententie philosophice per formas litterarias exprimantur, tradantur et transformentur, necnon in quibus conditionibus intellectualibus et historicis textus medii evi conscripti et recepti fuerint. Hec omnia coniungunt editiones digitales operum antiquorum et medii evi quibus operam do: philologiam enim et artem criticam textuum, sicut a maioribus traditur, cum methodis et instrumentis digitalibus copulant. Hac via, que plures disciplinas complectitur, perscrutari conor quomodo editio digitalis nos ad textus antiquos melius intelligendos adiuvet, nexus inter traditionem philosophicam et litterariam illustret, et efficiat ut hec opera inquirentibus et studentibus facilius pateant.</p>
+
+    {% include profile-links.html %}
+  </div>
+</section>
+
+<section class="feature" aria-labelledby="feature-py-words">
+  <p class="feature-label">In navigatro tuo experire</p>
+  <h2 id="feature-py-words">py-words: lexicon Latino-Anglicum et Latino-Hispanicum, in utramque partem, cum morphologia</h2>
+  <p>Quamlibet vocem Latinam declinatam vel coniugatam, aut integrum versum, inquire, et formas eius et articulos lexici accipies, cum significationibus Anglice vel Hispanice redditis; vel vocem Latinam pro Anglica aut Hispanica quere. Ex programmate <i>WORDS</i> Guillelmi Whitaker ortum est, sed lingua Python totum de novo scripsi, et in navigatro operatur, nec quicquam instituendum est. Articulos continet ex lexicis Lewis & Short, De Miguel et Echave-Sustaeta.</p>
+  <div class="buttons">
+    <a class="button button-primary" href="{{ "/py-words/" | relative_url }}"><i class="fas fa-book-open" aria-hidden="true"></i> py-words aperi</a>
+    <a class="button" href="{{ "/la/programmata/" | relative_url }}">Plura de eo</a>
+  </div>
+</section>
+
+<div class="section-heading">
+  <h2>Scripta recentiora</h2>
+  <a href="{{ "/la/scripta/" | relative_url }}">Omnia scripta →</a>
+</div>
+
+{% assign recent = "" | split: "" %}
+{% for group in site.data.publications %}
+{% unless group.recent == false %}
+{% assign recent = recent | concat: group.items %}
+{% endunless %}
+{% endfor %}
+{% assign recent = recent | sort: "year" | reverse %}
+<ol class="publications">
+  {% for pub in recent limit: 4 %}
+  {% include publication.html pub=pub %}
+  {% endfor %}
+</ol>
+
+<figure class="manuscript">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Meta-moerbeke_jpeg031-part.jpg" width="298" height="171" alt="Initium ornatum pagine codicis Latini seculi XIV" loading="lazy">
+  <figcaption>Initium libri VII <i>Metaphysice</i> Aristotelis in translatione Latina Guillelmi de Moerbeke, codex seculi XIV. <a href="https://commons.wikimedia.org/wiki/File:Meta-moerbeke_jpeg031-part.jpg">Wikimedia Commons</a>.</figcaption>
+</figure>

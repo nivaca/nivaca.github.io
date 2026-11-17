@@ -31,3 +31,19 @@ es:
 
   - title: "Sobre mí"
     href: "/es/acerca/"
+
+la:
+  - title: "Scripta"
+    href: "/la/scripta/"
+
+  - title: "Incepta"
+    href: "/la/incepta/"
+
+  - title: "Programmata"
+    href: "/la/programmata/"
+
+  - title: "CV"
+    href: "/la/cv/"
+
+  - title: "De me"
+    href: "/la/de-me/"

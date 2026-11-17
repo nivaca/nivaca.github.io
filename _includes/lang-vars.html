@@ -1,24 +1,33 @@
 {%- comment -%}
   Sets the language variables used by the layout and includes:
-  lang (this page's language), t (its interface strings), other_lang,
-  and twin (the same page in the other language, matched by `ref`; nil
-  if there is none). The language comes from the address: everything
-  under /es/ is Spanish, the rest English. This does not depend on the
-  defaults in _config.yml, which `jekyll serve` does not reload.
+
+  - site_langs: the site's languages, in menu order (en, es, la);
+  - lang: this page's language, taken from the address (/es/… is
+    Spanish, /la/… Latin, the rest English); this does not depend on the
+    defaults in _config.yml, which `jekyll serve` does not reload;
+  - t: this language's interface strings (_data/i18n.yml);
+  - alt_urls / alt_found: for each language in site_langs, the address of
+    this page in that language (matched by the `ref` front-matter key) and
+    "y" if it exists; when it does not, alt_urls falls back to that
+    language's home page.
 {%- endcomment -%}
+{%- assign site_langs = "en,es,la" | split: "," -%}
 {%- assign url_prefix = page.url | slice: 0, 4 -%}
-{%- if url_prefix == "/es/" -%}
-  {%- assign lang = "es" -%}{%- assign other_lang = "en" -%}
-{%- else -%}
-  {%- assign lang = "en" -%}{%- assign other_lang = "es" -%}
-{%- endif -%}
+{%- assign lang = "en" -%}
+{%- if url_prefix == "/es/" -%}{%- assign lang = "es" -%}{%- elsif url_prefix == "/la/" -%}{%- assign lang = "la" -%}{%- endif -%}
 {%- assign t = site.data.i18n[lang] -%}
-{%- assign twin = nil -%}
-{%- if page.ref -%}
-  {%- assign candidates = site.pages | where: "ref", page.ref -%}
+{%- assign alt_urls = "" | split: "" -%}
+{%- assign alt_found = "" | split: "" -%}
+{%- if page.ref -%}{%- assign candidates = site.pages | where: "ref", page.ref -%}{%- else -%}{%- assign candidates = "" | split: "" -%}{%- endif -%}
+{%- for l in site_langs -%}
+  {%- assign l_url = site.data.i18n[l].home -%}
+  {%- assign l_found = "n" -%}
   {%- for candidate in candidates -%}
-    {%- assign candidate_prefix = candidate.url | slice: 0, 4 -%}
-    {%- if other_lang == "es" and candidate_prefix == "/es/" -%}{%- assign twin = candidate -%}{%- endif -%}
-    {%- if other_lang == "en" and candidate_prefix != "/es/" -%}{%- assign twin = candidate -%}{%- endif -%}
+    {%- assign c_prefix = candidate.url | slice: 0, 4 -%}
+    {%- assign c_lang = "en" -%}
+    {%- if c_prefix == "/es/" -%}{%- assign c_lang = "es" -%}{%- elsif c_prefix == "/la/" -%}{%- assign c_lang = "la" -%}{%- endif -%}
+    {%- if c_lang == l -%}{%- assign l_url = candidate.url -%}{%- assign l_found = "y" -%}{%- endif -%}
   {%- endfor -%}
-{%- endif -%}
+  {%- assign alt_urls = alt_urls | push: l_url -%}
+  {%- assign alt_found = alt_found | push: l_found -%}
+{%- endfor -%}
