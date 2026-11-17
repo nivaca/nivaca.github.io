@@ -19,4 +19,4 @@ Mi página en Academia está [aquí](https://uniandes.academia.edu/NicolasVaugha
 Me entusiasma el [lenguaje de programación Python](https://www.python.org/), y también [LaTeX](https://www.latex-project.org/), el sistema de composición de documentos y lenguaje de marcado.
 Mis programas, mis scripts y las herramientas que uso están en la página [Código](/es/programacion/).
 
-Como se ve, defiendo el software libre y la publicación en acceso abierto.
+Como puede ver, defiendo el software de código abierto y la publicación en acceso abierto.
