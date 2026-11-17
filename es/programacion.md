@@ -1,7 +1,7 @@
 ---
 layout: page
 ref: coding
-title: Programación
+title: Código
 permalink: /es/programacion/
 description: Programas, scripts y herramientas de programación de Nicolás Vaughan.
 ---

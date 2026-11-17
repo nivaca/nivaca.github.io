@@ -32,4 +32,4 @@ description: Ediciones digitales y proyectos de humanidades digitales de Nicolá
   </li>
 </ul>
 
-Sobre mi trabajo en software y programación, incluido <a href="{{ "/py-words/" | relative_url }}">py-words</a>, véase <a href="{{ "/es/programacion/" | relative_url }}">Programación</a>.
+Sobre mi trabajo en software y programación, incluido <a href="{{ "/py-words/" | relative_url }}">py-words</a>, véase <a href="{{ "/es/programacion/" | relative_url }}">Código</a>.

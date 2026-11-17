@@ -1,7 +1,7 @@
 ---
 layout: page
 ref: about
-title: Acerca de
+title: Sobre mí
 permalink: /es/acerca/
 ---
 
@@ -17,6 +17,6 @@ También soy coeditor de [Programming Historian en español](https://programming
 Mi página en Academia está [aquí](https://uniandes.academia.edu/NicolasVaughan).
 
 Me entusiasma el [lenguaje de programación Python](https://www.python.org/), y también [LaTeX](https://www.latex-project.org/), el sistema de composición de documentos y lenguaje de marcado.
-Mis programas, mis scripts y las herramientas que uso están en la página de [Programación](/es/programacion/).
+Mis programas, mis scripts y las herramientas que uso están en la página [Código](/es/programacion/).
 
 Como se ve, defiendo el software libre y la publicación en acceso abierto.
