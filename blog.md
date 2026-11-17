@@ -1,5 +1,6 @@
 ---
 layout: page
+ref: blog
 title: Blog
 permalink: /blog/
 ---

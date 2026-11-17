@@ -1,0 +1,6 @@
+{%- comment -%}
+  Link to this page in the other language, or to that language's home
+  page if this one has no counterpart.
+{%- endcomment -%}
+{%- if twin -%}{%- assign switch_href = twin.url -%}{%- else -%}{%- assign switch_href = site.data.i18n[other_lang].home -%}{%- endif -%}
+<a class="lang-switch" href="{{ switch_href | relative_url }}" hreflang="{{ other_lang }}" lang="{{ other_lang }}" title="{{ t.switch_label }}" aria-label="{{ t.switch_label }}">{{ other_lang | upcase }}</a>

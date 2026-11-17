@@ -1,0 +1,41 @@
+# Interface strings for each language of the site. Templates read them as
+# site.data.i18n[page.lang].<key>. Page content lives in the pages
+# themselves (English at the root, Spanish under /es/).
+
+en:
+  language_name: English
+  home: /
+  skip_link: Skip to content
+  theme_toggle: Switch between light and dark theme
+  switch_label: Leer esta página en español
+  jobtitle: Associate Professor
+  department: Department of Literature
+  email: Email
+  in: In
+  link: Link
+  sections:
+    Books: Books
+    Editions and translations: Editions and translations
+    Book chapters: Book chapters
+    Articles and lessons: Articles and lessons
+    Reviews: Reviews
+    Talks: Talks
+
+es:
+  language_name: Español
+  home: /es/
+  skip_link: Ir al contenido
+  theme_toggle: Cambiar entre el tema claro y el oscuro
+  switch_label: Read this page in English
+  jobtitle: Profesor asociado
+  department: Departamento de Literatura
+  email: Correo
+  in: En
+  link: Enlace
+  sections:
+    Books: Libros
+    Editions and translations: Ediciones y traducciones
+    Book chapters: Capítulos de libro
+    Articles and lessons: Artículos y lecciones
+    Reviews: Reseñas
+    Talks: Ponencias

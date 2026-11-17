@@ -64,6 +64,36 @@
     gap: 0.5rem 1.5rem;
 }
 
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/**
+ * Language switch: the code of the other language, linking to the same
+ * page in that language. Same round shape as the theme toggle.
+ */
+.lang-switch {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid var(--rule);
+    border-radius: 50%;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    &:hover {
+        color: var(--accent);
+        border-color: var(--accent);
+    }
+}
+
 /**
  * Light/dark toggle. It shows the theme you would switch to.
  */

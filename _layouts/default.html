@@ -1,9 +1,10 @@
+{% include lang-vars.html -%}
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ lang }}">
   {% include head.html %}
 
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main">{{ t.skip_link }}</a>
 
     {% include header.html %}
 

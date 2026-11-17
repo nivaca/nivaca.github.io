@@ -1,5 +1,6 @@
 ---
 layout: page
+ref: publications
 title: Publications
 permalink: /publications/
 description: Books, chapters, articles and reviews by Nicolás Vaughan.

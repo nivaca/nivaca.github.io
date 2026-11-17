@@ -1,5 +1,6 @@
 ---
 layout: page
+ref: cv
 title: CV
 permalink: /cv/
 description: Curriculum vitae of Nicolás Vaughan.

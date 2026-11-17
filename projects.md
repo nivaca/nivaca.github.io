@@ -1,5 +1,6 @@
 ---
 layout: page
+ref: projects
 title: Projects
 permalink: /projects/
 description: Digital editions and digital humanities projects by Nicolás Vaughan.

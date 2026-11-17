@@ -4,6 +4,12 @@
   <meta name="color-scheme" content="light dark">
 
   {% seo %}
+  {%- if twin %}
+  {%- if lang == "en" %}{% assign en_url = page.url %}{% assign es_url = twin.url %}{% else %}{% assign en_url = twin.url %}{% assign es_url = page.url %}{% endif %}
+  <link rel="alternate" hreflang="en" href="{{ en_url | absolute_url }}">
+  <link rel="alternate" hreflang="es" href="{{ es_url | absolute_url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ en_url | absolute_url }}">
+  {%- endif %}
 
   <script>
     // Apply a saved light/dark choice before the page paints, then let the

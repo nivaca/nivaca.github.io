@@ -1,0 +1,59 @@
+---
+layout: default
+ref: home
+permalink: /es/
+title: Filosofía medieval, textos latinos y humanidades digitales
+description: >-
+  Nicolás Vaughan es profesor asociado de la Universidad de los Andes
+  (Bogotá, Colombia). Trabaja en filosofía y literatura medievales, textos
+  latinos y en inglés medio, y ediciones académicas digitales.
+---
+<section class="intro">
+  <img class="intro-photo" src="{{ "/images/nivaca.jpg" | relative_url }}" alt="Retrato de Nicolás Vaughan" width="200" height="266">
+
+  <div>
+    <h1 class="intro-name">{{ site.title }}</h1>
+    <p class="intro-role">Profesor asociado y director,
+      <br>
+      <a href="{{ site.department.url }}">Departamento de Literatura</a>,
+      <br><a href="{{ site.university.url }}">{{ site.university.name }}</a>,
+      <br>Bogotá, Colombia</p>
+
+    <p>Mi investigación se mueve entre la filosofía medieval, la literatura y las humanidades digitales, y se centra en textos escritos en latín y en inglés medio. Me interesa cómo las ideas filosóficas se formulan, se transmiten y se transforman en las formas literarias, y también los contextos intelectuales e históricos en que se produjeron y se leyeron los textos medievales. Mi trabajo en ediciones académicas digitales de obras clásicas y medievales reúne esos intereses: une la filología y la crítica textual de siempre con métodos y herramientas digitales. Con ese enfoque interdisciplinario quiero mostrar cómo una edición digital puede hacernos entender mejor los textos antiguos, aclarar las relaciones entre la tradición filosófica y la literaria, y poner estas obras al alcance de quienes las investigan y las estudian.</p>
+
+    {% include profile-links.html %}
+  </div>
+</section>
+
+<section class="feature" aria-labelledby="feature-py-words">
+  <p class="feature-label">Pruébelo en el navegador</p>
+  <h2 id="feature-py-words">py-words: diccionario latín-inglés-latín y latín-español-latín con morfología</h2>
+  <p>Escriba cualquier forma latina, o un verso entero, y py-words le dará sus formas y sus entradas de diccionario, con los significados en inglés o en español; también busca el latín de una palabra inglesa o española. Partió de <i>WORDS</i>, el programa de William Whitaker, pero lo reescribí por completo en Python, y funciona en el navegador, sin instalar nada. Incluye entradas del Lewis & Short, del De Miguel y del Echave-Sustaeta.</p>
+  <div class="buttons">
+    <a class="button button-primary" href="{{ "/py-words/" | relative_url }}"><i class="fas fa-book-open" aria-hidden="true"></i> Abrir py-words</a>
+    <a class="button" href="{{ "/es/programacion/" | relative_url }}">Más información</a>
+  </div>
+</section>
+
+<div class="section-heading">
+  <h2>Publicaciones recientes</h2>
+  <a href="{{ "/es/publicaciones/" | relative_url }}">Todas las publicaciones →</a>
+</div>
+
+{% assign recent = "" | split: "" %}
+{% for group in site.data.publications %}
+{% unless group.recent == false %}
+{% assign recent = recent | concat: group.items %}
+{% endunless %}
+{% endfor %}
+{% assign recent = recent | sort: "year" | reverse %}
+<ol class="publications">
+  {% for pub in recent limit: 4 %}
+  {% include publication.html pub=pub %}
+  {% endfor %}
+</ol>
+
+<figure class="manuscript">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Meta-moerbeke_jpeg031-part.jpg" width="298" height="171" alt="Inicio decorado de una página de un manuscrito latino del siglo XIV" loading="lazy">
+  <figcaption>Comienzo del libro VII de la <i>Metafísica</i> de Aristóteles en la traducción latina de Guillermo de Moerbeke, manuscrito del siglo XIV. <a href="https://commons.wikimedia.org/wiki/File:Meta-moerbeke_jpeg031-part.jpg">Wikimedia Commons</a>.</figcaption>
+</figure>

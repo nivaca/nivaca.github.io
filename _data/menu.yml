@@ -1,14 +1,33 @@
-- title: "Publications"
-  href: "/publications/"
+# Main navigation, one list per language.
 
-- title: "Projects"
-  href: "/projects/"
+en:
+  - title: "Publications"
+    href: "/publications/"
 
-- title: "Coding"
-  href: "/coding/"
+  - title: "Projects"
+    href: "/projects/"
 
-- title: "CV"
-  href: "/cv/"
+  - title: "Coding"
+    href: "/coding/"
 
-- title: "About"
-  href: "/about/"
+  - title: "CV"
+    href: "/cv/"
+
+  - title: "About"
+    href: "/about/"
+
+es:
+  - title: "Publicaciones"
+    href: "/es/publicaciones/"
+
+  - title: "Proyectos"
+    href: "/es/proyectos/"
+
+  - title: "Programación"
+    href: "/es/programacion/"
+
+  - title: "CV"
+    href: "/es/cv/"
+
+  - title: "Acerca de"
+    href: "/es/acerca/"

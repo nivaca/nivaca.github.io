@@ -1,5 +1,6 @@
 ---
 layout: page
+ref: coding
 title: Coding
 permalink: /coding/
 description: Software, scripts and programming tools by Nicolás Vaughan.

@@ -40,6 +40,13 @@ defaults:
       path: ""
     values:
       image: /images/nivaca.jpg
+      lang: en
+  # The Spanish version lives under /es/. Each page pairs with its English
+  # counterpart through a shared `ref` (see _includes/lang-switch.html).
+  - scope:
+      path: "es"
+    values:
+      lang: es
 
 # Build settings
 markdown: kramdown
