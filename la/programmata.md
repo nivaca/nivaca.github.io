@@ -11,9 +11,10 @@ Programmata scribo maxime lingua [Python](https://www.python.org/), necnon XML/T
 <ul class="projects">
   <li class="project">
     <h2><a href="https://codeberg.org/{{ site.codeberg_username }}/py-words">py-words: lexicon Latinum cum morphologia</a></h2>
-    <p class="project-role">2026 · v3.21 · in <a href="https://codeberg.org/{{ site.codeberg_username }}/py-words">Codeberg</a> et <a href="https://github.com/{{ site.github_username }}/py-words">GitHub</a></p>
+    <p class="project-role">2026 · v3.22 · in <a href="https://codeberg.org/{{ site.codeberg_username }}/py-words">Codeberg</a> et <a href="https://github.com/{{ site.github_username }}/py-words">GitHub</a></p>
     <p><b>py-words</b> lexicon est Latino-Anglicum et Latino-Hispanicum, in utramque partem, lingua Python scriptum. Ex programmate WORDS Guillelmi Whitaker ortum est, sed et codex et data de novo ordinata sunt, et nunc lexicon Anglicum Lewis et Short continet et Hispanica Echave-Sustaeta et De Miguel. Voces Latinas declinatas vel coniugatas, et integros versus, in formas suas et lemmata resolvit, cum significationibus Anglice vel Hispanice redditis, et voces Latinas pro Anglicis aut Hispanicis invenit. In fenestra, in linea mandatorum, in terminali vel in navigatro operatur, et nichil aliud quam Python 3.13 aut recentiorem requirit.</p>
-    <p><a class="button button-primary" href="{{ "/py-words/" | relative_url }}"><i class="fas fa-book-open" aria-hidden="true"></i> In navigatro tuo experire</a></p>
+    <p><a class="button button-primary" href="{{ "/py-words/" | relative_url }}"><i class="fas fa-book-open" aria-hidden="true"></i> In navigatro tuo experire</a>
+      <a class="button" href="https://nivaca.pythonanywhere.com/"><i class="fas fa-server" aria-hidden="true"></i> Speculum</a></p>
   </li>
 
   <li class="project">

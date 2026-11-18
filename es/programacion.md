@@ -11,9 +11,10 @@ Escribo programas sobre todo en [Python](https://www.python.org/), y también en
 <ul class="projects">
   <li class="project">
     <h2><a href="https://codeberg.org/{{ site.codeberg_username }}/py-words">py-words: un diccionario latino con morfología</a></h2>
-    <p class="project-role">2026 · v3.21 · en <a href="https://codeberg.org/{{ site.codeberg_username }}/py-words">Codeberg</a> y <a href="https://github.com/{{ site.github_username }}/py-words">GitHub</a></p>
+    <p class="project-role">2026 · v3.22 · en <a href="https://codeberg.org/{{ site.codeberg_username }}/py-words">Codeberg</a> y <a href="https://github.com/{{ site.github_username }}/py-words">GitHub</a></p>
     <p><b>py-words</b> es un diccionario latín-inglés-latín y latín-español-latín escrito en Python. Partió de WORDS, de William Whitaker, pero el código y los datos se rediseñaron, y ahora incluye el diccionario inglés de Lewis y Short y los españoles de Echave-Sustaeta y De Miguel. Analiza palabras latinas flexionadas, y líneas enteras de latín, en sus formas y sus entradas de diccionario, con los significados en inglés o en español, y busca el latín de palabras inglesas o españolas. Funciona en una ventana, en la línea de comandos, en la terminal o en el navegador, y solo necesita Python 3.13 o posterior.</p>
-    <p><a class="button button-primary" href="{{ "/py-words/" | relative_url }}"><i class="fas fa-book-open" aria-hidden="true"></i> Pruébelo en el navegador</a></p>
+    <p><a class="button button-primary" href="{{ "/py-words/" | relative_url }}"><i class="fas fa-book-open" aria-hidden="true"></i> Pruébelo en el navegador</a>
+      <a class="button" href="https://nivaca.pythonanywhere.com/"><i class="fas fa-server" aria-hidden="true"></i> Sitio espejo</a></p>
   </li>
 
   <li class="project">
