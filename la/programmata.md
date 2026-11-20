@@ -127,10 +127,22 @@ Programmata scribo maxime lingua [Python](https://www.python.org/): instrumenta 
 ## Instrumenta quibus utor
 
 In machinis meis solo [GNU/Linux](https://la.wikipedia.org/wiki/GNU/Linux) utor.
-Nunc libenter distributione [Fedora Linux](https://fedoraproject.org/) cum mensa [KDE Plasma](https://kde.org/plasma-desktop/) fruor.
+Nunc libenter distributione [Fedora Linux](https://fedoraproject.org/) (versione 45) cum mensa [KDE Plasma](https://kde.org/plasma-desktop/) 6 fruor.
 Per multos annos distributione [Manjaro Linux](https://manjaro.org/) et etiam [Arch Linux](https://archlinux.org/) pura usus sum, sed eas satis instabiles et ad cotidianum usum difficiles inveni.
 
-Ad scribendum et programmandum plerumque [GNU Emacs](https://www.gnu.org/s/emacs/) utor, sed sepe ad [Neovim](https://neovim.io/), [Visual Studio Code](https://code.visualstudio.com/), [PyCharm](https://www.jetbrains.com/pycharm/) et [Oxygen XML Editor](https://www.oxygenxml.com/) confugio, prout res postulat.
+Precipuus editor meus, ad scribendum et programmandum, est [GNU Emacs](https://www.gnu.org/s/emacs/) (versione 31), quem lingua Emacs Lisp ordino. In eo notas meas per [Org mode](https://orgmode.org/) et [Org-roam](https://www.orgroam.com/) servo, LaTeX per [AUCTeX](https://www.gnu.org/software/auctex/) et RefTeX scribo, Git per [Magit](https://magit.vc/) tracto, et documenta TEI per nxml-mode et per meum [py-schematron.el](#py-schematron-el) tracto.
+Ad incepta TEI, accommodationes ODD et XSLT etiam [Oxygen XML Editor](https://www.oxygenxml.com/) adhibeo.
+Ad mutationes celeres Vim vel Sublime Text adhibeo, et [Visual Studio Code](https://code.visualstudio.com/) maxime ut extensionem meam [Schematron Validator](#schematron-validator) experiar.
+
+In terminali [Ghostty](https://ghostty.org/) cum testa [fish](https://fishshell.com/) et tmux utor, et paucis instrumentis linee mandatorum: ripgrep et fd ad inquirendum, fzf, bat, eza, zoxide, atuin pro historia mandatorum, et delta ad differentias legendas.
+
+In lingua Python [uv](https://docs.astral.sh/uv/) utor, quod versiones Python, ambitus et dependentias curat, et pytest ad probationes.
+Programmata mea in fasciculos RPM pro Fedora, per rpmbuild confectos et in [Copr](https://copr.fedorainfracloud.org/) editos, et in AppImage pro ceteris distributionibus redigo.
+Fontes in [Codeberg](https://codeberg.org/{{ site.codeberg_username }}) et [GitHub](https://github.com/{{ site.github_username }}) servantur; utroque situ ex terminali per tea et gh utor.
+[Claude Code](https://claude.com/product/claude-code) ad codicem probandum et edendum adhibeo.
+
+Extra editorem XSLT et XPath per [Saxon](https://www.saxonica.com/) exsequor, et schemata RELAX NG per [Jing](https://relaxng.org/jclark/jing.html) et [Trang](https://relaxng.org/jclark/trang.html) probo et converto.
+Ad typos componendos LuaLaTeX ex [TeX Live](https://tug.org/texlive/) adhibeo, cum Biber ad bibliographias, quas in [Zotero](https://www.zotero.org/) cum extensione Better BibTeX servo; [Pandoc](https://pandoc.org/) ceteras conversiones inter formas curat.
 
 Hunc situm per [Jekyll](https://jekyllrb.com), generatorem situum staticorum, construxi; forma eius ex themate [S.V. Miller](https://svmiller.com/) orta est.
 Fontes eius [in GitHub](https://github.com/{{ site.github_username }}/nivaca.github.io) patent.

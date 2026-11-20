@@ -127,10 +127,22 @@ Escribo programas sobre todo en [Python](https://www.python.org/): herramientas 
 ## Las herramientas que uso
 
 En mis computadores uso únicamente [GNU/Linux](https://es.wikipedia.org/wiki/Controversia_por_la_denominaci%C3%B3n_GNU/Linux).
-Ahora estoy, muy a gusto, en la distribución [Fedora Linux](https://fedoraproject.org/) con el escritorio [KDE Plasma](https://kde.org/plasma-desktop/).
+Ahora estoy, muy a gusto, en la distribución [Fedora Linux](https://fedoraproject.org/) (versión 45), con el escritorio [KDE Plasma](https://kde.org/plasma-desktop/) 6.
 Durante muchos años usé [Manjaro Linux](https://manjaro.org/) y también [Arch Linux](https://archlinux.org/) a secas, pero me parecieron bastante inestables y difíciles para el trabajo diario.
 
-Mi editor de cabecera, para escribir y para programar, es [GNU Emacs](https://www.gnu.org/s/emacs/), aunque a menudo recurro a [Neovim](https://neovim.io/), [Visual Studio Code](https://code.visualstudio.com/), [PyCharm](https://www.jetbrains.com/pycharm/) y [Oxygen XML Editor](https://www.oxygenxml.com/), según lo que necesite.
+Mi editor de cabecera, para escribir y para programar, es [GNU Emacs](https://www.gnu.org/s/emacs/) (versión 31), que configuro en Emacs Lisp. En él llevo mis notas con [Org mode](https://orgmode.org/) y [Org-roam](https://www.orgroam.com/), escribo LaTeX con [AUCTeX](https://www.gnu.org/software/auctex/) y RefTeX, trabajo con Git mediante [Magit](https://magit.vc/) y edito TEI con nxml-mode y mi propio [py-schematron.el](#py-schematron-el).
+Para proyectos en TEI, personalizaciones ODD y XSLT uso también [Oxygen XML Editor](https://www.oxygenxml.com/).
+Para cambios rápidos uso Vim o Sublime Text, y [Visual Studio Code](https://code.visualstudio.com/) sobre todo para probar mi extensión [Schematron Validator](#schematron-validator).
+
+En la terminal uso [Ghostty](https://ghostty.org/) con el shell [fish](https://fishshell.com/) y tmux, y algunas herramientas de línea de comandos: ripgrep y fd para buscar, fzf, bat, eza, zoxide, atuin para el historial del shell y delta para leer diffs.
+
+Para Python uso [uv](https://docs.astral.sh/uv/), que se ocupa de las versiones de Python, los entornos y las dependencias; para las pruebas, pytest.
+Empaqueto mis programas como RPM para Fedora (los construyo con rpmbuild y los publico en [Copr](https://copr.fedorainfracloud.org/)) y como AppImage para las demás distribuciones.
+El código está en [Codeberg](https://codeberg.org/{{ site.codeberg_username }}) y en [GitHub](https://github.com/{{ site.github_username }}), que manejo desde la terminal con tea y gh.
+Uso [Claude Code](https://claude.com/product/claude-code) para probar y publicar código.
+
+Fuera del editor, ejecuto transformaciones XSLT y consultas XPath con [Saxon](https://www.saxonica.com/), y valido y convierto esquemas RELAX NG con [Jing](https://relaxng.org/jclark/jing.html) y [Trang](https://relaxng.org/jclark/trang.html).
+Compongo mis textos con LuaLaTeX, de [TeX Live](https://tug.org/texlive/), y uso Biber para las bibliografías, que guardo en [Zotero](https://www.zotero.org/) con la extensión Better BibTeX; [Pandoc](https://pandoc.org/) se encarga de convertir entre los demás formatos.
 
 Hice este sitio con [Jekyll](https://jekyllrb.com), un generador de sitios estáticos; el diseño partió de un tema de [S.V. Miller](https://svmiller.com/).
 Su código fuente está [en GitHub](https://github.com/{{ site.github_username }}/nivaca.github.io).
