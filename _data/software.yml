@@ -12,6 +12,13 @@
   details_la: fasciculus Emacs qui thema presens, dum programma currit, clarius vel obscurius reddit, nec documentum thematis nec optiones Custom tangens
   url: https://github.com/nivaca/nv-theme-color-adjustments
 
+- year: 2026
+  title: "Prot's Emacs themes for Oxygen XML"
+  details: a Python script that converts Protesilaos Stavrou's Emacs themes (the Modus, Ef and Doric families) into colour themes for Oxygen XML Editor
+  details_es: un script de Python que convierte los temas de Emacs de Protesilaos Stavrou (las familias Modus, Ef y Doric) en temas de colores para Oxygen XML Editor
+  details_la: scriptum lingua Python quod themata Emacs Protesilai Stavrou (familias Modus, Ef et Doric) in themata colorum pro Oxygen XML Editor convertit
+  url: https://github.com/nivaca/prot-emacs-themes-to-oxygen-xml
+
 - year: 2025
   title: "Leuven Beamer theme"
   details: a LaTeX Beamer theme loosely inspired by Fabrice Niessen's Leuven Emacs theme
@@ -25,6 +32,23 @@
   details_es: temas de colores para Oxygen XML Editor, entre ellos versiones de los temas Modus, Ef, Doric y Dracula
   details_la: themata colorum pro Oxygen XML Editor, inter que sunt versiones thematum Modus, Ef, Doric et Dracula
   url: https://github.com/nivaca/oxygenxml_color_themes
+
+- year: 2025
+  title: "hamleodd"
+  details: a TEI ODD for bilingual (English and Spanish) dramatic texts, which requires every speech to carry its language, an identifier and a link to the corresponding speech in the other language, and checks the links with Schematron rules
+  details_es: un ODD de TEI para textos dramáticos bilingües (en inglés y en español), que exige que cada parlamento lleve su idioma, un identificador y un enlace al parlamento correspondiente en el otro idioma, y comprueba esos enlaces con reglas Schematron
+  details_la: ODD TEI pro textibus dramaticis bilinguibus (Anglicis et Hispanicis), quod requirit ut singule orationes linguae sue indicium, signum proprium et nexum ad orationem sibi respondentem in altera lingua habeant, et nexus illos per regulas Schematron probat
+  url: https://github.com/nivaca/hamleodd
+
+- year: 2025
+  title: "Ulauncher Baloo Search"
+  details: a Ulauncher extension that finds files and folders with KDE's Baloo search (baloosearch6)
+  details_es: una extensión de Ulauncher que busca archivos y carpetas con Baloo, el buscador de KDE (baloosearch6)
+  details_la: extensio pro Ulauncher que documenta et directoria per Baloo, instrumentum inquirendi KDE (baloosearch6), invenit
+  url: https://github.com/nivaca/ulauncher-baloosearch
+  note: "Adapted from [ulauncher-fzf](https://github.com/hillaryychan/ulauncher-fzf)."
+  note_es: "Adaptada de [ulauncher-fzf](https://github.com/hillaryychan/ulauncher-fzf)."
+  note_la: "Ex [ulauncher-fzf](https://github.com/hillaryychan/ulauncher-fzf) accommodata."
 
 - year: 2021
   title: "witrels"
