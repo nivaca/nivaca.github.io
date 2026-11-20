@@ -11,7 +11,7 @@ I write software mostly in [Python](https://www.python.org/): command-line tools
 <ul class="projects">
   <li class="project">
     <h2><a href="https://codeberg.org/{{ site.codeberg_username }}/py-words">py-words: a Latin dictionary with morphology</a></h2>
-    <p class="project-role">2026 · v3.23 · on <a href="https://codeberg.org/{{ site.codeberg_username }}/py-words">Codeberg</a> and <a href="https://github.com/{{ site.github_username }}/py-words">GitHub</a></p>
+    <p class="project-role">2026 · v3.24 · on <a href="https://codeberg.org/{{ site.codeberg_username }}/py-words">Codeberg</a> and <a href="https://github.com/{{ site.github_username }}/py-words">GitHub</a></p>
     <p><b>py-words</b> is a Latin-English-Latin and Latin-Spanish-Latin dictionary written in Python. It started from William Whitaker's WORDS, but both code and data have been redesigned, and it now includes Lewis and Short's English dictionary and the Spanish ones of Echave-Sustaeta and De Miguel. It analyses inflected Latin words, and whole lines of Latin, into their forms and dictionary entries, with meanings in English or Spanish, and finds the Latin for English or Spanish words. It runs in a window, on the command line, in the terminal or in a web browser, and needs only Python 3.13 or later.</p>
     <p><a class="button button-primary" href="{{ "/py-words/" | relative_url }}"><i class="fas fa-book-open" aria-hidden="true"></i> Try it in your browser</a>
       <a class="button" href="https://nivaca.pythonanywhere.com/"><i class="fas fa-server" aria-hidden="true"></i> Mirror</a></p>
@@ -25,7 +25,7 @@ I write software mostly in [Python](https://www.python.org/): command-line tools
 
   <li class="project">
     <h2><a href="https://github.com/{{ site.github_username }}/py-wtk">py-wtk: Wiktionary from the terminal or the desktop</a></h2>
-    <p class="project-role">2026 · v1.13 · on <a href="https://codeberg.org/{{ site.codeberg_username }}/py-wtk">Codeberg</a> and <a href="https://github.com/{{ site.github_username }}/py-wtk">GitHub</a></p>
+    <p class="project-role">2026 · v1.14 · on <a href="https://codeberg.org/{{ site.codeberg_username }}/py-wtk">Codeberg</a> and <a href="https://github.com/{{ site.github_username }}/py-wtk">GitHub</a></p>
     <p><b>py-wtk</b> is a Python interface to the <a href="https://en.wiktionary.org">English Wiktionary</a> for looking up words without opening a web browser. It comes as a command-line tool, a full-screen terminal interface and a desktop window, all sharing the same code. It shows the complete entry, not only the definitions: etymology, pronunciation, examples and quotations, usage notes, inflection tables, synonyms, derived and related terms, descendants and translations, for all the languages on the page or only those you choose (only Latin, say, or Latin and Spanish). It can also search page titles and output structured JSON for use in other programs. It needs only Python 3.15 or later and its standard library (plus Tkinter for the window), and there is also a self-contained AppImage for Linux.</p>
   </li>
 
@@ -73,7 +73,7 @@ I write software mostly in [Python](https://www.python.org/): command-line tools
 
   <li class="project" id="py-annotate">
     <h2><a href="https://github.com/{{ site.github_username }}/py-annotate">py-annotate: annotate PDF documents</a></h2>
-    <p class="project-role">2026 · v1.0.0 · on <a href="https://codeberg.org/{{ site.codeberg_username }}/py-annotate">Codeberg</a> and <a href="https://github.com/{{ site.github_username }}/py-annotate">GitHub</a></p>
+    <p class="project-role">2026 · v1.1.0 · on <a href="https://codeberg.org/{{ site.codeberg_username }}/py-annotate">Codeberg</a> and <a href="https://github.com/{{ site.github_username }}/py-annotate">GitHub</a></p>
     <p><b>py-annotate</b> adds annotations to PDF documents: highlights, underlines and strikeouts over the text, marks where text is to be inserted, notes, text boxes and callouts, rectangles, ellipses, polygons, clouds, lines, arrows, freehand drawings and stamps, each with its comment, its author and the dates it was made and last changed. They are written as ordinary PDF annotations, not painted into the pages, so any PDF viewer shows them and can change or remove them; the annotations a document already has are read when it is opened, and can be moved, changed or deleted too. A panel lists all the annotations of the document, sorted by page, date, kind or author, searched and filtered, and the comment of the one selected can be written there directly. The colours can be given meanings of one's own (definitions, references, questions), which appear in the menus, the list and the exported files. Annotations are exported as a Markdown report, a CSV table or JSON, and imported from JSON or from another copy of the PDF annotated by someone else. A copy can also be saved flattened, without annotations, or as PDF/A or PDF/X-4 through <a href="#pdf2iso">pdf2iso</a>. The window is in English and Spanish. It is written in Python with PyMuPDF and PySide6, and comes as an AppImage for Linux, as a Fedora package on Copr or from the source with Python 3.14 or later and uv.</p>
   </li>
 

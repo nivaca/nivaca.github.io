@@ -11,7 +11,7 @@ Programmata scribo maxime lingua [Python](https://www.python.org/): instrumenta 
 <ul class="projects">
   <li class="project">
     <h2><a href="https://codeberg.org/{{ site.codeberg_username }}/py-words">py-words: lexicon Latinum cum morphologia</a></h2>
-    <p class="project-role">2026 · v3.23 · in <a href="https://codeberg.org/{{ site.codeberg_username }}/py-words">Codeberg</a> et <a href="https://github.com/{{ site.github_username }}/py-words">GitHub</a></p>
+    <p class="project-role">2026 · v3.24 · in <a href="https://codeberg.org/{{ site.codeberg_username }}/py-words">Codeberg</a> et <a href="https://github.com/{{ site.github_username }}/py-words">GitHub</a></p>
     <p><b>py-words</b> lexicon est Latino-Anglicum et Latino-Hispanicum, in utramque partem, lingua Python scriptum. Ex programmate WORDS Guillelmi Whitaker ortum est, sed et codex et data de novo ordinata sunt, et nunc lexicon Anglicum Lewis et Short continet et Hispanica Echave-Sustaeta et De Miguel. Voces Latinas declinatas vel coniugatas, et integros versus, in formas suas et lemmata resolvit, cum significationibus Anglice vel Hispanice redditis, et voces Latinas pro Anglicis aut Hispanicis invenit. In fenestra, in linea mandatorum, in terminali vel in navigatro operatur, et nichil aliud quam Python 3.13 aut recentiorem requirit.</p>
     <p><a class="button button-primary" href="{{ "/py-words/" | relative_url }}"><i class="fas fa-book-open" aria-hidden="true"></i> In navigatro tuo experire</a>
       <a class="button" href="https://nivaca.pythonanywhere.com/"><i class="fas fa-server" aria-hidden="true"></i> Speculum</a></p>
@@ -25,7 +25,7 @@ Programmata scribo maxime lingua [Python](https://www.python.org/): instrumenta 
 
   <li class="project">
     <h2><a href="https://github.com/{{ site.github_username }}/py-wtk">py-wtk: Victionarium ex terminali vel ex mensa</a></h2>
-    <p class="project-role">2026 · v1.13 · in <a href="https://codeberg.org/{{ site.codeberg_username }}/py-wtk">Codeberg</a> et <a href="https://github.com/{{ site.github_username }}/py-wtk">GitHub</a></p>
+    <p class="project-role">2026 · v1.14 · in <a href="https://codeberg.org/{{ site.codeberg_username }}/py-wtk">Codeberg</a> et <a href="https://github.com/{{ site.github_username }}/py-wtk">GitHub</a></p>
     <p><b>py-wtk</b> interfacies est lingua Python scripta ad voces in <a href="https://en.wiktionary.org">Victionario Anglico</a> inquirendas sine navigatro. Tribus modis prebetur, ut instrumentum linee mandatorum, ut interfacies terminalis totum quadrum occupans et ut fenestra mense, que omnia eundem codicem habent. Articulum integrum ostendit, non tantum definitiones: etymologiam, pronuntiationem, exempla et citationes, notas de usu, tabulas flexionum, synonyma, vocabula derivata et cognata, descendentia et translationes, omnium linguarum pagine vel earum tantum quas elegeris (solius Latine, verbi gratia, vel Latine et Hispanice). Titulos quoque paginarum inquirit et JSON ordinatum aliis programmatibus reddit. Nichil aliud quam Python 3.15 aut recentiorem cum bibliotheca eius ordinaria requirit (et Tkinter pro fenestra), et prebetur etiam AppImage per se constans pro Linux.</p>
   </li>
 
@@ -73,7 +73,7 @@ Programmata scribo maxime lingua [Python](https://www.python.org/): instrumenta 
 
   <li class="project" id="py-annotate">
     <h2><a href="https://github.com/{{ site.github_username }}/py-annotate">py-annotate: documenta PDF annotare</a></h2>
-    <p class="project-role">2026 · v1.0.0 · in <a href="https://codeberg.org/{{ site.codeberg_username }}/py-annotate">Codeberg</a> et <a href="https://github.com/{{ site.github_username }}/py-annotate">GitHub</a></p>
+    <p class="project-role">2026 · v1.1.0 · in <a href="https://codeberg.org/{{ site.codeberg_username }}/py-annotate">Codeberg</a> et <a href="https://github.com/{{ site.github_username }}/py-annotate">GitHub</a></p>
     <p><b>py-annotate</b> documentis PDF annotationes addit: textum illuminat, sublineat et expungit, notat ubi textus inserendus sit, notas, quadra textus et indicationes, rectangula, ellipses, polygona, nubes, lineas, sagittas, delineationes manu factas et sigilla apponit, singula cum commentario suo, auctore suo et diebus quibus facta et postremo mutata sunt. Ut annotationes PDF usitate scribuntur, non in paginis pinguntur, unde quilibet lector PDF eas ostendit et mutare vel tollere potest; annotationes quas documentum iam habet, cum aperitur, leguntur, et ipse quoque moveri, mutari vel deleri possunt. Tabula lateralis omnes documenti annotationes enumerat, secundum paginam, diem, genus vel auctorem ordinatas, quas querere et cribrare licet, et ibi commentarium annotationis electe statim scribere. Coloribus significationes proprie dari possunt (definitiones, loca citata, questiones), que in indicibus optionum, in indice et in documentis exportatis apparent. Annotationes ut relatio Markdown, tabula CSV vel JSON exportantur, et ex JSON vel ex alio exemplari eiusdem PDF ab alio annotato importantur. Exemplaria etiam servare potest complanata, sine annotationibus, vel ut PDF/A aut PDF/X-4 per <a href="#pdf2iso">pdf2iso</a>. Fenestra Anglice et Hispanice loquitur. Lingua Python cum PyMuPDF et PySide6 scriptum est, et vel ut AppImage pro Linux, vel ut fasciculus Fedore in Copr, vel ex fontibus cum Python 3.14 aut recentiore et uv instituitur.</p>
   </li>
 

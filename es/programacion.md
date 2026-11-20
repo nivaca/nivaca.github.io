@@ -11,7 +11,7 @@ Escribo programas sobre todo en [Python](https://www.python.org/): herramientas 
 <ul class="projects">
   <li class="project">
     <h2><a href="https://codeberg.org/{{ site.codeberg_username }}/py-words">py-words: un diccionario latino con morfología</a></h2>
-    <p class="project-role">2026 · v3.23 · en <a href="https://codeberg.org/{{ site.codeberg_username }}/py-words">Codeberg</a> y <a href="https://github.com/{{ site.github_username }}/py-words">GitHub</a></p>
+    <p class="project-role">2026 · v3.24 · en <a href="https://codeberg.org/{{ site.codeberg_username }}/py-words">Codeberg</a> y <a href="https://github.com/{{ site.github_username }}/py-words">GitHub</a></p>
     <p><b>py-words</b> es un diccionario latín-inglés-latín y latín-español-latín escrito en Python. Partió de WORDS, de William Whitaker, pero el código y los datos se rediseñaron, y ahora incluye el diccionario inglés de Lewis y Short y los españoles de Echave-Sustaeta y De Miguel. Analiza palabras latinas flexionadas, y líneas enteras de latín, en sus formas y sus entradas de diccionario, con los significados en inglés o en español, y busca el latín de palabras inglesas o españolas. Funciona en una ventana, en la línea de comandos, en la terminal o en el navegador, y solo necesita Python 3.13 o posterior.</p>
     <p><a class="button button-primary" href="{{ "/py-words/" | relative_url }}"><i class="fas fa-book-open" aria-hidden="true"></i> Pruébelo en el navegador</a>
       <a class="button" href="https://nivaca.pythonanywhere.com/"><i class="fas fa-server" aria-hidden="true"></i> Sitio espejo</a></p>
@@ -25,7 +25,7 @@ Escribo programas sobre todo en [Python](https://www.python.org/): herramientas 
 
   <li class="project">
     <h2><a href="https://github.com/{{ site.github_username }}/py-wtk">py-wtk: el Wiktionary desde la terminal o el escritorio</a></h2>
-    <p class="project-role">2026 · v1.13 · en <a href="https://codeberg.org/{{ site.codeberg_username }}/py-wtk">Codeberg</a> y <a href="https://github.com/{{ site.github_username }}/py-wtk">GitHub</a></p>
+    <p class="project-role">2026 · v1.14 · en <a href="https://codeberg.org/{{ site.codeberg_username }}/py-wtk">Codeberg</a> y <a href="https://github.com/{{ site.github_username }}/py-wtk">GitHub</a></p>
     <p><b>py-wtk</b> es una interfaz en Python para consultar palabras en el <a href="https://en.wiktionary.org">Wiktionary inglés</a> sin abrir el navegador. Viene como herramienta de línea de comandos, como interfaz de terminal a pantalla completa y como ventana de escritorio, y las tres comparten el mismo código. Muestra la entrada completa, no solo las definiciones: etimología, pronunciación, ejemplos y citas, notas de uso, tablas de flexión, sinónimos, términos derivados y relacionados, descendientes y traducciones, de todas las lenguas de la página o solo de las que uno elija (solo latín, por ejemplo, o latín y español). También busca en los títulos de las páginas y produce JSON estructurado para otros programas. Solo necesita Python 3.15 o posterior y su biblioteca estándar (más Tkinter para la ventana), y hay además una AppImage autónoma para Linux.</p>
   </li>
 
@@ -73,7 +73,7 @@ Escribo programas sobre todo en [Python](https://www.python.org/): herramientas 
 
   <li class="project" id="py-annotate">
     <h2><a href="https://github.com/{{ site.github_username }}/py-annotate">py-annotate: anotar documentos PDF</a></h2>
-    <p class="project-role">2026 · v1.0.0 · en <a href="https://codeberg.org/{{ site.codeberg_username }}/py-annotate">Codeberg</a> y <a href="https://github.com/{{ site.github_username }}/py-annotate">GitHub</a></p>
+    <p class="project-role">2026 · v1.1.0 · en <a href="https://codeberg.org/{{ site.codeberg_username }}/py-annotate">Codeberg</a> y <a href="https://github.com/{{ site.github_username }}/py-annotate">GitHub</a></p>
     <p><b>py-annotate</b> añade anotaciones a documentos PDF: resaltados, subrayados y tachados sobre el texto, marcas donde falta insertar texto, notas, cuadros de texto y llamadas, rectángulos, elipses, polígonos, nubes, líneas, flechas, dibujos a mano alzada y sellos, cada una con su comentario, su autor y las fechas en que se hizo y se cambió por última vez. Se escriben como anotaciones PDF corrientes, no se pintan en las páginas, así que cualquier visor de PDF las muestra y puede cambiarlas o quitarlas; las anotaciones que el documento ya tenga se leen al abrirlo, y también se pueden mover, cambiar o borrar. Un panel lista todas las anotaciones del documento, ordenadas por página, fecha, tipo o autor, con búsqueda y filtros, y allí mismo se escribe el comentario de la que esté seleccionada. A los colores se les puede dar un significado propio (definiciones, referencias, preguntas), que aparece en los menús, en la lista y en los archivos exportados. Las anotaciones se exportan como informe en Markdown, tabla CSV o JSON, y se importan de un JSON o de otra copia del PDF anotada por otra persona. También guarda copias aplanadas, sin anotaciones o en PDF/A o PDF/X-4 mediante <a href="#pdf2iso">pdf2iso</a>. La ventana está en inglés y en español. Está escrito en Python con PyMuPDF y PySide6, y se instala como AppImage para Linux, como paquete de Fedora en Copr o desde el código fuente con Python 3.14 o posterior y uv.</p>
   </li>
 
