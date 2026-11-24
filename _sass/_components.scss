@@ -248,6 +248,72 @@
         color: var(--text-muted);
         margin-bottom: 0.4rem;
     }
+
+    .feature-label {
+        margin-bottom: 0.25rem;
+    }
+}
+
+// Los dos programas principales (py-words, py-pdftools): una tarjeta
+// como la de la portada, con una captura que lleva a su página.
+.project-featured {
+    display: flow-root; // contiene la captura flotante
+    margin-bottom: 1.25rem;
+    padding: 1.25rem 1.5rem;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 6px;
+    background: var(--bg-soft);
+
+    &:first-child {
+        padding-top: 1.25rem;
+    }
+
+    @include media-query($on-palm) {
+        padding: 1rem 0.9rem;
+
+        &:first-child {
+            padding-top: 1rem;
+        }
+    }
+
+    // The last card has no rule below it, the list goes on.
+    & + .project:not(.project-featured) {
+        padding-top: 0.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    p:last-child {
+        margin-top: 0.75rem;
+    }
+}
+
+.project-shot {
+    float: right;
+    width: 42%;
+    margin: 0.3rem 0 0.5rem 1.25rem;
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border: 1px solid var(--rule);
+        border-radius: 4px;
+    }
+
+    &:hover img {
+        border-color: var(--accent);
+    }
+
+    @include media-query($on-palm) {
+        float: none;
+        display: block;
+        width: 100%;
+        margin: 0.5rem 0 0.75rem;
+    }
 }
 
 /**

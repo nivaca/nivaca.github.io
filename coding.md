@@ -9,13 +9,24 @@ description: Software, scripts and programming tools by Nicolás Vaughan.
 I write software mostly in [Python](https://www.python.org/): command-line tools, desktop programs with PySide6 (Qt) and plugins for KDE Plasma. Bash scripts take care of the builds and the smaller jobs. Much of my work with texts is done in XML: I encode them in [TEI](https://tei-c.org/), write ODD customisations with their RelaxNG schemas and Schematron rules, query the documents with XPath and transform them with XSLT, most often into [LaTeX](https://www.latex-project.org/), which I typeset with LuaLaTeX. I work in [Emacs](https://www.gnu.org/software/emacs/), and write Emacs Lisp (Elisp) for it: my own configuration and packages such as [py-schematron.el](#py-schematron-el). I have also written some TypeScript, for a VS Code extension. My code is on [GitHub](https://github.com/{{ site.github_username }}) and [Codeberg](https://codeberg.org/{{ site.codeberg_username }}).
 
 <ul class="projects">
-  <li class="project" id="py-words">
+  <li class="project project-featured" id="py-words">
+    <p class="feature-label">Main project</p>
     <h2><a href="https://codeberg.org/{{ site.codeberg_username }}/py-words">py-words: a Latin dictionary with morphology</a></h2>
     <p class="project-role">2026 · v3.31 · on <a href="https://codeberg.org/{{ site.codeberg_username }}/py-words">Codeberg</a> and <a href="https://github.com/{{ site.github_username }}/py-words">GitHub</a></p>
+    <a class="project-shot" href="{{ "/coding/py-words/" | relative_url }}"><img src="{{ "/images/py-words/gui_en.webp" | relative_url }}" alt="The window of py-words in dark mode, showing the entries of perspicio" loading="lazy"></a>
     <p><b>py-words</b> is a Latin-English-Latin and Latin-Spanish-Latin dictionary written in Python. It started from William Whitaker's WORDS, but both code and data have been redesigned, and it now includes Lewis and Short's English dictionary and the Spanish ones of Echave-Sustaeta and De Miguel. It analyses inflected Latin words, and whole lines of Latin, into their forms and dictionary entries, with meanings in English or Spanish, and finds the Latin for English or Spanish words. It runs in a window, on the command line, in the terminal or in a web browser, and needs only Python 3.13 or later. It also works in KRunner, the launcher of KDE Plasma, and as an Android app that carries the whole dictionary and needs no Internet connection.</p>
     <p><a class="button button-primary" href="{{ "/py-words/" | relative_url }}"><i class="fas fa-book-open" aria-hidden="true"></i> Try it in your browser</a>
       <a class="button" href="https://nivaca.pythonanywhere.com/"><i class="fas fa-server" aria-hidden="true"></i> Mirror</a>
       <a class="button" href="{{ "/coding/py-words/" | relative_url }}"><i class="fas fa-info-circle" aria-hidden="true"></i> More about it</a></p>
+  </li>
+
+  <li class="project project-featured" id="py-pdftools">
+    <p class="feature-label">Main project</p>
+    <h2><a href="https://github.com/{{ site.github_username }}/py-pdftools">py-pdftools: annotate, redact, label, impose and OCR PDF documents in one program</a></h2>
+    <p class="project-role">2026 · v1.15.0 · on <a href="https://codeberg.org/{{ site.codeberg_username }}/py-pdftools">Codeberg</a> and <a href="https://github.com/{{ site.github_username }}/py-pdftools">GitHub</a></p>
+    <a class="project-shot" href="{{ "/coding/py-pdftools/" | relative_url }}"><img src="{{ "/images/py-pdftools/annotate_en.webp" | relative_url }}" alt="py-pdftools in the mode Annotate" loading="lazy"></a>
+    <p><b>py-pdftools</b> edits PDF documents: it annotates and redacts them, changes their page labels, headers, footers, watermarks and the order of their pages, imposes them for printing, and reads the text of their scanned pages with tesseract. It brings together, in one window and one command line, seven programs I wrote before it (py-annotate, py-redact, py-foliation, py-imposition, py-pdfocr, pdf-word-finder and pdf2iso), and adds forms, digital signatures, passwords, bookmarks, and the combining, splitting and exporting of documents. It is in English and Spanish, and is written in Python with PyMuPDF, pikepdf, reportlab and PySide6; it comes as an AppImage for Linux, as Fedora and Debian packages, with installers for Linux, macOS and Windows, or from the source with Python 3.14 or later.</p>
+    <p><a class="button button-primary" href="{{ "/coding/py-pdftools/" | relative_url }}"><i class="fas fa-info-circle" aria-hidden="true"></i> More about it</a></p>
   </li>
 
   <li class="project">
@@ -52,13 +63,6 @@ I write software mostly in [Python](https://www.python.org/): command-line tools
     <h2><a href="https://github.com/{{ site.github_username }}/py-slowdown">py-slowdown: play audio slower or faster without changing its pitch</a></h2>
     <p class="project-role">2026 · v1.0 · on <a href="https://codeberg.org/{{ site.codeberg_username }}/py-slowdown">Codeberg</a> and <a href="https://github.com/{{ site.github_username }}/py-slowdown">GitHub</a></p>
     <p><b>py-slowdown</b> plays audio slower or faster without changing its pitch. It is meant for transcribing recordings (lectures, interviews, dictations) and for learning music by ear. It opens audio files and the sound of video files (MP3, M4A, FLAC, WAV, Ogg, Opus and whatever else FFmpeg reads) and shows them as a waveform with a time ruler, where a click moves the position and the wheel scrolls and zooms. The speed goes from 0.25× to 3× and can be changed while it plays; the stretching is done by the Rubber Band Library with its highest-quality engine, and at 1× the file is played sample for sample, as it is. Bookmarks, each with an optional label, are added at the playing position or anywhere on the waveform, listed in a side panel and exported as text; for each file it remembers its bookmarks and the point where it was left. Everything can be done from the keyboard, and the interface is in English and Spanish. It is written in Python with PySide6, PyAV, NumPy and sounddevice, and comes as an AppImage for Linux, a Fedora package on Copr, a Debian package, or from the source with Python 3.14 or later and the Rubber Band Library.</p>
-  </li>
-
-  <li class="project" id="py-pdftools">
-    <h2><a href="https://github.com/{{ site.github_username }}/py-pdftools">py-pdftools: annotate, redact, label, impose and OCR PDF documents in one program</a></h2>
-    <p class="project-role">2026 · v1.15.0 · on <a href="https://codeberg.org/{{ site.codeberg_username }}/py-pdftools">Codeberg</a> and <a href="https://github.com/{{ site.github_username }}/py-pdftools">GitHub</a></p>
-    <p><b>py-pdftools</b> edits PDF documents: it annotates and redacts them, changes their page labels, headers, footers, watermarks and the order of their pages, imposes them for printing, and reads the text of their scanned pages with tesseract. It brings together, in one window and one command line, seven programs I wrote before it (py-annotate, py-redact, py-foliation, py-imposition, py-pdfocr, pdf-word-finder and pdf2iso), and adds forms, digital signatures, passwords, bookmarks, and the combining, splitting and exporting of documents. It is in English and Spanish, and is written in Python with PyMuPDF, pikepdf, reportlab and PySide6; it comes as an AppImage for Linux, as Fedora and Debian packages, with installers for Linux, macOS and Windows, or from the source with Python 3.14 or later.</p>
-    <p><a class="button button-primary" href="{{ "/coding/py-pdftools/" | relative_url }}"><i class="fas fa-info-circle" aria-hidden="true"></i> More about it</a></p>
   </li>
 
   <li class="project" id="py-schematron">
