@@ -301,3 +301,100 @@
         width: 6.5rem;
     }
 }
+
+/**
+ * Program pages (py-words, py-pdftools): facts, screenshots, tables
+ */
+// The facts under the title: version, licence, requirements...
+.facts {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0.2rem 1rem;
+    font-family: $sans;
+    font-size: 0.95rem;
+    padding: 0.75rem 1rem;
+    background: var(--bg-soft);
+    border-radius: 6px;
+
+    dt {
+        color: var(--text-muted);
+    }
+
+    dd {
+        margin: 0;
+    }
+
+    @include media-query($on-palm) {
+        grid-template-columns: 1fr;
+        gap: 0;
+
+        dd {
+            margin-bottom: 0.4rem;
+        }
+    }
+}
+
+.screenshot {
+    margin: 0.5rem 0 1.5rem;
+
+    img {
+        border: 1px solid var(--rule);
+        border-radius: 6px;
+    }
+
+    figcaption {
+        font-family: $sans;
+        font-size: 0.85rem;
+        color: var(--text-muted);
+        margin-top: 0.4rem;
+    }
+
+    // A phone screenshot: narrow, not the width of the column.
+    &.phone img {
+        max-width: 16rem;
+    }
+}
+
+.post-content table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: $sans;
+    font-size: 0.9rem;
+    display: block;
+    overflow-x: auto;
+
+    th, td {
+        text-align: left;
+        vertical-align: top;
+        padding: 0.4rem 0.75rem 0.4rem 0;
+        border-bottom: 1px solid var(--rule);
+    }
+
+    th {
+        font-weight: 650;
+    }
+}
+
+// A version history: the version in the margin, what changed beside it.
+.history {
+    list-style: none;
+    margin-left: 0;
+
+    li {
+        display: grid;
+        grid-template-columns: 6.5rem 1fr;
+        gap: 0 1rem;
+        padding: 0.35rem 0;
+        border-bottom: 1px solid var(--rule);
+
+        @include media-query($on-palm) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .when {
+        font-family: $sans;
+        font-size: 0.9rem;
+        color: var(--text-muted);
+    }
+}
