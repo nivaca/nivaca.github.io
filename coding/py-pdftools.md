@@ -15,11 +15,11 @@ py-pdftools edits PDF documents. It annotates and redacts them, changes their pa
 </div>
 
 <dl class="facts">
-  <dt>Version</dt><dd>1.15.0 (24 November 2026)</dd>
+  <dt>Version</dt><dd>1.16.0 (25 November 2026)</dd>
   <dt>Programs</dt><dd>a window (<code>py-pdftools-gui</code>) and a command line (<code>py-pdftools</code>)</dd>
   <dt>Interface</dt><dd>English and Spanish</dd>
   <dt>Written in</dt><dd>Python, with PyMuPDF, pikepdf, reportlab and PySide6 (Qt)</dd>
-  <dt>Needs</dt><dd>Python 3.14 or later (the AppImage and the packages bring what they need); Ghostscript for PDF/A and PDF/X, tesseract for OCR, pyHanko for digital signatures</dd>
+  <dt>Needs</dt><dd>Python 3.14 or later (the AppImage, the installers for Windows and macOS and the packages bring what they need); Ghostscript for PDF/A and PDF/X, tesseract for OCR, pyHanko for digital signatures</dd>
   <dt>Licence</dt><dd>GNU General Public License, version 3 or later</dd>
   <dt>Code</dt><dd><a href="https://codeberg.org/{{ site.codeberg_username }}/py-pdftools">Codeberg</a> and <a href="https://github.com/{{ site.github_username }}/py-pdftools">GitHub</a></dd>
 </dl>
@@ -108,10 +108,12 @@ Every release is on [Codeberg](https://codeberg.org/{{ site.codeberg_username }}
 
 | System | How |
 |---|---|
+| Windows 10 or later | an installer (`.exe`), for one user or for everyone |
+| macOS 15 or later, Apple silicon | a disk image (`.dmg`) |
 | Fedora 45 and later | `sudo dnf copr enable nivaca/py-pdftools`, then `sudo dnf install py-pdftools` |
 | Debian 12, Ubuntu 22.04 and later | the `.deb` of a release, or my signed APT repository, [github.com/nivaca/apt](https://github.com/{{ site.github_username }}/apt) |
 | Any Linux | the AppImage, which brings its own Python, Qt and libraries |
-| Linux, macOS, Windows | the installers in the source (`install/install.sh`, `install\install.bat`), with Python 3.14 or later |
+| Linux, macOS, Windows | the install scripts in the source (`install/install.sh`, `install\install.bat`), with Python 3.14 or later |
 | From the source | `uv run py-pdftools-gui`, with [uv](https://docs.astral.sh/uv/) |
 
 ## Documentation
@@ -135,4 +137,5 @@ py-pdftools is young: its first version came out on 19 November 2026. The main s
   <li><span class="when">1.13.0</span><span>A menu Find, with every search, in every mode.</span></li>
   <li><span class="when">1.14.0<br>24 Nov.</span><span>Signing digitally, in three plain steps, with a digital ID made in the dialog if there is none.</span></li>
   <li><span class="when">1.15.0<br>24 Nov.</span><span>Every search as quick as the search as you type: each page read once, into one index of the document.</span></li>
+  <li><span class="when">1.16.0<br>25 Nov.</span><span>Installers for Windows and macOS that need nothing else; the menu Annotate in submenus; a sign for comments; annotations readable on large scanned pages.</span></li>
 </ul>

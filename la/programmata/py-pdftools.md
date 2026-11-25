@@ -15,11 +15,11 @@ py-pdftools documenta PDF tractat. Ea annotat et expungit, titulos paginarum, ca
 </div>
 
 <dl class="facts">
-  <dt>Editio</dt><dd>1.15.0 (die XXIV mensis Novembris anni MMXXVI)</dd>
+  <dt>Editio</dt><dd>1.16.0 (die XXV mensis Novembris anni MMXXVI)</dd>
   <dt>Programmata</dt><dd>fenestra (<code>py-pdftools-gui</code>) et linea mandatorum (<code>py-pdftools</code>)</dd>
   <dt>Interfacies</dt><dd>Anglica et Hispanica</dd>
   <dt>Scriptum</dt><dd>lingua Python, cum PyMuPDF, pikepdf, reportlab et PySide6 (Qt)</dd>
-  <dt>Requirit</dt><dd>Python 3.14 aut recentiorem (AppImage et fasciculi secum ferunt quod eis opus est); Ghostscript ad PDF/A et PDF/X, tesseract ad OCR, pyHanko ad subscriptiones digitales</dd>
+  <dt>Requirit</dt><dd>Python 3.14 aut recentiorem (AppImage, institutores pro Windows et macOS et fasciculi secum ferunt quod eis opus est); Ghostscript ad PDF/A et PDF/X, tesseract ad OCR, pyHanko ad subscriptiones digitales</dd>
   <dt>Licentia</dt><dd>GNU General Public License, versio 3 aut posterior</dd>
   <dt>Fontes</dt><dd>in <a href="https://codeberg.org/{{ site.codeberg_username }}/py-pdftools">Codeberg</a> et <a href="https://github.com/{{ site.github_username }}/py-pdftools">GitHub</a></dd>
 </dl>
@@ -108,10 +108,12 @@ Omnes editiones in [Codeberg](https://codeberg.org/{{ site.codeberg_username }}/
 
 | Systema | Quomodo |
 |---|---|
+| Windows 10 vel posterius | institutor (`.exe`), pro uno usuario vel pro omnibus |
+| macOS 15 vel posterius, Apple silicon | imago disci (`.dmg`) |
 | Fedora 45 et posteriores | `sudo dnf copr enable nivaca/py-pdftools`, deinde `sudo dnf install py-pdftools` |
 | Debian 12, Ubuntu 22.04 et posteriores | fasciculus `.deb` alicuius editionis, vel meum repositorium APT obsignatum, [github.com/nivaca/apt](https://github.com/{{ site.github_username }}/apt) |
 | Quodlibet systema Linux | AppImage, quod proprium Python, Qt et bibliothecas secum fert |
-| Linux, macOS, Windows | institutores in fontibus (`install/install.sh`, `install\install.bat`), cum Python 3.14 aut recentiore |
+| Linux, macOS, Windows | scripta instituendi in fontibus (`install/install.sh`, `install\install.bat`), cum Python 3.14 aut recentiore |
 | Ex fontibus | `uv run py-pdftools-gui`, cum [uv](https://docs.astral.sh/uv/) |
 
 ## De programmate scripta
@@ -135,4 +137,5 @@ py-pdftools recens est: prima eius editio die XIX mensis Novembris anni MMXXVI p
   <li><span class="when">1.13.0</span><span>Tabella Quere (Find), cum omni inquisitione, in omni modo.</span></li>
   <li><span class="when">1.14.0<br>XXIV Nov.</span><span>Documenta subscriptione digitali obsignata, tribus gradibus simplicibus, cum testimonio digitali in dialogo facto si nullum adest.</span></li>
   <li><span class="when">1.15.0<br>XXIV Nov.</span><span>Omnis inquisitio tam celeris quam inquisitio dum scribitur: quaque pagina semel lecta, in unum indicem documenti.</span></li>
+  <li><span class="when">1.16.0<br>XXV Nov.</span><span>Institutores pro Windows et macOS quibus nichil aliud opus est; tabella Annotare (Annotate) in tabellas minores divisa; signum commentariorum; annotationes legibiles in paginis magnis in imagines translatis.</span></li>
 </ul>

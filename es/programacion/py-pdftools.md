@@ -15,11 +15,11 @@ py-pdftools edita documentos PDF. Los anota y los censura, cambia sus etiquetas 
 </div>
 
 <dl class="facts">
-  <dt>Versión</dt><dd>1.15.0 (24 de noviembre de 2026)</dd>
+  <dt>Versión</dt><dd>1.16.0 (25 de noviembre de 2026)</dd>
   <dt>Programas</dt><dd>una ventana (<code>py-pdftools-gui</code>) y una línea de comandos (<code>py-pdftools</code>)</dd>
   <dt>Interfaz</dt><dd>inglés y español</dd>
   <dt>Escrito en</dt><dd>Python, con PyMuPDF, pikepdf, reportlab y PySide6 (Qt)</dd>
-  <dt>Requisitos</dt><dd>Python 3.14 o posterior (la AppImage y los paquetes traen lo que necesitan); Ghostscript para PDF/A y PDF/X, tesseract para el OCR, pyHanko para las firmas digitales</dd>
+  <dt>Requisitos</dt><dd>Python 3.14 o posterior (la AppImage, los instaladores para Windows y macOS y los paquetes traen lo que necesitan); Ghostscript para PDF/A y PDF/X, tesseract para el OCR, pyHanko para las firmas digitales</dd>
   <dt>Licencia</dt><dd>Licencia Pública General de GNU, versión 3 o posterior</dd>
   <dt>Código</dt><dd><a href="https://codeberg.org/{{ site.codeberg_username }}/py-pdftools">Codeberg</a> y <a href="https://github.com/{{ site.github_username }}/py-pdftools">GitHub</a></dd>
 </dl>
@@ -108,10 +108,12 @@ Cada versión se publica en [Codeberg](https://codeberg.org/{{ site.codeberg_use
 
 | Sistema | Cómo |
 |---|---|
+| Windows 10 o posterior | un instalador (`.exe`), para un usuario o para todos |
+| macOS 15 o posterior, Apple silicon | una imagen de disco (`.dmg`) |
 | Fedora 45 y posteriores | `sudo dnf copr enable nivaca/py-pdftools` y luego `sudo dnf install py-pdftools` |
 | Debian 12, Ubuntu 22.04 y posteriores | el `.deb` de una versión, o mi repositorio APT firmado, [github.com/nivaca/apt](https://github.com/{{ site.github_username }}/apt) |
 | Cualquier Linux | la AppImage, que trae su propio Python, Qt y bibliotecas |
-| Linux, macOS, Windows | los instaladores del código fuente (`install/install.sh`, `install\install.bat`), con Python 3.14 o posterior |
+| Linux, macOS, Windows | los scripts de instalación del código fuente (`install/install.sh`, `install\install.bat`), con Python 3.14 o posterior |
 | Desde el código fuente | `uv run py-pdftools-gui`, con [uv](https://docs.astral.sh/uv/) |
 
 ## Documentación
@@ -135,4 +137,5 @@ py-pdftools es joven: su primera versión salió el 19 de noviembre de 2026. Sig
   <li><span class="when">1.13.0</span><span>Un menú Buscar, con todas las búsquedas, en todos los modos.</span></li>
   <li><span class="when">1.14.0<br>24 nov.</span><span>La firma digital, en tres pasos sencillos, con un ID digital creado en el mismo diálogo si no hay ninguno.</span></li>
   <li><span class="when">1.15.0<br>24 nov.</span><span>Todas las búsquedas, tan rápidas como la búsqueda mientras se escribe: cada página se lee una sola vez, en un único índice del documento.</span></li>
+  <li><span class="when">1.16.0<br>25 nov.</span><span>Instaladores para Windows y macOS que no necesitan nada más; el menú Anotar en submenús; una señal para los comentarios; anotaciones legibles en páginas escaneadas grandes.</span></li>
 </ul>
