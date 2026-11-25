@@ -15,7 +15,7 @@ py-slowdown plays audio slower or faster without changing its pitch. It is made 
 </div>
 
 <dl class="facts">
-  <dt>Version</dt><dd>1.3.1 (24 November 2026); Slowdown for Android 1.0 (25 November 2026)</dd>
+  <dt>Version</dt><dd>1.4.0 (25 November 2026); Slowdown for Android 1.1 (25 November 2026)</dd>
   <dt>Programs</dt><dd>a window for Linux, Windows and macOS; an app for Android</dd>
   <dt>Engine</dt><dd>the Rubber Band Library, with its R3 engine, the one of highest quality</dd>
   <dt>Interface</dt><dd>English and Spanish</dd>
@@ -33,13 +33,13 @@ py-slowdown plays audio slower or faster without changing its pitch. It is made 
 
 It opens audio files and the sound of video files: MP3, M4A, MP4, FLAC, WAV, AIFF, Ogg, Opus, WMA and whatever else FFmpeg reads. The file appears as a waveform with a time ruler, where a click moves the position and the wheel scrolls and zooms; a long file can be played while it is still being read, and the second time its whole waveform is there at once.
 
-The speed goes from 0.25× to 3× and can be changed while it plays, by a slider or from a list of speeds of one's own (50%, 75%, 100%…). The stretching is done by the [Rubber Band Library](https://breakfastquay.com/rubberband/), with its R3 engine, called through a small binding of py-slowdown's own; at 1× the file is played as it is, sample for sample, without going through Rubber Band. A lighter quality, which needs half the processor, or the older R2 engine, with crisper attacks, can be chosen instead. The pitch moves up or down on two knobs, in semitones (−12 to +12) and in cents (−50 to +50, to tune a recording to an instrument), without changing the speed, and a voice or an instrument can keep its formants, and so its timbre.
+The speed goes from 0.25× to 3× and can be changed while it plays, on a knob or from a list of speeds of one's own (50%, 75%, 100%…). The stretching is done by the [Rubber Band Library](https://breakfastquay.com/rubberband/), with its R3 engine, called through a small binding of py-slowdown's own; at 1× the file is played as it is, sample for sample, without going through Rubber Band. A lighter quality, which needs half the processor, or the older R2 engine, with crisper attacks, can be chosen instead. The pitch moves up or down on two knobs, in semitones (−12 to +12) and in cents (−50 to +50, to tune a recording to an instrument), without changing the speed, and a voice or an instrument can keep its formants, and so its timbre.
 
 A pause takes the position back to where playing started, so that Space plays the same passage again. A selection repeats without end and without a gap, the end of the passage running into its start through a short fade, at any speed, and selections can be kept as loops with a name. Bookmarks, each with a label, are added at the playing position or anywhere on the waveform, listed in a side panel and exported as text.
 
 For working on a piece it has a few more tools:
 
-- **Hear** plays one part of the mix: one channel, the two in one, the mix without its centre (where the voice and the solo usually are), only the bass, or everything but the bass.
+- **Hear** plays one part of the mix: one channel, the two in one, the mix without its centre (where the voice and the solo usually are), only the bass, or everything but the bass. A five-band equalizer, from 60 Hz to 12 kHz, raises or lowers each band on its own knob.
 - **Count-in** gives a metronome's clicks before playing. Their tempo can follow the speed, and can be measured by tapping with the beat. With the recording's first beat marked, the recording comes in on the nearest beat wherever playing starts.
 - **Export the audio** saves the recording, or the selection, as it sounds (at the speed and pitch chosen, and as it is heard, if asked), as WAV, FLAC, MP3 or Opus.
 
@@ -47,7 +47,7 @@ For each file it remembers its bookmarks, its loops, the point where it was left
 
 ## On Android
 
-[Slowdown for Android](https://github.com/{{ site.github_username }}/slowdown-android) (version 1.0) is the same program for a phone. It has the same engine, reads and writes the same `.slx` files, and its window is laid out and coloured like that of py-slowdown: the waveform, the player's buttons, the knobs of the speed, the volume and the pitch, and the panel of the bookmarks and the loops. A tap on the waveform moves the position, dragging scrolls, and pinching zooms around the fingers. It changes the speed and the pitch as the desktop program does, repeats a selection or the whole file without a gap, keeps loops and bookmarks with names, and remembers how each file was played. MP3, FLAC, WAV and AIFF are decoded by the app itself, a five-minute song in half a second; other formats by the codecs of Android, more slowly. A keyboard or a foot pedal works with the keys of py-slowdown, and the play button of headphones plays and pauses.
+[Slowdown for Android](https://github.com/{{ site.github_username }}/slowdown-android) (version 1.1) is the same program for a phone. It has the same engine, reads and writes the same `.slx` files, and its window is laid out and coloured like that of py-slowdown: the waveform, the player's buttons, the knobs of the speed, the volume and the pitch, and the panel of the bookmarks and the loops. A tap on the waveform moves the position, dragging scrolls, and pinching zooms around the fingers. It changes the speed and the pitch as the desktop program does, repeats a selection or the whole file without a gap, keeps loops and bookmarks with names, and remembers how each file was played. MP3, FLAC, WAV and AIFF are decoded by the app itself, a five-minute song in half a second; other formats by the codecs of Android, more slowly. A keyboard or a foot pedal works with the keys of py-slowdown, and the play button of headphones plays and pauses.
 
 The count-in, the ways of hearing, exporting the audio and playing with the screen off are not in the app yet. It is written in Kotlin, with the sound engine in C++, and needs Android 12 or later on a 64-bit ARM device. It can be installed from its releases ([Codeberg](https://codeberg.org/{{ site.codeberg_username }}/slowdown-android/releases), [GitHub](https://github.com/{{ site.github_username }}/slowdown-android/releases)), with [Obtainium](https://github.com/ImranR98/Obtainium), or from my own F-Droid repository, [nivaca.codeberg.page/fdroid](https://nivaca.codeberg.page/fdroid/); all three use the same signed APK, so any one of them updates the others.
 
@@ -85,4 +85,5 @@ The main steps, from the first version to the present one. The [changelog](https
   <li><span class="when">1.2.0</span><span>The settings of each recording in a file of its own, beside it; speeds of one's own; a choice of playback quality; menus Hear and Count-in.</span></li>
   <li><span class="when">1.3.0, 1.3.1</span><span>A pause goes back to where playing started; the pitch in semitones and cents, on two knobs; the first beat as a bookmark; the <code>.slx</code> files, opened by the program.</span></li>
   <li><span class="when">Android 1.0<br>25 Nov.</span><span>Slowdown for Android, the window of py-slowdown 1.3 for a phone, with the same engine and the same <code>.slx</code> files.</span></li>
+  <li><span class="when">1.4.0</span><span>Knobs for the speed and the volume; a five-band equalizer, in a side panel, Sound; the loops on the waveform; a clock of bars and beats; a compact mode; a start screen; icons of the program's own.</span></li>
 </ul>
