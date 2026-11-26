@@ -61,7 +61,7 @@ plugins:
 permalink: blog/:year/:month/:title/
 excerpt_separator: "<!--more-->"
 
-exclude: ['*.Rmd', 'vendor', 'Gemfile', 'Gemfile.lock', 'README.md', 'LICENSE']
+exclude: ['*.Rmd', 'vendor', 'tools', 'Gemfile', 'Gemfile.lock', 'README.md', 'LICENSE']
 
 twitter:
   card: summary
