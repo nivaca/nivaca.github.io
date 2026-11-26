@@ -15,7 +15,7 @@ py-pdftools edits PDF documents. It annotates and redacts them, changes their pa
 </div>
 
 <dl class="facts">
-  <dt>Version</dt><dd>1.16.0 (25 November 2026)</dd>
+  <dt>Version</dt><dd>1.19.0 (25 November 2026)</dd>
   <dt>Programs</dt><dd>a window (<code>py-pdftools-gui</code>) and a command line (<code>py-pdftools</code>)</dd>
   <dt>Interface</dt><dd>English and Spanish</dd>
   <dt>Written in</dt><dd>Python, with PyMuPDF, pikepdf, reportlab and PySide6 (Qt)</dd>
@@ -138,4 +138,5 @@ py-pdftools is young: its first version came out on 19 November 2026. The main s
   <li><span class="when">1.14.0<br>24 Nov.</span><span>Signing digitally, in three plain steps, with a digital ID made in the dialog if there is none.</span></li>
   <li><span class="when">1.15.0<br>24 Nov.</span><span>Every search as quick as the search as you type: each page read once, into one index of the document.</span></li>
   <li><span class="when">1.16.0<br>25 Nov.</span><span>Installers for Windows and macOS that need nothing else; the menu Annotate in submenus; a sign for comments; annotations readable on large scanned pages.</span></li>
+  <li><span class="when">1.17.0–1.19.0<br>25 Nov.</span><span>Copies with the pages as pictures; Close document (Ctrl+W) closes the document, not the program; smaller copies that keep every colour; reading aloud with the system's voice; four more colour themes and a choice of icons.</span></li>
 </ul>

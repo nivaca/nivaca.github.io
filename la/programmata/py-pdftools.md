@@ -15,7 +15,7 @@ py-pdftools documenta PDF tractat. Ea annotat et expungit, titulos paginarum, ca
 </div>
 
 <dl class="facts">
-  <dt>Editio</dt><dd>1.16.0 (die XXV mensis Novembris anni MMXXVI)</dd>
+  <dt>Editio</dt><dd>1.19.0 (die XXV mensis Novembris anni MMXXVI)</dd>
   <dt>Programmata</dt><dd>fenestra (<code>py-pdftools-gui</code>) et linea mandatorum (<code>py-pdftools</code>)</dd>
   <dt>Interfacies</dt><dd>Anglica et Hispanica</dd>
   <dt>Scriptum</dt><dd>lingua Python, cum PyMuPDF, pikepdf, reportlab et PySide6 (Qt)</dd>
@@ -138,4 +138,5 @@ py-pdftools recens est: prima eius editio die XIX mensis Novembris anni MMXXVI p
   <li><span class="when">1.14.0<br>XXIV Nov.</span><span>Documenta subscriptione digitali obsignata, tribus gradibus simplicibus, cum testimonio digitali in dialogo facto si nullum adest.</span></li>
   <li><span class="when">1.15.0<br>XXIV Nov.</span><span>Omnis inquisitio tam celeris quam inquisitio dum scribitur: quaque pagina semel lecta, in unum indicem documenti.</span></li>
   <li><span class="when">1.16.0<br>XXV Nov.</span><span>Institutores pro Windows et macOS quibus nichil aliud opus est; tabella Annotare (Annotate) in tabellas minores divisa; signum commentariorum; annotationes legibiles in paginis magnis in imagines translatis.</span></li>
+  <li><span class="when">1.17.0–1.19.0<br>XXV Nov.</span><span>Exemplaria cum paginis in imagines translatis; Ctrl+W documentum claudit, non programma; exemplaria minora que omnes colores servant; textus voce systematis recitatus; quattuor nove colorum species (themes) et icones eligende.</span></li>
 </ul>
