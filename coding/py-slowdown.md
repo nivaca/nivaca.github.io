@@ -15,7 +15,7 @@ py-slowdown plays audio slower or faster without changing its pitch. It is made 
 </div>
 
 <dl class="facts">
-  <dt>Version</dt><dd>1.6.1 (26 November 2026); Slowdown for Android 1.2 (25 November 2026)</dd>
+  <dt>Version</dt><dd>1.6.1 (26 November 2026); Slowdown for Android 1.3 (26 November 2026)</dd>
   <dt>Programs</dt><dd>a window for Linux, Windows and macOS; an app for Android</dd>
   <dt>Engine</dt><dd>the Rubber Band Library, with its R3 engine, the one of highest quality</dd>
   <dt>Interface</dt><dd>English and Spanish</dd>
@@ -47,7 +47,7 @@ For each file it remembers its bookmarks, its loops, the point where it was left
 
 ## On Android
 
-[Slowdown for Android](https://github.com/{{ site.github_username }}/slowdown-android) (version 1.2) is the same program for a phone. It has the same engine, reads and writes the same `.slx` files, and its window is laid out and coloured like that of py-slowdown: the waveform, the player's buttons, the knobs of the speed, the volume and the pitch, and the panel of the bookmarks and the loops. A tap on the waveform moves the position, dragging scrolls, and pinching zooms around the fingers. It changes the speed and the pitch as the desktop program does, repeats a selection or the whole file without a gap, keeps loops and bookmarks with names, and remembers how each file was played. MP3, FLAC, WAV and AIFF are decoded by the app itself, a five-minute song in half a second; other formats by the codecs of Android, more slowly. A keyboard or a foot pedal works with the keys of py-slowdown, and the play button of headphones plays and pauses.
+[Slowdown for Android](https://github.com/{{ site.github_username }}/slowdown-android) (version 1.3) is the same program for a phone. It has the same engine, reads and writes the same `.slx` files, and its window is laid out and coloured like that of py-slowdown: the waveform, the player's buttons, the knobs of the speed, the volume and the pitch, and the panel of the bookmarks and the loops. A tap on the waveform moves the position, dragging scrolls, and pinching zooms around the fingers. It changes the speed and the pitch as the desktop program does, repeats a selection or the whole file without a gap, keeps loops and bookmarks with names, and remembers how each file was played. MP3, FLAC, WAV and AIFF are decoded by the app itself, a five-minute song in half a second; other formats by the codecs of Android, more slowly. A keyboard or a foot pedal works with the keys of py-slowdown, and the play button of headphones plays and pauses.
 
 Since version 1.2 it also has the count-in, the ways of hearing and the export of the audio (as WAV or M4A), plays on with the screen off, and its `.slx` files can be exported and loaded, or kept in a folder of one's choice, beside the recordings. It is written in Kotlin, with the sound engine in C++, and needs Android 12 or later on a 64-bit ARM device. It can be installed from its releases ([Codeberg](https://codeberg.org/{{ site.codeberg_username }}/slowdown-android/releases), [GitHub](https://github.com/{{ site.github_username }}/slowdown-android/releases)), with [Obtainium](https://github.com/ImranR98/Obtainium), or from my own F-Droid repository, [nivaca.codeberg.page/fdroid](https://nivaca.codeberg.page/fdroid/); all three use the same signed APK, so any one of them updates the others.
 
