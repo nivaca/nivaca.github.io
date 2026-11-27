@@ -15,7 +15,7 @@ py-pdftools edits PDF documents. It annotates and redacts them, changes their pa
 </div>
 
 <dl class="facts">
-  <dt>Version</dt><dd>1.19.0 (25 November 2026)</dd>
+  <dt>Version</dt><dd>1.23.0 (27 November 2026)</dd>
   <dt>Programs</dt><dd>a window (<code>py-pdftools-gui</code>) and a command line (<code>py-pdftools</code>)</dd>
   <dt>Interface</dt><dd>English and Spanish</dd>
   <dt>Written in</dt><dd>Python, with PyMuPDF, pikepdf, reportlab and PySide6 (Qt)</dd>

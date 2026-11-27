@@ -16,7 +16,7 @@ py-words voces Latinas flexas, et integras lineas Latinas, in formas suas et in 
 </div>
 
 <dl class="facts">
-  <dt>Editio</dt><dd>3.31 (die XXIV mensis Novembris anni MMXXVI)</dd>
+  <dt>Editio</dt><dd>3.32 (die XXVI mensis Novembris anni MMXXVI)</dd>
   <dt>Programmata</dt><dd>fenestra, linea mandatorum, terminale totum quadrum occupans, pagina interretialis; etiam in KRunner et in Android</dd>
   <dt>Lexicon</dt><dd>93.370 articuli, cum significationibus Anglicis et Hispanicis</dd>
   <dt>Interfacies</dt><dd>Anglica, Hispanica et Latina medii evi</dd>
@@ -86,7 +86,7 @@ Omnia eodem lexico, eisdem optionibus et eadem historia inquisitionum utuntur.
 
 ### In Android
 
-[py-words pro Android](https://github.com/{{ site.github_username }}/py-words-android) (editio 2.7) ipsum py-words in se continet, cum datis eius et Python 3.13 quo currit, ita ut in telephono sine rete operetur. Per tabellam fons a telephono ad situm in rete transfertur, et rursus ad telephonum; uterque eandem paginam ostendit, et mutato fonte inquisitio in quadro manet. Prima vice lexicon in telephono paucis momentis oneratur, postea celerius. Vox vel linea Latina ex quolibet programmate queri potest, eam eligendo et *Look up in py-words* premendo, vel textum cum programmate communicando. Programma lingua Kotlin scriptum est, cum Chaquopy, per quod Python currit, et Android 10 aut recentiorem in machina ARM 64 bitorum requirit. Institui potest ex editionibus eius ([Codeberg](https://codeberg.org/{{ site.codeberg_username }}/py-words-android/releases), [GitHub](https://github.com/{{ site.github_username }}/py-words-android/releases)), per [Obtainium](https://github.com/ImranR98/Obtainium), vel ex meo repositorio F-Droid, [nivaca.codeberg.page/fdroid](https://nivaca.codeberg.page/fdroid/); omnes tres vie eodem fasciculo APK obsignato utuntur, ita ut quelibet renovet quod per ceteras institutum est.
+[py-words pro Android](https://github.com/{{ site.github_username }}/py-words-android) (editio 2.8) ipsum py-words in se continet, cum datis eius et Python 3.13 quo currit, ita ut in telephono sine rete operetur. Per tabellam fons a telephono ad situm in rete transfertur, et rursus ad telephonum; uterque eandem paginam ostendit, et mutato fonte inquisitio in quadro manet. Prima vice lexicon in telephono paucis momentis oneratur, postea celerius. Vox vel linea Latina ex quolibet programmate queri potest, eam eligendo et *Look up in py-words* premendo, vel textum cum programmate communicando. Programma lingua Kotlin scriptum est, cum Chaquopy, per quod Python currit, et Android 10 aut recentiorem in machina ARM 64 bitorum requirit. Institui potest ex editionibus eius ([Codeberg](https://codeberg.org/{{ site.codeberg_username }}/py-words-android/releases), [GitHub](https://github.com/{{ site.github_username }}/py-words-android/releases)), per [Obtainium](https://github.com/ImranR98/Obtainium), vel ex meo repositorio F-Droid, [nivaca.codeberg.page/fdroid](https://nivaca.codeberg.page/fdroid/); omnes tres vie eodem fasciculo APK obsignato utuntur, ita ut quelibet renovet quod per ceteras institutum est.
 
 <figure class="screenshot phone">
   <img src="{{ "/images/py-words/android.webp" | relative_url }}" alt="py-words pro Android, cum analysi vocis arma et articulo DMLBS ex Logeion" loading="lazy">

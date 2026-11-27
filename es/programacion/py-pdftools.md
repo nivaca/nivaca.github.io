@@ -15,7 +15,7 @@ py-pdftools edita documentos PDF. Los anota y los censura, cambia sus etiquetas 
 </div>
 
 <dl class="facts">
-  <dt>Versión</dt><dd>1.19.0 (25 de noviembre de 2026)</dd>
+  <dt>Versión</dt><dd>1.23.0 (27 de noviembre de 2026)</dd>
   <dt>Programas</dt><dd>una ventana (<code>py-pdftools-gui</code>) y una línea de comandos (<code>py-pdftools</code>)</dd>
   <dt>Interfaz</dt><dd>inglés y español</dd>
   <dt>Escrito en</dt><dd>Python, con PyMuPDF, pikepdf, reportlab y PySide6 (Qt)</dd>

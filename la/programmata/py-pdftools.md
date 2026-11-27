@@ -15,7 +15,7 @@ py-pdftools documenta PDF tractat. Ea annotat et expungit, titulos paginarum, ca
 </div>
 
 <dl class="facts">
-  <dt>Editio</dt><dd>1.19.0 (die XXV mensis Novembris anni MMXXVI)</dd>
+  <dt>Editio</dt><dd>1.23.0 (die XXVII mensis Novembris anni MMXXVI)</dd>
   <dt>Programmata</dt><dd>fenestra (<code>py-pdftools-gui</code>) et linea mandatorum (<code>py-pdftools</code>)</dd>
   <dt>Interfacies</dt><dd>Anglica et Hispanica</dd>
   <dt>Scriptum</dt><dd>lingua Python, cum PyMuPDF, pikepdf, reportlab et PySide6 (Qt)</dd>

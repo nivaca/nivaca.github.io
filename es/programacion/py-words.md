@@ -16,7 +16,7 @@ py-words analiza palabras latinas flexionadas, y líneas enteras de latín, en s
 </div>
 
 <dl class="facts">
-  <dt>Versión</dt><dd>3.31 (24 de noviembre de 2026)</dd>
+  <dt>Versión</dt><dd>3.32 (26 de noviembre de 2026)</dd>
   <dt>Programas</dt><dd>una ventana, la línea de comandos, la terminal a pantalla completa y una página web; también en KRunner y en Android</dd>
   <dt>Diccionario</dt><dd>93&nbsp;370 entradas, con significados en inglés y en español</dd>
   <dt>Interfaz</dt><dd>inglés, español y latín medieval</dd>
@@ -86,7 +86,7 @@ Todos comparten el mismo diccionario, los mismos ajustes y el mismo historial de
 
 ### En Android
 
-[py-words para Android](https://github.com/{{ site.github_username }}/py-words-android) (versión 2.7) lleva dentro el propio py-words, con sus datos y un Python 3.13 para correrlo, así que funciona en el teléfono sin internet. Un menú cambia la fuente al sitio en línea, y viceversa; las dos muestran la misma página, y al cambiar de fuente se conserva la búsqueda que hay en pantalla. La primera vez, el diccionario tarda unos segundos en cargar en el teléfono; después, menos. Desde cualquier aplicación puede consultarse una palabra o una línea de latín: se selecciona y se elige *Buscar en py-words*, o se comparte el texto con la aplicación. Está escrita en Kotlin, con Chaquopy para correr Python, y necesita Android 10 o posterior en un dispositivo ARM de 64 bits. Se instala desde sus versiones publicadas ([Codeberg](https://codeberg.org/{{ site.codeberg_username }}/py-words-android/releases), [GitHub](https://github.com/{{ site.github_username }}/py-words-android/releases)), con [Obtainium](https://github.com/ImranR98/Obtainium) o desde mi propio repositorio de F-Droid, [nivaca.codeberg.page/fdroid](https://nivaca.codeberg.page/fdroid/). Los tres usan el mismo APK firmado, de modo que cualquiera de ellos actualiza a los otros.
+[py-words para Android](https://github.com/{{ site.github_username }}/py-words-android) (versión 2.8) lleva dentro el propio py-words, con sus datos y un Python 3.13 para correrlo, así que funciona en el teléfono sin internet. Un menú cambia la fuente al sitio en línea, y viceversa; las dos muestran la misma página, y al cambiar de fuente se conserva la búsqueda que hay en pantalla. La primera vez, el diccionario tarda unos segundos en cargar en el teléfono; después, menos. Desde cualquier aplicación puede consultarse una palabra o una línea de latín: se selecciona y se elige *Buscar en py-words*, o se comparte el texto con la aplicación. Está escrita en Kotlin, con Chaquopy para correr Python, y necesita Android 10 o posterior en un dispositivo ARM de 64 bits. Se instala desde sus versiones publicadas ([Codeberg](https://codeberg.org/{{ site.codeberg_username }}/py-words-android/releases), [GitHub](https://github.com/{{ site.github_username }}/py-words-android/releases)), con [Obtainium](https://github.com/ImranR98/Obtainium) o desde mi propio repositorio de F-Droid, [nivaca.codeberg.page/fdroid](https://nivaca.codeberg.page/fdroid/). Los tres usan el mismo APK firmado, de modo que cualquiera de ellos actualiza a los otros.
 
 <figure class="screenshot phone">
   <img src="{{ "/images/py-words/android.webp" | relative_url }}" alt="py-words para Android, con el análisis de arma y la entrada del DMLBS en Logeion" loading="lazy">
